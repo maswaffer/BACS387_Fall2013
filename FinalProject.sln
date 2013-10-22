@@ -11,9 +11,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Engine", "Engine", "{9E55A9
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drin.Engine", "Drin.Engine\Drin.Engine.csproj", "{AC9A4D50-A923-4483-894C-4B208BBED98C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{D3E1DC31-E7F5-496B-BC6D-1D64E18CD7A8}"
+EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 3
+		SccNumberOfProjects = 4
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://bacs387.visualstudio.com/defaultcollection
 		SccLocalPath0 = .
@@ -24,6 +26,9 @@ Global
 		SccProjectTopLevelParentUniqueName2 = FinalProject.sln
 		SccProjectName2 = Drin.Engine
 		SccLocalPath2 = Drin.Engine
+		SccProjectUniqueName3 = Common\\Common.csproj
+		SccProjectName3 = Common
+		SccLocalPath3 = Common
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,6 +43,10 @@ Global
 		{AC9A4D50-A923-4483-894C-4B208BBED98C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC9A4D50-A923-4483-894C-4B208BBED98C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC9A4D50-A923-4483-894C-4B208BBED98C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3E1DC31-E7F5-496B-BC6D-1D64E18CD7A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3E1DC31-E7F5-496B-BC6D-1D64E18CD7A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3E1DC31-E7F5-496B-BC6D-1D64E18CD7A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3E1DC31-E7F5-496B-BC6D-1D64E18CD7A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
