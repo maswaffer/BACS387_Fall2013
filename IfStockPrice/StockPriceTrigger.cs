@@ -10,6 +10,7 @@ namespace IfStockPrice
     public class StockPriceTrigger : ITrigger
     {
         public Broker StockBroker { get; set; }
+        public string Message { get; set; }
 
         public bool CheckCondition()
         {

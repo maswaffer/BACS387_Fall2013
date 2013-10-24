@@ -10,16 +10,7 @@ namespace IfStockPrice
     {
         public string Message { get; set; }
 
-        public ICriteria ICriteria
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
+        
 
         public bool Check(Stock value)
         {

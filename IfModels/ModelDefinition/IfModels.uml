@@ -77,6 +77,17 @@
             isDerivedUnion="false"
             aggregation="None"
             isComposite="false" />
+          <property
+            Id="033c53b3-f1ba-4425-8185-a545b7d60dce"
+            name="string Message"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
@@ -182,6 +193,31 @@
             aggregation="None"
             isComposite="false" />
         </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="7a6c4bf0-ba37-4fe4-ac49-c8d33f126529"
+        name="ICriteria"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="054b5f21-d28f-4464-a898-ea4a5b1a0ae8"
+        name="PriceIsHighCriteria"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="d7b47255-c8a5-4f2d-9c0d-5fef05351788">
+            <interfaceMoniker
+              Id="7a6c4bf0-ba37-4fe4-ac49-c8d33f126529"
+              LastKnownName="ICriteria"
+              LastKnownLocation="IfModels.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
       </class>
     </packageHasNamedElement>
   </packagedElements>
