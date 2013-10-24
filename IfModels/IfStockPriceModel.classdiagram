@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="1a66aa5d-ac17-48a8-ba92-3984e6b392a6" name="IfStockPriceModel" linkedPackageId="f2d2ae87-179a-4312-9f45-f9f46cd8d6ea" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="1c2816bf-d004-4c24-ad4f-a2015859b188">
+      <profileInstance Id="55733f17-5c58-4e8b-b444-ff59d1e3b8ec" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="053e1a70-01d5-4f84-aa3c-fb7787dc1972">
+      <profileInstance Id="b2506b28-924c-431c-81f4-6fedcc282de9" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="61f221b0-a3cd-431a-b0f2-5957ca743d64" name="ITrigger" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4e0aec38-e855-403a-afb8-4eb0bb95d6ca" />
+        <ownedAttributes>
+          <property Id="f06b2c8e-850f-49a1-a48e-2d7ab6155604" name="string Message" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5948b536-b972-490d-95a6-bee7028082dc" />
+          </property>
+        </ownedAttributes>
+        <ownedOperations>
+          <operation Id="10880a53-34af-47e9-82bc-6ca9d5d1c1e5" name="bool CheckCondition" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6b2f9d06-b18a-496c-ad34-7ccf74f55df7" />
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="8c3f06db-fcd0-4b37-bbe0-253025d5beee" name="StockPriceTrigger" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1746f5b2-48a6-42a6-a6f5-bb1428010fd4" />
+        <suppliersInternal>
+          <interfaceRealization Id="9feb898d-c847-42e6-9f44-afa9e2e91561">
+            <interfaceMoniker Id="61f221b0-a3cd-431a-b0f2-5957ca743d64" LastKnownName="ITrigger" />
+            <elementDefinition Id="02802065-ca34-4abd-ae88-e0987115d5cd" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="081c6bed-6785-4bf4-9a4e-1d67a1756673" name="Broker Broker" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ba2681d5-a5b4-4218-b175-b55431434dca" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="61194931-79a3-49d5-a653-2cece7d0f9fd" name="bool CheckCondition" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="48ed5597-17ce-4a07-91cc-21d1c90db9c0" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="843c5a8e-b676-4307-a5f2-cb10440efe9c" name="Broker" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c4547881-69ed-41c9-8595-8ae5807c5360" />
+        <ownedAttributesInternal>
+          <property Id="426dcd09-8131-41b1-9881-7a782514e59f" name="TraderService Service" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e2cce319-24c1-434b-81b1-e51096591b75" />
+          </property>
+          <property Id="c8376510-f83d-40e0-9e0f-8fc3bedd3e06" name="TimeSpan Delay" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="20b9ba06-f8f8-4928-8909-f05d24b59345" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="d76ea1b1-f028-48c1-836c-48881e3531e1" name="AddCriteria" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9741024a-b3fe-496f-9647-5c35495c0805" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="deba8e57-f53f-4d4e-ab42-eb6292cbbd96" name="ICriteria" direction="In" isUnique="false">
+                  <elementDefinition Id="3f693d16-1db4-4ca4-b5d5-a45b6e11d58e" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="4b0622b9-9094-498c-9b49-eb93ac38625e" name="BrokerMessage CheckStock" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="baa9d242-f7f4-44a5-87eb-077b70395ddf" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e2399198-2331-429e-b827-ac6a8ffd47c1" name="BrokerMessage" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f512f1c9-9b02-4bf3-a531-0173378f5b69" />
+        <ownedAttributesInternal>
+          <property Id="5627b9df-1cd3-4541-aca7-c8585a6dbbe4" name="IsCriteriaMet" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="83eafbd8-66b3-4b6f-b4be-dfb3d0862655" />
+          </property>
+          <property Id="df2508f3-66f5-4dde-8266-e6ea54181061" name="Message" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9be41c20-f727-4eca-96f0-e9c15ef480ee" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="f2d2ae87-179a-4312-9f45-f9f46cd8d6ea" name="IfModels">
+    <elementDefinition Id="36f2f6ea-1a24-4809-9771-7d41b325055b" />
+  </package>
+</logicalClassDesignerModel>
