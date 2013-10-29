@@ -24,5 +24,11 @@ namespace Drin
         {
             InitializeComponent();
         }
+
+        private void AddRule_Click(object sender, RoutedEventArgs e)
+        {
+            var window = WindowFactory.GetWindow();
+            window.Show();
+        }
     }
 }
