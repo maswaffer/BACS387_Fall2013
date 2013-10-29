@@ -8,18 +8,17 @@ namespace IfStockPrice
 {
     public class PriceIsHighCriteria : ICriteria
     {
-        public string Message { get; set; }
 
-        
+        public string Message { get; set; }
 
         public bool Check(Stock value)
         {
-            /*
-             * Check to see if stock price is equal to high for day
-             * if yes, set message and  return true
-             * else return false
-             */
-            throw new NotImplementedException();
+            if (value.Quote >= value.High)
+            {
+                Message = string.Format("{0}: Quote {1} was equal to or greater than high of {2} for day", value.Symbol, value.Quote, value.High);
+                return true;
+            }
+            return false;
         }
     }
 }

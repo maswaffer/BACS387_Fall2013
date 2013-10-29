@@ -8,29 +8,47 @@ namespace IfStockPrice
 {
     public class Broker
     {
-        public TraderService Service { get; set; }
-        public TimeSpan Delay { get; set; }
+        public Broker(string symbol, List<ICriteria> criteria)
+        {
+            Service = new TraderService();
+            Delay = new TimeSpan(0, 0, 10);
+            Symbol = symbol;
+            Criteria = criteria;
+        }
 
+        private string Symbol { get; set; }
+
+        private TraderService Service { get; set; }
+        private TimeSpan Delay { get; set; }
+        private DateTime LastCheck { get; set; }
         private List<Stock> Quotes { get; set; }
         private List<ICriteria> Criteria { get; set; }
 
-        public void AddCriteria(ICriteria criteria)
-        {
-            //Add criteria to private list
-        }
-
         public BrokerMessage CheckStock()
         {
-            /*
-             * If last check was longer ago than delay, check for new quote
-             * If new quote is received,
-             * For each criteria, check the values
-             * If match is found, return true
-             * else return false
-             */
-            //todo add symbol
+            var timeSinceLast = DateTime.Now - LastCheck;
+            if (timeSinceLast.TotalMilliseconds < Delay.TotalMilliseconds)
+            {
+                return new BrokerMessage();
+            }
+            var quote = Service.GetStockQuote(Symbol);
+            if (quote == null)
+            {
+                return new BrokerMessage();
+            }
 
-            throw new NotImplementedException();
+            foreach (var criteria in Criteria)
+            {
+                if (criteria.Check(quote))
+                {
+                    return new BrokerMessage
+                    {
+                        Criteria = criteria,
+                        IsCriteriaMet = true
+                    };
+                }
+            }
+            return new BrokerMessage();
         }
 
         public class BrokerMessage

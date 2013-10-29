@@ -10,32 +10,25 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Common;
 
-namespace Drin
+namespace IfSetupWindows
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for IfStockPriceWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class IfStockPriceWindow : Window, ITriggerWindow
     {
-        public MainWindow()
+
+        public IfStockPriceWindow()
         {
             InitializeComponent();
         }
 
-        private void AddRule_Click(object sender, RoutedEventArgs e)
+        public ITrigger GetConfiguredTrigger()
         {
-            var window = WindowFactory.GetWindow();
-            window.Show();
-            window.Closing += (s, ea) =>
-            {
-                var trigger = ((ITriggerWindow)window).GetConfiguredTrigger();
-            };
+            throw new NotImplementedException();
         }
-
-        
     }
 }

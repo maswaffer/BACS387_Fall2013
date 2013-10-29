@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using Common;
+using IfSetupWindows;
 
 namespace Drin
 {
@@ -11,7 +13,7 @@ namespace Drin
     {
         public static Window GetWindow()
         {
-            throw new NotImplementedException();
+            return new IfStockPriceWindow();
         }
     }
 }

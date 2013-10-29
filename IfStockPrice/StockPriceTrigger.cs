@@ -9,18 +9,27 @@ namespace IfStockPrice
 {
     public class StockPriceTrigger : ITrigger
     {
-        public Broker StockBroker { get; set; }
+        public StockPriceTrigger(string symbol, List<ICriteria> criteria)
+        {
+            StockBroker = new Broker(symbol, criteria);
+        }
+
+        private Broker StockBroker { get; set; }
         public string Message { get; set; }
 
         public bool CheckCondition()
         {
-            /*
-             * Ask broker to check for quote
-             * Ask broker if any criteria were met
-             * If so, set message and return true 
-             * If no, return false
-             */
-            throw new NotImplementedException();
+            var check = StockBroker.CheckStock();
+            if (check.IsCriteriaMet)
+            {
+                Message = check.Criteria.Message;
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
         }
     }
 }
