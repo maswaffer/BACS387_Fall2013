@@ -8,6 +8,11 @@ namespace IfStockPrice
 {
     public class PriceIsHighCriteria : ICriteria
     {
+        public string Name
+        {
+            get { return "Price >= Daily High"; }
+            set { }
+        }
 
         public string Message { get; set; }
 
@@ -19,6 +24,11 @@ namespace IfStockPrice
                 return true;
             }
             return false;
+        }
+
+        public override string ToString()
+        {
+            return Name;
         }
     }
 }

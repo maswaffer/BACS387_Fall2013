@@ -8,7 +8,7 @@ namespace IfStockPrice
 {
     public class Broker
     {
-        public Broker(string symbol, List<ICriteria> criteria)
+        public Broker(string symbol, ICriteria criteria)
         {
             Service = new TraderService();
             Delay = new TimeSpan(0, 0, 10);
@@ -22,7 +22,7 @@ namespace IfStockPrice
         private TimeSpan Delay { get; set; }
         private DateTime LastCheck { get; set; }
         private List<Stock> Quotes { get; set; }
-        private List<ICriteria> Criteria { get; set; }
+        private ICriteria Criteria { get; set; }
 
         public BrokerMessage CheckStock()
         {
@@ -37,16 +37,14 @@ namespace IfStockPrice
                 return new BrokerMessage();
             }
 
-            foreach (var criteria in Criteria)
+
+            if (Criteria.Check(quote))
             {
-                if (criteria.Check(quote))
+                return new BrokerMessage
                 {
-                    return new BrokerMessage
-                    {
-                        Criteria = criteria,
-                        IsCriteriaMet = true
-                    };
-                }
+                    Criteria = Criteria,
+                    IsCriteriaMet = true
+                };
             }
             return new BrokerMessage();
         }

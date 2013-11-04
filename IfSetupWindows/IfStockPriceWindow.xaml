@@ -1,8 +1,22 @@
 ﻿<Window x:Class="IfSetupWindows.IfStockPriceWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="IfStockPriceWindow" Height="300" Width="300">
+        Title="Set stock price criteria" Height="300" Width="500">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="115*"/>
+            <ColumnDefinition Width="177*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="29*"/>
+            <RowDefinition Height="216*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Select Stock Symbol"  HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label Content="Select Criteria Type" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <ComboBox Grid.Column="1" Name="CriteriaType" Grid.Row="1" SelectionChanged="CriteriaType_SelectionChanged"/>
+        <TextBox Grid.Column="1" Name="Symbol" Text="MSFT" VerticalAlignment="Top" HorizontalAlignment="Left" Width="120"/>
+        <Button Content="Save" Click="SaveButton_Click" Grid.Column="1" HorizontalAlignment="Right" Grid.Row="2" VerticalAlignment="Bottom" Width="75"/>
+
     </Grid>
 </Window>

@@ -9,12 +9,13 @@ namespace IfStockPrice
 {
     public class StockPriceTrigger : ITrigger
     {
-        public StockPriceTrigger(string symbol, List<ICriteria> criteria)
+        public StockPriceTrigger(string symbol, ICriteria criteria)
         {
             StockBroker = new Broker(symbol, criteria);
         }
 
         private Broker StockBroker { get; set; }
+        private ICriteria Criteria { get; set; }
         public string Message { get; set; }
 
         public bool CheckCondition()
@@ -30,6 +31,11 @@ namespace IfStockPrice
                 return false;
             }
 
+        }
+
+        public override string ToString()
+        {
+            return "If stock " + Criteria.ToString();
         }
     }
 }

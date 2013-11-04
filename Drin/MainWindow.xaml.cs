@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,16 +27,19 @@ namespace Drin
             InitializeComponent();
         }
 
+        private ITrigger TriggerToAdd { get; set; }
+
         private void AddRule_Click(object sender, RoutedEventArgs e)
         {
             var window = WindowFactory.GetWindow();
+            window.Closing += SaveTrigger;
             window.Show();
-            window.Closing += (s, ea) =>
-            {
-                var trigger = ((ITriggerWindow)window).GetConfiguredTrigger();
-            };
         }
 
-        
+        private void SaveTrigger(object sender, CancelEventArgs e)
+        {
+            TriggerToAdd = ((ITriggerWindow)sender).GetConfiguredTrigger();
+        }
+
     }
 }

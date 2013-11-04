@@ -8,6 +8,7 @@ namespace IfStockPrice
 {
     public interface ICriteria
     {
+        string Name { get; set; }
         bool Check(Stock value);
         string Message { get; set; }
     }
