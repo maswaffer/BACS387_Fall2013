@@ -19,9 +19,11 @@ Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "IfModels", "IfModels\IfMode
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IfSetupWindows", "IfSetupWindows\IfSetupWindows.csproj", "{B4B462F3-1712-4C30-BE83-CE03ACC5D7CC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThenSendEmail", "ThenSendEmail\ThenSendEmail.csproj", "{DBDCDBB6-4DD8-4E99-9948-CC5D90918160}"
+EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 7
+		SccNumberOfProjects = 8
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://bacs387.visualstudio.com/defaultcollection
 		SccLocalPath0 = .
@@ -47,6 +49,10 @@ Global
 		SccProjectTopLevelParentUniqueName6 = FinalProject.sln
 		SccProjectName6 = IfSetupWindows
 		SccLocalPath6 = IfSetupWindows
+		SccProjectUniqueName7 = ThenSendEmail\\ThenSendEmail.csproj
+		SccProjectTopLevelParentUniqueName7 = FinalProject.sln
+		SccProjectName7 = ThenSendEmail
+		SccLocalPath7 = ThenSendEmail
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -77,6 +83,10 @@ Global
 		{B4B462F3-1712-4C30-BE83-CE03ACC5D7CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4B462F3-1712-4C30-BE83-CE03ACC5D7CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4B462F3-1712-4C30-BE83-CE03ACC5D7CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBDCDBB6-4DD8-4E99-9948-CC5D90918160}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBDCDBB6-4DD8-4E99-9948-CC5D90918160}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBDCDBB6-4DD8-4E99-9948-CC5D90918160}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBDCDBB6-4DD8-4E99-9948-CC5D90918160}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -85,6 +95,7 @@ Global
 		{1134AA5D-F606-40A1-A8FB-EBCE0C18D4E9} = {82D6EE66-DF80-447F-9CB1-36A528AD2291}
 		{D408E91F-BDC8-4E36-B6C5-0366A83A0694} = {82D6EE66-DF80-447F-9CB1-36A528AD2291}
 		{B4B462F3-1712-4C30-BE83-CE03ACC5D7CC} = {82D6EE66-DF80-447F-9CB1-36A528AD2291}
+		{DBDCDBB6-4DD8-4E99-9948-CC5D90918160} = {B49C2D43-4E96-491D-97D4-FB145C978C4B}
 		{AC9A4D50-A923-4483-894C-4B208BBED98C} = {9E55A9E8-E3DF-40BF-8F0F-24460DF73EA5}
 	EndGlobalSection
 EndGlobal
