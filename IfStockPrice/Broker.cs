@@ -8,12 +8,21 @@ namespace IfStockPrice
 {
     public class Broker
     {
-        public Broker(string symbol, ICriteria criteria)
+        public Broker(string symbol)
         {
+            Criteria = new List<ICriteria>();
             Service = new TraderService();
             Delay = new TimeSpan(0, 0, 10);
             Symbol = symbol;
-            Criteria = criteria;
+        }
+
+        public Broker(string symbol, ICriteria criteria)
+        {
+            Criteria = new List<ICriteria>();
+            Service = new TraderService();
+            Delay = new TimeSpan(0, 0, 10);
+            Symbol = symbol;
+            Criteria.Add(criteria);
         }
 
         private string Symbol { get; set; }
@@ -22,7 +31,7 @@ namespace IfStockPrice
         private TimeSpan Delay { get; set; }
         private DateTime LastCheck { get; set; }
         private List<Stock> Quotes { get; set; }
-        private ICriteria Criteria { get; set; }
+        private List<ICriteria> Criteria { get; set; }
 
         public BrokerMessage CheckStock()
         {
@@ -36,15 +45,19 @@ namespace IfStockPrice
             {
                 return new BrokerMessage();
             }
-
-
-            if (Criteria.Check(quote))
+            //This will only return a message for the 1st criteria met
+            //If this is OK for our business case, this is fine
+            //Otherwise we have to find a more elegant solution
+            foreach (var criteria in Criteria)
             {
-                return new BrokerMessage
+                if (criteria.Check(quote))
                 {
-                    Criteria = Criteria,
-                    IsCriteriaMet = true
-                };
+                    return new BrokerMessage
+                    {
+                        Criteria = criteria,
+                        IsCriteriaMet = true
+                    };
+                }
             }
             return new BrokerMessage();
         }
@@ -53,6 +66,11 @@ namespace IfStockPrice
         {
             public bool IsCriteriaMet { get; set; }
             public ICriteria Criteria { get; set; }
+        }
+
+        public void AddCriteria(ICriteria criteria)
+        {
+            throw new NotImplementedException();
         }
     }
 }
