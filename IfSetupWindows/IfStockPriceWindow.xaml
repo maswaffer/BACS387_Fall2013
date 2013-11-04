@@ -1,6 +1,7 @@
-﻿<Window x:Class="IfSetupWindows.IfStockPriceWindow"
+﻿<y:IfWindow x:Class="IfSetupWindows.IfStockPriceWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:y="clr-namespace:IfSetupWindows"
         Title="Set stock price criteria" Height="300" Width="500">
     <Grid>
         <Grid.ColumnDefinitions>
@@ -19,4 +20,4 @@
         <Button Content="Save" Click="SaveButton_Click" Grid.Column="1" HorizontalAlignment="Right" Grid.Row="2" VerticalAlignment="Bottom" Width="75"/>
 
     </Grid>
-</Window>
+</y:IfWindow>

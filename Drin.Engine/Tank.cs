@@ -11,19 +11,19 @@ namespace Drin.Engine
     {
         public Tank()
         {
-            ConfiguredTriggers = new List<ITrigger>();
+            Rules = new List<Rule>();
         }
 
-        private List<ITrigger> ConfiguredTriggers { get; set; }
+        private List<Rule> Rules { get; set; }
 
-        public void Fill(ITrigger trigger)
+        public void Fill(Rule rule)
         {
-            ConfiguredTriggers.Add(trigger);
+            Rules.Add(rule);
         }
 
-        public void Fill(IList<ITrigger> triggers)
+        public void Fill(IList<Rule> rules)
         {
-            ConfiguredTriggers.AddRange(triggers);
+            Rules.AddRange(rules);
         }
     }
 }

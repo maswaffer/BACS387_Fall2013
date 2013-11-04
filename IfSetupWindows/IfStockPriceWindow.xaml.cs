@@ -19,21 +19,15 @@ namespace IfSetupWindows
     /// <summary>
     /// Interaction logic for IfStockPriceWindow.xaml
     /// </summary>
-    public partial class IfStockPriceWindow : Window, ITriggerWindow
+    public partial class IfStockPriceWindow : IfWindow
     {
 
-        private ITrigger ConfiguredTrigger { get; set; }
 
         public IfStockPriceWindow()
         {
             InitializeComponent();
 
             CriteriaType.Items.Add(new PriceIsHighCriteria());
-        }
-
-        public ITrigger GetConfiguredTrigger()
-        {
-            return ConfiguredTrigger;
         }
 
         private void CriteriaType_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -45,7 +39,7 @@ namespace IfSetupWindows
             {
                 //No need to do anything else
             }
-            ConfiguredTrigger = new StockPriceTrigger(symbol, selection);
+            TriggertoProcess = new StockPriceTrigger(symbol, selection);
         }
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)

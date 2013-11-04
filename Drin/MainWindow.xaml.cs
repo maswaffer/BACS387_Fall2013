@@ -14,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Common;
+using Drin.Engine;
 
 namespace Drin
 {
@@ -25,21 +26,36 @@ namespace Drin
         public MainWindow()
         {
             InitializeComponent();
+            TriggerTypes.ItemsSource = WindowFactory.GetTriggerTypes();
+            Tank = new Tank();
         }
 
         private ITrigger TriggerToAdd { get; set; }
+        private IAction ActionToAdd { get; set; }
+        private Tank Tank { get; set; }
 
-        private void AddRule_Click(object sender, RoutedEventArgs e)
+        private void AddTrigger_Click(object sender, RoutedEventArgs e)
         {
-            var window = WindowFactory.GetWindow();
-            window.Closing += SaveTrigger;
+            var triggerType = TriggerTypes.SelectedItem.ToString();
+            var window = WindowFactory.GetTriggerWindow(triggerType);
+            window.ProcessTrigger((t) =>
+            {
+                TriggerToAdd = t;
+            });
             window.Show();
         }
 
-        private void SaveTrigger(object sender, CancelEventArgs e)
+        private void AddAction_Click(object sender, RoutedEventArgs e)
         {
-            TriggerToAdd = ((ITriggerWindow)sender).GetConfiguredTrigger();
+
         }
+
+        private void AddRule_Click(object sender, RoutedEventArgs e)
+        {
+            var rule = new Rule(TriggerToAdd, ActionToAdd);
+            Tank.Fill(rule);
+        }
+
 
     }
 }

@@ -11,9 +11,24 @@ namespace Drin
 {
     public static class WindowFactory
     {
-        public static Window GetWindow()
+        public static IfWindow GetTriggerWindow(string selection)
         {
-            return new IfStockPriceWindow();
+            switch (selection)
+            {
+                case "Stock Price":
+                    return new IfStockPriceWindow();
+                default:
+                    return null;
+            }
         }
+
+        public static List<string> GetTriggerTypes()
+        {
+            return new List<string>
+            {
+                "Stock Price"
+            };
+        }
+
     }
 }
