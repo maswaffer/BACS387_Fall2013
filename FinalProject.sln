@@ -35,9 +35,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Watson", "GraceHopper\Watso
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IfPhotoCondition", "IfPhotoCondition\IfPhotoCondition.csproj", "{7931CE46-D0B7-49D1-9A72-4495FF704A71}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ida.Rhodes", "Ida.Rhodes\Ida.Rhodes.csproj", "{4D57563D-FF27-4F73-93A8-0B2F9BE7B094}"
+EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 14
+		SccNumberOfProjects = 15
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://bacs387.visualstudio.com/defaultcollection
 		SccLocalPath0 = .
@@ -91,6 +93,10 @@ Global
 		SccProjectTopLevelParentUniqueName13 = FinalProject.sln
 		SccProjectName13 = IfPhotoCondition
 		SccLocalPath13 = IfPhotoCondition
+		SccProjectUniqueName14 = Ida.Rhodes\\Ida.Rhodes.csproj
+		SccProjectTopLevelParentUniqueName14 = FinalProject.sln
+		SccProjectName14 = Ida.Rhodes
+		SccLocalPath14 = Ida.Rhodes
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -149,6 +155,10 @@ Global
 		{7931CE46-D0B7-49D1-9A72-4495FF704A71}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7931CE46-D0B7-49D1-9A72-4495FF704A71}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7931CE46-D0B7-49D1-9A72-4495FF704A71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D57563D-FF27-4F73-93A8-0B2F9BE7B094}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D57563D-FF27-4F73-93A8-0B2F9BE7B094}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D57563D-FF27-4F73-93A8-0B2F9BE7B094}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D57563D-FF27-4F73-93A8-0B2F9BE7B094}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -162,6 +172,7 @@ Global
 		{4E533B8F-0880-44A5-B937-FB26AF842C1A} = {82D6EE66-DF80-447F-9CB1-36A528AD2291}
 		{630DBC59-DDEE-4907-A7B2-EC086B989034} = {82D6EE66-DF80-447F-9CB1-36A528AD2291}
 		{7931CE46-D0B7-49D1-9A72-4495FF704A71} = {82D6EE66-DF80-447F-9CB1-36A528AD2291}
+		{4D57563D-FF27-4F73-93A8-0B2F9BE7B094} = {82D6EE66-DF80-447F-9CB1-36A528AD2291}
 		{DBDCDBB6-4DD8-4E99-9948-CC5D90918160} = {B49C2D43-4E96-491D-97D4-FB145C978C4B}
 		{AC9A4D50-A923-4483-894C-4B208BBED98C} = {9E55A9E8-E3DF-40BF-8F0F-24460DF73EA5}
 		{CE6B712B-7D91-474F-BC1B-CCA2F3F4F9E2} = {67EF2E48-4A81-4384-A9D9-C6AE4E25A9DD}
