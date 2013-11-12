@@ -16,7 +16,11 @@ namespace IfStockPrice
              * build Stock object
              * return
              */
-            throw new NotImplementedException();
+            return new Stock
+            {
+                High = 100,
+                Quote = 101
+            };
         }
     }
 }
