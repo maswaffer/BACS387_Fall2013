@@ -21,9 +21,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IfSetupWindows", "IfSetupWi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThenSendEmail", "ThenSendEmail\ThenSendEmail.csproj", "{DBDCDBB6-4DD8-4E99-9948-CC5D90918160}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IFTESTS", "IFTESTS", "{67EF2E48-4A81-4384-A9D9-C6AE4E25A9DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IfStockPrice.Test", "IfStockPrice.Test\IfStockPrice.Test.csproj", "{CE6B712B-7D91-474F-BC1B-CCA2F3F4F9E2}"
+EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 8
+		SccNumberOfProjects = 9
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://bacs387.visualstudio.com/defaultcollection
 		SccLocalPath0 = .
@@ -53,6 +57,10 @@ Global
 		SccProjectTopLevelParentUniqueName7 = FinalProject.sln
 		SccProjectName7 = ThenSendEmail
 		SccLocalPath7 = ThenSendEmail
+		SccProjectUniqueName8 = IfStockPrice.Test\\IfStockPrice.Test.csproj
+		SccProjectTopLevelParentUniqueName8 = FinalProject.sln
+		SccProjectName8 = IfStockPrice.Test
+		SccLocalPath8 = IfStockPrice.Test
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +95,10 @@ Global
 		{DBDCDBB6-4DD8-4E99-9948-CC5D90918160}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DBDCDBB6-4DD8-4E99-9948-CC5D90918160}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DBDCDBB6-4DD8-4E99-9948-CC5D90918160}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE6B712B-7D91-474F-BC1B-CCA2F3F4F9E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE6B712B-7D91-474F-BC1B-CCA2F3F4F9E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE6B712B-7D91-474F-BC1B-CCA2F3F4F9E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE6B712B-7D91-474F-BC1B-CCA2F3F4F9E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -97,5 +109,6 @@ Global
 		{B4B462F3-1712-4C30-BE83-CE03ACC5D7CC} = {82D6EE66-DF80-447F-9CB1-36A528AD2291}
 		{DBDCDBB6-4DD8-4E99-9948-CC5D90918160} = {B49C2D43-4E96-491D-97D4-FB145C978C4B}
 		{AC9A4D50-A923-4483-894C-4B208BBED98C} = {9E55A9E8-E3DF-40BF-8F0F-24460DF73EA5}
+		{CE6B712B-7D91-474F-BC1B-CCA2F3F4F9E2} = {67EF2E48-4A81-4384-A9D9-C6AE4E25A9DD}
 	EndGlobalSection
 EndGlobal

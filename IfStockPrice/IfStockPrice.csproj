@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PriceChangeGreaterThan.cs" />
     <Compile Include="PriceIsHighCriteria.cs" />
     <Compile Include="Stock.cs" />
     <Compile Include="StockPriceTrigger.cs" />

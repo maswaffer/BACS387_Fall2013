@@ -9,15 +9,24 @@
             <ColumnDefinition Width="177*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="25*"/>
-            <RowDefinition Height="29*"/>
-            <RowDefinition Height="216*"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="250*"/>
+            <RowDefinition Height="25"/>
         </Grid.RowDefinitions>
         <Label Content="Select Stock Symbol"  HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Label Content="Select Criteria Type" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <ComboBox Grid.Column="1" Name="CriteriaType" Grid.Row="1" SelectionChanged="CriteriaType_SelectionChanged"/>
         <TextBox Grid.Column="1" Name="Symbol" Text="MSFT" VerticalAlignment="Top" HorizontalAlignment="Left" Width="120"/>
-        <Button Content="Save" Click="SaveButton_Click" Grid.Column="1" HorizontalAlignment="Right" Grid.Row="2" VerticalAlignment="Bottom" Width="75"/>
-
+        <Label Name="Parameters" Content="Set Criteria Parameters" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <StackPanel Grid.Column="1" Name="PercentChangeParams" HorizontalAlignment="Stretch" Grid.Row="2" Orientation="Horizontal">
+            <Label Content="Percentage change limit:"/>
+            <TextBox Name="PercentChange" Text="%" HorizontalAlignment="Stretch"  TextAlignment="Right" Width="150"/>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Grid.Row="99" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Content="Add Criteria" Click="AddCriteriaButton_Click"   Margin="0 0 30 0" VerticalAlignment="Bottom" Width="75"/>
+            <Button Content="Save" Click="SaveButton_Click"  VerticalAlignment="Bottom" Width="75"/>
+            
+        </StackPanel>
     </Grid>
 </y:IfWindow>
