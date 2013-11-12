@@ -1,0 +1,1 @@
+We aim to keep our users up-to-date with the woot daily deal by sending them a notification of what's the new product for sale. We'll send them the notification as soon as the deal goes on sale. We'll let them set up which woot sections they want updates on.
