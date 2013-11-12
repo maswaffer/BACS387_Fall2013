@@ -34,12 +34,14 @@ namespace IfSetupWindows
         {
             var symbol = Symbol.Text;
 
-            var selection = ((ComboBox)sender).SelectedItem as ICriteria;
+            var selection = ((ComboBox)sender).SelectedItem as ICriteria<Stock>;
             if (selection is PriceIsHighCriteria)
             {
                 //No need to do anything else
             }
-            TriggertoProcess = new StockPriceTrigger(symbol, selection);
+            TriggertoProcess = new StockPriceTrigger(symbol);
+            TriggertoProcess.AddCriteria<Stock>(selection);
+
         }
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)

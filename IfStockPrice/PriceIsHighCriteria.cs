@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Common;
 
 namespace IfStockPrice
 {
-    public class PriceIsHighCriteria : ICriteria
+    public class PriceIsHighCriteria : ICriteria<Stock>
     {
         public string Name
         {

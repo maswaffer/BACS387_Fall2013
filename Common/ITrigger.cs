@@ -10,5 +10,6 @@ namespace Common
     {
         bool CheckCondition();
         string Message { get; set; }
+        void AddCriteria<T>(ICriteria<T> criteria) where T: new();
     }
 }

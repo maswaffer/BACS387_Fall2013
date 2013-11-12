@@ -12,48 +12,54 @@ namespace IfStockPrice
         /*
          * I have 2 different constructors here for 2 possible different uses
          */
-        public StockPriceTrigger(string symbol){
-            StockBroker = new Broker(symbol);
+        public StockPriceTrigger(string symbol)
+        {
+            Symbol = symbol;
+            Service = new TraderService();
+            Criteria = new List<ICriteria<Stock>>();
         }
 
-        public StockPriceTrigger(string symbol, ICriteria criteria)
+        private string Symbol { get; set; }
+        private List<ICriteria<Stock>> Criteria { get; set; }
+        private TraderService Service { get; set; }
+
+        public void AddCriteria<T>(ICriteria<T> criteria) where T : new()
         {
-            StockBroker = new Broker(symbol, criteria);
-        }
-
-
-        private Broker StockBroker { get; set; }
-        private ICriteria Criteria { get; set; }
-
-        public void AddCriteria(ICriteria criteria)
-        {
-            StockBroker.AddCriteria(criteria);
+            Criteria.Add(criteria as ICriteria<Stock>);
         }
 
         #region ITriggerImplementation
 
         public string Message { get; set; }
-        
+
         public bool CheckCondition()
         {
-            var check = StockBroker.CheckStock();
-            if (check.IsCriteriaMet)
+            var quote = Service.GetStockQuote(Symbol);
+            foreach (var criteria in Criteria)
             {
-                Message = check.Criteria.Message;
-                return true;
+                var isMet = criteria.Check(quote);
+                if (isMet)
+                {
+                    Message = criteria.Message;
+                    return true;
+                }
             }
-            else
-            {
-                return false;
-            }
-
+            return false;
         }
 
         #endregion
 
         public override string ToString()
         {
-            return "If stock " + Criteria.ToString();
+            var criteriaDescriptions = new List<string>();
+            foreach (var c in Criteria)
+            {
+                criteriaDescriptions.Add(c.ToString());
+            }
+
+            return "If stock " + string.Join(" or ", criteriaDescriptions);
         }
+
+
     }
 }

@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IfStockPrice
+namespace Common
 {
-    public interface ICriteria
+    public interface ICriteria<T>
     {
         string Name { get; set; }
-        bool Check(Stock value);
+        bool Check(T value);
         string Message { get; set; }
     }
 }

@@ -43,8 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Broker.cs" />
-    <Compile Include="ICriteria.cs" />
     <Compile Include="PriceIsHighCriteria.cs" />
     <Compile Include="Stock.cs" />
     <Compile Include="StockPriceTrigger.cs" />
