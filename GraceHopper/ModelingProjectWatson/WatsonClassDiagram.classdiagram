@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="a5ce621c-b43f-4a84-94c5-a8a480f20c26" name="UMLClassDiagram1" linkedPackageId="a7241d23-7df9-491b-805e-c1ebf0ef7286" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="3d86ea48-c6f1-433a-8604-73ef86d8b87c" name="pitchCount" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="091f808b-c93c-4e07-a015-c6188325b3e2" />
+        <suppliersInternal>
+          <dependency Id="95b737c8-69b0-439e-a239-d145ddaf7d0c">
+            <interfaceMoniker Id="f5d977fb-b0ea-4b38-bbbc-df3936638a07" LastKnownName="ITrigger" />
+            <elementDefinition Id="041b68ee-f78e-47f9-a86f-8ad52607cb68" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="bf145f6d-436e-44bd-8da2-bcea7a8f4029" isDerived="false" sourceEndRoleName="pitchCount" targetEndRoleName="Pitch" isLeaf="false" isAbstract="false">
+            <classMoniker Id="068fb5ea-26f7-4d3d-99c0-9d0b5a98c2b2" LastKnownName="Pitch" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3762faf9-ed5e-461b-9d38-3079794fff6f" name="pitchCount" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="35763a27-54f6-4cdd-9511-7a161d734c1d" name="Lower" value="*">
+                      <elementDefinition Id="77047611-24d4-4788-9621-04185d9228d1" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="8a4031c7-b65e-40ab-9ae0-4dafc896394d" name="Upper" value="*">
+                      <elementDefinition Id="bb205165-f292-4ef8-aee4-45ba746b8e8f" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="b658f955-59e4-488a-ace4-f7dbc3de365d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="78d47eba-f62a-41b7-9b1b-ac4ee11cc962" name="Pitch" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a2e159fc-f547-4e0e-a534-6c1118ea0d5c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="dab68634-678f-46c2-b958-6f4f13551a30" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="08dd1973-a308-4eab-944d-c03571b865a8" name="Ball" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="41141987-cdbf-4e7e-96ec-79a7c028a8ba" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="5d0320fc-f044-4a41-8aa8-2a1a0f58eb54" LastKnownName="Int" />
+            </type_NamedElement>
+          </property>
+          <property Id="fc5f1723-f442-4380-b43c-7276d72c7495" name="Strike" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="01543c51-7b14-481b-8db3-587a690d3c4e" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="5d0320fc-f044-4a41-8aa8-2a1a0f58eb54" LastKnownName="Int" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="5d0320fc-f044-4a41-8aa8-2a1a0f58eb54" name="Int" isAbstract="false" isLeaf="false" cachedFullName="Int">
+        <elementDefinition Id="5a383f0d-7286-48fb-8684-113def52d547" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="068fb5ea-26f7-4d3d-99c0-9d0b5a98c2b2" name="Pitch" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b75e698d-d68c-44b8-b56a-5813567943b0" />
+        <ownedAttributesInternal>
+          <property Id="0bb2443c-e506-4970-a254-1cae5fbba954" name="BallorStrike" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f92a41b3-cb4d-4c0c-888d-1dad5385a38d" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="87977dc8-ffb9-4228-bd6a-21f8e1f4d050" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="7740dd71-3ed0-4ef8-a0b0-a405c2c2faa2" name="pitchName" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7cfdefce-51ee-4488-b500-f7e423406036" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="87977dc8-ffb9-4228-bd6a-21f8e1f4d050" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="597e2ce1-d5eb-47bf-9edf-eadeb9815f6c" name="Speed" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a2fcc474-3021-4a7e-a70f-6d1dc99d73c6" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="5d0320fc-f044-4a41-8aa8-2a1a0f58eb54" LastKnownName="Int" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a4aaa590-1841-485f-a6b3-c0d68a250463" name="FastBall" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d2c842dd-300a-4f2f-bfca-1b30de2e9432" />
+        <generalsInternal>
+          <generalization Id="034502b6-8a07-41e3-85e6-504ad88b0e8c" isSubstitutable="false">
+            <classMoniker Id="068fb5ea-26f7-4d3d-99c0-9d0b5a98c2b2" LastKnownName="Pitch" />
+            <elementDefinition Id="d0de2c74-5f7a-4622-a49e-f2cbfe790654" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="1b746589-1920-4dc6-aba3-cb11f5c33421" name="twoSeam" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="cf9e0637-a44d-48f3-b7e2-5dd6485313e8" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="87977dc8-ffb9-4228-bd6a-21f8e1f4d050" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="bd772e21-0f3b-4bd1-870b-424e997f3a5f" name="fourSeem" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ddad9626-e581-4ae5-8386-a73429c5a0f4" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="87977dc8-ffb9-4228-bd6a-21f8e1f4d050" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b2eb4ffa-6202-4827-af2f-0b0b5f1235cb" name="Slider" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6123b314-fe1c-4947-82c3-9bf242fd9666" />
+        <generalsInternal>
+          <generalization Id="19e2cf5a-9801-408e-a00a-8c433993f5d5" isSubstitutable="false">
+            <classMoniker Id="068fb5ea-26f7-4d3d-99c0-9d0b5a98c2b2" LastKnownName="Pitch" />
+            <elementDefinition Id="fd55c9b9-8858-4e53-b470-8894de2d39f1" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a7326f05-0b7c-4c07-8361-3725710fa2e6" name="Knuckleball" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="76dc6a06-3c15-49c4-b8e0-213b6d6ec3f3" />
+        <generalsInternal>
+          <generalization Id="6787d1cc-57d4-4330-a21c-75393758b80c" isSubstitutable="false">
+            <classMoniker Id="068fb5ea-26f7-4d3d-99c0-9d0b5a98c2b2" LastKnownName="Pitch" />
+            <elementDefinition Id="ec2f2100-0771-4b31-b6b7-98b5c70b6e6c" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="0dc62dd5-daf7-4163-9628-9f948e2520bb" name="Curveball" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9b0336da-35b0-4e40-9f38-fa72fa2d929c" />
+        <generalsInternal>
+          <generalization Id="83458df1-a240-4513-b74a-e37829a88d98" isSubstitutable="false">
+            <classMoniker Id="068fb5ea-26f7-4d3d-99c0-9d0b5a98c2b2" LastKnownName="Pitch" />
+            <elementDefinition Id="8d851f4a-fd53-4906-82ee-4bdf7f6ce5df" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="59737508-6ace-4ebe-b2d9-1373b62a9986" name="Changeup" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a3fc7f0f-56c7-4782-8b95-bb963a5d774a" />
+        <generalsInternal>
+          <generalization Id="bf88f919-8727-4508-977c-6d08630beb2c" isSubstitutable="false">
+            <classMoniker Id="068fb5ea-26f7-4d3d-99c0-9d0b5a98c2b2" LastKnownName="Pitch" />
+            <elementDefinition Id="28b2263e-903b-46fd-a1b8-754065fd3645" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="87977dc8-ffb9-4228-bd6a-21f8e1f4d050" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="f5d977fb-b0ea-4b38-bbbc-df3936638a07" name="ITrigger" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="aee75bbf-9820-4cb8-93d7-a832f715bf2a" />
+        <ownedAttributes>
+          <property Id="cdb1ff38-271a-491f-8370-67c0bf0f3aaa" name="strikeoutMessage" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="529a5aad-838d-4064-9c9c-fa3a0c667616" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="87977dc8-ffb9-4228-bd6a-21f8e1f4d050" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="3d8925eb-6c83-4248-9bd4-48da6b6c7d7c" name="walkMessage" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ca97258d-b516-4cff-ac35-eff4ad46c7b0" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="87977dc8-ffb9-4228-bd6a-21f8e1f4d050" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributes>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="94d6f2f0-ea8d-4f36-8ece-52c90506bcda" name="iCriteria" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f1276d83-a451-4fdb-b0cf-19b5e78f5486" />
+        <suppliersInternal>
+          <dependency Id="96f1e664-b958-425f-96f6-4b11deb83b21">
+            <classMoniker Id="3d86ea48-c6f1-433a-8604-73ef86d8b87c" LastKnownName="pitchCount" />
+            <elementDefinition Id="215aaa33-3b26-44bf-b042-774d05275bb4" />
+          </dependency>
+        </suppliersInternal>
+        <ownedOperations>
+          <operation Id="e8dd2a6d-0ca3-414a-89bc-539fca19a5a4" name="checkStrikeout" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0bc44b90-221f-4eed-9a2d-74c6fbf99268" />
+          </operation>
+          <operation Id="b3717400-0bc3-4339-ba47-d03808015d0a" name="checkWalk" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5204a3fe-65db-407b-9fe4-df0fcf28cc9e" />
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="a7241d23-7df9-491b-805e-c1ebf0ef7286" name="ModelingProjectWatson">
+    <elementDefinition Id="ea2cbf28-4d5c-4880-aa74-4f0831e6a0bc" />
+    <profileInstances>
+      <packageHasProfileInstances Id="0e7a1898-07df-411d-bfba-67de00b7f2c1">
+        <profileInstance Id="b378ea1a-60a2-46e7-960f-99981a92291b" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="aaf91200-3481-4ee9-86e5-0ff0c7e4650f">
+        <profileInstance Id="36c41d65-da73-41a8-9bac-6cd1e412d7aa" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

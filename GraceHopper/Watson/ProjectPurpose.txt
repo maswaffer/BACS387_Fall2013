@@ -1,0 +1,42 @@
+﻿Rylee Tanaka
+ Adam McDaniel
+ Fernando Lopez
+  Our program will be a pitch simulator. The user will be shown 5 different
+ pitches and they will be able to choose which pitch to throw next. The
+ program will read the user input of which to pitch is chosen. For example, 1
+ would be a fastball, 2 a curveball, and 3 a slider. Based on the pitch that is
+ chosen, the program will begin by randomizing the speed of the pitch.
+ Different pitches have different speed ranges, for example, a fastball will have
+ a range between 90 and 98 while a change-up will have a range between 70
+ and 75. Then, the program will determine if the pitch chosen will be a ball or
+ strike. As with the speeds, different pitches mean different odds of a strike.
+ For example, a fastball will have a better chance of being a strike than a
+ curveball. In a separate class, called PitchCount, the amount of balls and
+ strikes will be stored. The class will check if the count reaches 3 strikes or 4
+ balls. If the strikes reaches 3, the system will notify the user of a strike out. If
+ the balls reaches 4, the program will notify the user of a walk. After a strike
+ out or walk is recorded, the program will ask the user if they want to pitch to
+ another batter.
+  The names of our classes are really to understand. The PitchCount class will
+ hold the current pitch count for the batter. It will also be able to determine
+ whether the batter strikes out or walks. The Pitch class contains many
+ different attributes. ballOrStrike determines if the pitch was a ball or a
+ strike, pitchSpeed holds the actual speed of the pitch, and pitchType tells the
+ type of pitch it was. The five pitches that the pitcher would be able to throw
+ are a fastball, curveball, slider, change-up, and a knuckleball. Each are all
+ Pitches and inherit all of the attributes. All will have the same attributes of
+ pitchSpeed and ballOrStrike, but with different speeds and odds of a strike
+ for each pitch. There is also a many to one association between Pitch and
+ pitchCount. One pitchCount may contain an infinite amount of pitches,
+ although this could only happen if we incorporated a foul ball into the
+ program.
+  Grace Hopper was a computer scientist and United States Navy Rear Admiral.
+ She was one of the first people to program the Mark I computer. She then
+ designed the first compiler, the A-O. She then developed the B-O compiler
+ known now as FLOW-MATIC. She was one of the two technical advisers in
+ the CODASYL Executive Committee, and several of her staff were members of
+ the CODASYL Short Range Committee to define the basic COBOL language
+ design. In 1969 she won the first ever Computer Science Man-of-the-Year
+ Award and in 1973 she was the first United States citizen and the first
+ women of any nationality to be made a Distinguished Fellow of the British
+ Computer Society.

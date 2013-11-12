@@ -1,0 +1,1574 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="ea2cbf28-4d5c-4880-aa74-4f0831e6a0bc"
+  name="ModelingProjectWatson" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="091f808b-c93c-4e07-a015-c6188325b3e2"
+        name="pitchCount"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="041b68ee-f78e-47f9-a86f-8ad52607cb68">
+            <interfaceMoniker
+              Id="aee75bbf-9820-4cb8-93d7-a832f715bf2a"
+              LastKnownName="ITrigger"
+              LastKnownLocation="ModelingProjectWatson.uml" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="dab68634-678f-46c2-b958-6f4f13551a30"
+            isDerived="false"
+            sourceEndRoleName="pitchCount"
+            targetEndRoleName="Pitch"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="b75e698d-d68c-44b8-b56a-5813567943b0"
+              LastKnownName="Pitch"
+              LastKnownLocation="ModelingProjectWatson.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b658f955-59e4-488a-ace4-f7dbc3de365d"
+                  name="pitchCount"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="77047611-24d4-4788-9621-04185d9228d1"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="bb205165-f292-4ef8-aee4-45ba746b8e8f"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a2e159fc-f547-4e0e-a534-6c1118ea0d5c"
+                  name="Pitch"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="41141987-cdbf-4e7e-96ec-79a7c028a8ba"
+            name="Ball"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="5a383f0d-7286-48fb-8684-113def52d547"
+                LastKnownName="Int"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="01543c51-7b14-481b-8db3-587a690d3c4e"
+            name="Strike"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="5a383f0d-7286-48fb-8684-113def52d547"
+                LastKnownName="Int"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="5a383f0d-7286-48fb-8684-113def52d547"
+        name="Int" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b75e698d-d68c-44b8-b56a-5813567943b0"
+        name="Pitch"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="f92a41b3-cb4d-4c0c-888d-1dad5385a38d"
+            name="BallorStrike"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="7cfdefce-51ee-4488-b500-f7e423406036"
+            name="pitchName"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="a2fcc474-3021-4a7e-a70f-6d1dc99d73c6"
+            name="Speed"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="5a383f0d-7286-48fb-8684-113def52d547"
+                LastKnownName="Int"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d2c842dd-300a-4f2f-bfca-1b30de2e9432"
+        name="FastBall"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="d0de2c74-5f7a-4622-a49e-f2cbfe790654"
+            isSubstitutable="false">
+            <classMoniker
+              Id="b75e698d-d68c-44b8-b56a-5813567943b0"
+              LastKnownName="Pitch"
+              LastKnownLocation="ModelingProjectWatson.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="cf9e0637-a44d-48f3-b7e2-5dd6485313e8"
+            name="twoSeam"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ddad9626-e581-4ae5-8386-a73429c5a0f4"
+            name="fourSeem"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="6123b314-fe1c-4947-82c3-9bf242fd9666"
+        name="Slider"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="fd55c9b9-8858-4e53-b470-8894de2d39f1"
+            isSubstitutable="false">
+            <classMoniker
+              Id="b75e698d-d68c-44b8-b56a-5813567943b0"
+              LastKnownName="Pitch"
+              LastKnownLocation="ModelingProjectWatson.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="76dc6a06-3c15-49c4-b8e0-213b6d6ec3f3"
+        name="Knuckleball"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="ec2f2100-0771-4b31-b6b7-98b5c70b6e6c"
+            isSubstitutable="false">
+            <classMoniker
+              Id="b75e698d-d68c-44b8-b56a-5813567943b0"
+              LastKnownName="Pitch"
+              LastKnownLocation="ModelingProjectWatson.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="9b0336da-35b0-4e40-9f38-fa72fa2d929c"
+        name="Curveball"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="8d851f4a-fd53-4906-82ee-4bdf7f6ce5df"
+            isSubstitutable="false">
+            <classMoniker
+              Id="b75e698d-d68c-44b8-b56a-5813567943b0"
+              LastKnownName="Pitch"
+              LastKnownLocation="ModelingProjectWatson.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a3fc7f0f-56c7-4782-8b95-bb963a5d774a"
+        name="Changeup"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="28b2263e-903b-46fd-a1b8-754065fd3645"
+            isSubstitutable="false">
+            <classMoniker
+              Id="b75e698d-d68c-44b8-b56a-5813567943b0"
+              LastKnownName="Pitch"
+              LastKnownLocation="ModelingProjectWatson.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="0ce1f3f9-539c-42e9-a886-a39c926575fe"
+        name="Sequence1"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <ownedCommentsInternal>
+          <comment
+            Id="46705ee5-4a8f-42db-8a88-f3f04cb215a8">
+            <body>Randomizer determines if pitch is a ball or strike and generates speed 
+</body>
+          </comment>
+          <comment
+            Id="d94a742e-55f9-4747-83fa-1046578001b2">
+            <body>User can choose to pitch again or close the app</body>
+          </comment>
+        </ownedCommentsInternal>
+        <fragments>
+          <behaviorExecutionSpecification
+            Id="3f7ce753-46aa-4670-bd9b-79b0bd94faeb"
+            name="BehaviorExecutionSpecification1">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="338a85b1-b804-43ca-8ed5-b842316ba701"
+                LastKnownName="console : pitch"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="1de1535a-da7a-49a9-808d-957405e64cf9"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="715ebe9d-dc75-4b88-83c0-806576dadda6"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="82f47ce1-0ecc-4e25-8a1c-e139f7c2f5d0"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="7aeb30ce-71d5-4449-9017-64d76f5e3b34"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="715ebe9d-dc75-4b88-83c0-806576dadda6"
+            name="ExecutionOccurrenceSpecification1">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="07a9df1a-b9ff-4ebe-ba71-d553c557ccad"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProjectWatson.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="338a85b1-b804-43ca-8ed5-b842316ba701"
+                LastKnownName="console : pitch"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="c29cbd2e-ea9c-4b5d-abce-b81a2d3b361f"
+            name="MessageOccurrenceSpecification1">
+            <covered>
+              <lifelineMoniker
+                Id="87b4a9f8-815a-4fe3-8806-ceeadfba54ec"
+                LastKnownName="user : input"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="82f47ce1-0ecc-4e25-8a1c-e139f7c2f5d0"
+            name="MessageOccurrenceSpecification2">
+            <covered>
+              <lifelineMoniker
+                Id="338a85b1-b804-43ca-8ed5-b842316ba701"
+                LastKnownName="console : pitch"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="bf14ca6d-53ca-44df-86e3-cd0e938599e5"
+            name="BehaviorExecutionSpecification2">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="c8c1c773-de61-48a2-af9c-81547bc2571d"
+                LastKnownName="system : randomize"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="d7f6f472-740a-44cc-b804-64edeb59409e"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="68ecfd71-bfc0-4822-a637-4b6431e994fd"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="711b5139-bf1e-40f5-a1ed-a0b640d80882"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="4e4d7ffb-da58-4925-99f5-6ab77854498d"
+                LastKnownName="MessageOccurrenceSpecification21"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="04d512d8-16d6-4616-ab57-2ee67dd319ad"
+                LastKnownName="MessageOccurrenceSpecification23"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="68ecfd71-bfc0-4822-a637-4b6431e994fd"
+            name="ExecutionOccurrenceSpecification3">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="810a5fe5-b32c-48bb-b047-ec6dfd0b6e2d"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProjectWatson.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="c8c1c773-de61-48a2-af9c-81547bc2571d"
+                LastKnownName="system : randomize"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="7aeb30ce-71d5-4449-9017-64d76f5e3b34"
+            name="MessageOccurrenceSpecification3">
+            <covered>
+              <lifelineMoniker
+                Id="338a85b1-b804-43ca-8ed5-b842316ba701"
+                LastKnownName="console : pitch"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="711b5139-bf1e-40f5-a1ed-a0b640d80882"
+            name="MessageOccurrenceSpecification4">
+            <covered>
+              <lifelineMoniker
+                Id="c8c1c773-de61-48a2-af9c-81547bc2571d"
+                LastKnownName="system : randomize"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="40ff1df0-9386-46eb-ba94-adcf52c6dcee"
+            name="BehaviorExecutionSpecification8">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="7ab0145c-2da6-44a0-b01c-b64295fb9570"
+                LastKnownName="pitchCount : pitch"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="17e7486a-93b7-4a97-b06a-6a62549a44d3"
+                LastKnownName="ExecutionOccurrenceSpecification16"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="646c2046-5e72-4c1b-923d-f6a32c7b2540"
+                LastKnownName="ExecutionOccurrenceSpecification15"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="cca9fdd3-1500-405c-951a-b3ad1e5c094e"
+                LastKnownName="MessageOccurrenceSpecification22"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="646c2046-5e72-4c1b-923d-f6a32c7b2540"
+            name="ExecutionOccurrenceSpecification15">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="bbf9e85b-352a-41ba-a8e9-54d835e8fa21"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProjectWatson.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="7ab0145c-2da6-44a0-b01c-b64295fb9570"
+                LastKnownName="pitchCount : pitch"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="4e4d7ffb-da58-4925-99f5-6ab77854498d"
+            name="MessageOccurrenceSpecification21">
+            <covered>
+              <lifelineMoniker
+                Id="c8c1c773-de61-48a2-af9c-81547bc2571d"
+                LastKnownName="system : randomize"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="cca9fdd3-1500-405c-951a-b3ad1e5c094e"
+            name="MessageOccurrenceSpecification22">
+            <covered>
+              <lifelineMoniker
+                Id="7ab0145c-2da6-44a0-b01c-b64295fb9570"
+                LastKnownName="pitchCount : pitch"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="17e7486a-93b7-4a97-b06a-6a62549a44d3"
+            name="ExecutionOccurrenceSpecification16">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="9e5314ae-a07c-4e6d-99af-1ddc0f06525b"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProjectWatson.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="7ab0145c-2da6-44a0-b01c-b64295fb9570"
+                LastKnownName="pitchCount : pitch"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="1de1535a-da7a-49a9-808d-957405e64cf9"
+            name="ExecutionOccurrenceSpecification2">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="5f6cb5d0-2b67-446c-bc6f-e6d6b5e5137b"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProjectWatson.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="338a85b1-b804-43ca-8ed5-b842316ba701"
+                LastKnownName="console : pitch"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="1b92de73-b82d-41ed-9a5e-93071330bb9c"
+            name="BehaviorExecutionSpecification9">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="7ab0145c-2da6-44a0-b01c-b64295fb9570"
+                LastKnownName="pitchCount : pitch"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="24f05527-e978-416a-96c3-4d8c52380cc5"
+                LastKnownName="ExecutionOccurrenceSpecification18"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="3c535a9c-01bb-4d42-88bd-b51bf0c4872b"
+                LastKnownName="ExecutionOccurrenceSpecification17"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="b147b302-6bc6-4667-8fce-fdd8a7f2207e"
+                LastKnownName="MessageOccurrenceSpecification24"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="3c535a9c-01bb-4d42-88bd-b51bf0c4872b"
+            name="ExecutionOccurrenceSpecification17">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="4103057b-13c2-433d-abea-975bcac4fbff"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProjectWatson.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="7ab0145c-2da6-44a0-b01c-b64295fb9570"
+                LastKnownName="pitchCount : pitch"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="04d512d8-16d6-4616-ab57-2ee67dd319ad"
+            name="MessageOccurrenceSpecification23">
+            <covered>
+              <lifelineMoniker
+                Id="c8c1c773-de61-48a2-af9c-81547bc2571d"
+                LastKnownName="system : randomize"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="b147b302-6bc6-4667-8fce-fdd8a7f2207e"
+            name="MessageOccurrenceSpecification24">
+            <covered>
+              <lifelineMoniker
+                Id="7ab0145c-2da6-44a0-b01c-b64295fb9570"
+                LastKnownName="pitchCount : pitch"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="d7f6f472-740a-44cc-b804-64edeb59409e"
+            name="ExecutionOccurrenceSpecification4">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="920abe42-1999-4fb5-b412-41cad2279446"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProjectWatson.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="c8c1c773-de61-48a2-af9c-81547bc2571d"
+                LastKnownName="system : randomize"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="24f05527-e978-416a-96c3-4d8c52380cc5"
+            name="ExecutionOccurrenceSpecification18">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="37da8f14-e076-4190-99af-66bdc76afa07"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProjectWatson.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="7ab0145c-2da6-44a0-b01c-b64295fb9570"
+                LastKnownName="pitchCount : pitch"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="0df0c0b8-8891-48c0-848c-c51db9d0848a"
+            name="BehaviorExecutionSpecification7">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="338a85b1-b804-43ca-8ed5-b842316ba701"
+                LastKnownName="console : pitch"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="0139e186-e7fe-4ebf-bf76-8dd882f4143b"
+                LastKnownName="ExecutionOccurrenceSpecification14"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="cb0f8eb1-54b4-47a1-aeaf-8dd7cecfdcf4"
+                LastKnownName="ExecutionOccurrenceSpecification13"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="02d9a18e-2c48-4f6a-84cc-1c83f21c4ab6"
+                LastKnownName="MessageOccurrenceSpecification18"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="fb39202b-7462-484e-9950-e0629b4fd2c1"
+                LastKnownName="MessageOccurrenceSpecification19"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="cb0f8eb1-54b4-47a1-aeaf-8dd7cecfdcf4"
+            name="ExecutionOccurrenceSpecification13">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="0d5e46ab-0f64-49c6-9e07-993302a701d5"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProjectWatson.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="338a85b1-b804-43ca-8ed5-b842316ba701"
+                LastKnownName="console : pitch"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="11e6be64-157d-430b-a9b5-bfcf000a2e2c"
+            name="MessageOccurrenceSpecification17">
+            <covered>
+              <lifelineMoniker
+                Id="7ab0145c-2da6-44a0-b01c-b64295fb9570"
+                LastKnownName="pitchCount : pitch"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="02d9a18e-2c48-4f6a-84cc-1c83f21c4ab6"
+            name="MessageOccurrenceSpecification18">
+            <covered>
+              <lifelineMoniker
+                Id="338a85b1-b804-43ca-8ed5-b842316ba701"
+                LastKnownName="console : pitch"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="2dfe3d39-06c0-4a6e-9655-875a44c3a351"
+            name="MessageOccurrenceSpecification20">
+            <covered>
+              <lifelineMoniker
+                Id="7ab0145c-2da6-44a0-b01c-b64295fb9570"
+                LastKnownName="pitchCount : pitch"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="fb39202b-7462-484e-9950-e0629b4fd2c1"
+            name="MessageOccurrenceSpecification19">
+            <covered>
+              <lifelineMoniker
+                Id="338a85b1-b804-43ca-8ed5-b842316ba701"
+                LastKnownName="console : pitch"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="0139e186-e7fe-4ebf-bf76-8dd882f4143b"
+            name="ExecutionOccurrenceSpecification14">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="996cd24f-1573-425d-b7ed-a10272f04c53"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProjectWatson.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="338a85b1-b804-43ca-8ed5-b842316ba701"
+                LastKnownName="console : pitch"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="d47878f1-d7ee-4d61-8e16-340a59dd3a01"
+            name="BehaviorExecutionSpecification12">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="87b4a9f8-815a-4fe3-8806-ceeadfba54ec"
+                LastKnownName="user : input"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="0d36b776-3160-4140-8e65-6161fc245582"
+                LastKnownName="ExecutionOccurrenceSpecification24"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="4011d7f4-bd73-4d8e-84a4-87d5f8945eb3"
+                LastKnownName="ExecutionOccurrenceSpecification23"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="058a2b56-3d10-4030-bffa-554247769b8c"
+                LastKnownName="MessageOccurrenceSpecification32"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="bfe379ca-6d00-42b4-ae36-0d185c9e4c00"
+                LastKnownName="MessageOccurrenceSpecification33"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="4011d7f4-bd73-4d8e-84a4-87d5f8945eb3"
+            name="ExecutionOccurrenceSpecification23">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="760caed9-25ad-4114-926a-e3b2adaaf86d"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProjectWatson.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="87b4a9f8-815a-4fe3-8806-ceeadfba54ec"
+                LastKnownName="user : input"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="381af709-5c67-4e4f-b2ca-3511c42bf336"
+            name="MessageOccurrenceSpecification31">
+            <covered>
+              <lifelineMoniker
+                Id="338a85b1-b804-43ca-8ed5-b842316ba701"
+                LastKnownName="console : pitch"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="058a2b56-3d10-4030-bffa-554247769b8c"
+            name="MessageOccurrenceSpecification32">
+            <covered>
+              <lifelineMoniker
+                Id="87b4a9f8-815a-4fe3-8806-ceeadfba54ec"
+                LastKnownName="user : input"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="f52aabbb-06a7-40db-a27d-1f1d932e6d1c"
+            name="MessageOccurrenceSpecification34">
+            <covered>
+              <lifelineMoniker
+                Id="338a85b1-b804-43ca-8ed5-b842316ba701"
+                LastKnownName="console : pitch"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="bfe379ca-6d00-42b4-ae36-0d185c9e4c00"
+            name="MessageOccurrenceSpecification33">
+            <covered>
+              <lifelineMoniker
+                Id="87b4a9f8-815a-4fe3-8806-ceeadfba54ec"
+                LastKnownName="user : input"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="0d36b776-3160-4140-8e65-6161fc245582"
+            name="ExecutionOccurrenceSpecification24">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="0d4402c2-4392-4360-9710-35db64fe1a88"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProjectWatson.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="87b4a9f8-815a-4fe3-8806-ceeadfba54ec"
+                LastKnownName="user : input"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="062a7a8b-53fd-4af7-b5e5-3452e9c6f254"
+            name="BehaviorExecutionSpecification11">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="fe594a23-2784-4107-b0b7-894c6dd98d3c"
+                LastKnownName="pitchCount : completed"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="b7a9560c-f139-47b2-aecf-a7dad08cf59c"
+                LastKnownName="ExecutionOccurrenceSpecification22"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="244066b9-5990-4fbd-82e5-22778c930a1e"
+                LastKnownName="ExecutionOccurrenceSpecification21"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="8c9348f3-2daa-4460-8aef-100dbc789320"
+                LastKnownName="MessageOccurrenceSpecification30"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="244066b9-5990-4fbd-82e5-22778c930a1e"
+            name="ExecutionOccurrenceSpecification21">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="5558b08a-b596-4a6f-9132-0da590fb3359"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProjectWatson.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="fe594a23-2784-4107-b0b7-894c6dd98d3c"
+                LastKnownName="pitchCount : completed"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="8c9348f3-2daa-4460-8aef-100dbc789320"
+            name="MessageOccurrenceSpecification30">
+            <covered>
+              <lifelineMoniker
+                Id="fe594a23-2784-4107-b0b7-894c6dd98d3c"
+                LastKnownName="pitchCount : completed"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="d589fb08-08bf-4483-bac5-8fe0c0ccde4a"
+            name="MessageOccurrenceSpecification29">
+            <covered>
+              <lifelineMoniker
+                Id="338a85b1-b804-43ca-8ed5-b842316ba701"
+                LastKnownName="console : pitch"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="b7a9560c-f139-47b2-aecf-a7dad08cf59c"
+            name="ExecutionOccurrenceSpecification22">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="53b37675-e7fc-4c9d-bd0d-09ecc0defc08"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProjectWatson.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="fe594a23-2784-4107-b0b7-894c6dd98d3c"
+                LastKnownName="pitchCount : completed"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="87b4a9f8-815a-4fe3-8806-ceeadfba54ec"
+            name="user : input"
+            isActor="false"
+            lifelineDisplayName="user : input">
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="c29cbd2e-ea9c-4b5d-abce-b81a2d3b361f"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="4011d7f4-bd73-4d8e-84a4-87d5f8945eb3"
+                LastKnownName="ExecutionOccurrenceSpecification23"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="0d36b776-3160-4140-8e65-6161fc245582"
+                LastKnownName="ExecutionOccurrenceSpecification24"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="338a85b1-b804-43ca-8ed5-b842316ba701"
+            name="console : pitch"
+            isActor="false"
+            lifelineDisplayName="console : pitch">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="715ebe9d-dc75-4b88-83c0-806576dadda6"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="1de1535a-da7a-49a9-808d-957405e64cf9"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="cb0f8eb1-54b4-47a1-aeaf-8dd7cecfdcf4"
+                LastKnownName="ExecutionOccurrenceSpecification13"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="0139e186-e7fe-4ebf-bf76-8dd882f4143b"
+                LastKnownName="ExecutionOccurrenceSpecification14"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="381af709-5c67-4e4f-b2ca-3511c42bf336"
+                LastKnownName="MessageOccurrenceSpecification31"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="f52aabbb-06a7-40db-a27d-1f1d932e6d1c"
+                LastKnownName="MessageOccurrenceSpecification34"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="d589fb08-08bf-4483-bac5-8fe0c0ccde4a"
+                LastKnownName="MessageOccurrenceSpecification29"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="c8c1c773-de61-48a2-af9c-81547bc2571d"
+            name="system : randomize"
+            isActor="false"
+            lifelineDisplayName="system : randomize">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="68ecfd71-bfc0-4822-a637-4b6431e994fd"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="d7f6f472-740a-44cc-b804-64edeb59409e"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="7ab0145c-2da6-44a0-b01c-b64295fb9570"
+            name="pitchCount : pitch"
+            isActor="false"
+            lifelineDisplayName="pitchCount : pitch">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="646c2046-5e72-4c1b-923d-f6a32c7b2540"
+                LastKnownName="ExecutionOccurrenceSpecification15"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="17e7486a-93b7-4a97-b06a-6a62549a44d3"
+                LastKnownName="ExecutionOccurrenceSpecification16"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="3c535a9c-01bb-4d42-88bd-b51bf0c4872b"
+                LastKnownName="ExecutionOccurrenceSpecification17"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="24f05527-e978-416a-96c3-4d8c52380cc5"
+                LastKnownName="ExecutionOccurrenceSpecification18"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="11e6be64-157d-430b-a9b5-bfcf000a2e2c"
+                LastKnownName="MessageOccurrenceSpecification17"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="2dfe3d39-06c0-4a6e-9655-875a44c3a351"
+                LastKnownName="MessageOccurrenceSpecification20"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="fe594a23-2784-4107-b0b7-894c6dd98d3c"
+            name="pitchCount : completed"
+            isActor="false"
+            lifelineDisplayName="pitchCount : completed">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="244066b9-5990-4fbd-82e5-22778c930a1e"
+                LastKnownName="ExecutionOccurrenceSpecification21"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="b7a9560c-f139-47b2-aecf-a7dad08cf59c"
+                LastKnownName="ExecutionOccurrenceSpecification22"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="3cf8fdd5-5fc9-4f53-a7ea-cfaa7d59d34f"
+            name="select pitch()"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="c29cbd2e-ea9c-4b5d-abce-b81a2d3b361f"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="82f47ce1-0ecc-4e25-8a1c-e139f7c2f5d0"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="65d01d9e-dfbc-491d-b25d-8b513b956c30"
+            name="pitch sent to randomizer()"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="7aeb30ce-71d5-4449-9017-64d76f5e3b34"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="711b5139-bf1e-40f5-a1ed-a0b640d80882"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="8311ea31-a7a6-4c98-982a-684ead81f155"
+            name="pitch speed and strike msg generated()"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="4e4d7ffb-da58-4925-99f5-6ab77854498d"
+                LastKnownName="MessageOccurrenceSpecification21"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="cca9fdd3-1500-405c-951a-b3ad1e5c094e"
+                LastKnownName="MessageOccurrenceSpecification22"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="b77ae151-b079-4d46-9f6d-f1de8f665d0f"
+            name="pitch speed and ball msg generated()"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="04d512d8-16d6-4616-ab57-2ee67dd319ad"
+                LastKnownName="MessageOccurrenceSpecification23"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="b147b302-6bc6-4667-8fce-fdd8a7f2207e"
+                LastKnownName="MessageOccurrenceSpecification24"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="635752de-0f11-4a04-a68d-34808e027d48"
+            name="pitch count sent to console"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="11e6be64-157d-430b-a9b5-bfcf000a2e2c"
+                LastKnownName="MessageOccurrenceSpecification17"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="02d9a18e-2c48-4f6a-84cc-1c83f21c4ab6"
+                LastKnownName="MessageOccurrenceSpecification18"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="df57821a-28df-4c26-9906-6f458147ebbf"
+            name="return updated count for next pitch"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="fb39202b-7462-484e-9950-e0629b4fd2c1"
+                LastKnownName="MessageOccurrenceSpecification19"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="2dfe3d39-06c0-4a6e-9655-875a44c3a351"
+                LastKnownName="MessageOccurrenceSpecification20"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="56e18dd4-63c0-4e16-bb31-5df43eab7b33"
+            name="would user like to pitch again"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="381af709-5c67-4e4f-b2ca-3511c42bf336"
+                LastKnownName="MessageOccurrenceSpecification31"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="058a2b56-3d10-4030-bffa-554247769b8c"
+                LastKnownName="MessageOccurrenceSpecification32"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="419bbc21-8b47-455b-9ad1-ead5826ec846"
+            name="return yes else close app"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="bfe379ca-6d00-42b4-ae36-0d185c9e4c00"
+                LastKnownName="MessageOccurrenceSpecification33"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="f52aabbb-06a7-40db-a27d-1f1d932e6d1c"
+                LastKnownName="MessageOccurrenceSpecification34"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="d60724d6-2d78-4f8f-9130-dcfe665dc9f7"
+            name="update count until it is complete"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="d589fb08-08bf-4483-bac5-8fe0c0ccde4a"
+                LastKnownName="MessageOccurrenceSpecification29"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="8c9348f3-2daa-4460-8aef-100dbc789320"
+                LastKnownName="MessageOccurrenceSpecification30"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="07a9df1a-b9ff-4ebe-ba71-d553c557ccad"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="5f6cb5d0-2b67-446c-bc6f-e6d6b5e5137b"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="810a5fe5-b32c-48bb-b047-ec6dfd0b6e2d"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="920abe42-1999-4fb5-b412-41cad2279446"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="0d5e46ab-0f64-49c6-9e07-993302a701d5"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="996cd24f-1573-425d-b7ed-a10272f04c53"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="bbf9e85b-352a-41ba-a8e9-54d835e8fa21"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="9e5314ae-a07c-4e6d-99af-1ddc0f06525b"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="4103057b-13c2-433d-abea-975bcac4fbff"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="37da8f14-e076-4190-99af-66bdc76afa07"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="5558b08a-b596-4a6f-9132-0da590fb3359"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="53b37675-e7fc-4c9d-bd0d-09ecc0defc08"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="760caed9-25ad-4114-926a-e3b2adaaf86d"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="0d4402c2-4392-4360-9710-35db64fe1a88"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="b757d72c-86ed-404b-bc3f-7d5e9f5fb0a5"
+        name="Enumeration1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="aee75bbf-9820-4cb8-93d7-a832f715bf2a"
+        name="ITrigger"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedAttributes>
+          <property
+            Id="529a5aad-838d-4064-9c9c-fa3a0c667616"
+            name="strikeoutMessage"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ca97258d-b516-4cff-ac35-eff4ad46c7b0"
+            name="walkMessage"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProjectWatson.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributes>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="95b415de-dca5-4e45-90c5-570240801572"
+        name="pitchResult"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="a9e47f51-613c-449f-90d1-e8ed1804720f">
+            <interfaceMoniker
+              Id="aee75bbf-9820-4cb8-93d7-a832f715bf2a"
+              LastKnownName="ITrigger"
+              LastKnownLocation="ModelingProjectWatson.uml" />
+          </dependency>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="eca6dfa5-1ddf-4c05-9e15-819893ad4d61"
+            isSubstitutable="false">
+            <classMoniker
+              Id="091f808b-c93c-4e07-a015-c6188325b3e2"
+              LastKnownName="pitchCount"
+              LastKnownLocation="ModelingProjectWatson.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="8f07ee54-2e34-4d06-956d-caa60c31e059"
+            name="strikeOut"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="1551fa9f-6701-4a04-ba5a-2395e731f839"
+            name="walk"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="9f213ea5-732f-46ad-830f-1e4937a075d6"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="f1276d83-a451-4fdb-b0cf-19b5e78f5486"
+        name="iCriteria"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="215aaa33-3b26-44bf-b042-774d05275bb4">
+            <classMoniker
+              Id="091f808b-c93c-4e07-a015-c6188325b3e2"
+              LastKnownName="pitchCount"
+              LastKnownLocation="ModelingProjectWatson.uml" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="62bbdbf0-a586-4200-a18e-35f0609d5c38"
+            isDerived="false"
+            sourceEndRoleName="Criteria"
+            targetEndRoleName="pitchResult"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="95b415de-dca5-4e45-90c5-570240801572"
+              LastKnownName="pitchResult"
+              LastKnownLocation="ModelingProjectWatson.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c89a6ba9-9c8a-4a05-a339-957a1951af11"
+                  name="Criteria"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="11611f24-3c60-4701-8451-467a760bbcef"
+                  name="pitchResult"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedOperations>
+          <operation
+            Id="0bc44b90-221f-4eed-9a2d-74c6fbf99268"
+            name="checkStrikeout"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="5204a3fe-65db-407b-9fe4-df0fcf28cc9e"
+            name="checkWalk"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>
