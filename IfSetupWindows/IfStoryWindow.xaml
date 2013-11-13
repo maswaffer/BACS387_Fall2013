@@ -10,8 +10,8 @@
             <Label Content="Set parameter for check frequency" HorizontalAlignment="Left" Margin="11,108,0,0" VerticalAlignment="Top" Width="208" Height="28" RenderTransformOrigin="0.489,0.107"/>
         </Grid>
         <Grid HorizontalAlignment="Left" Height="260" Margin="219,0,0,0" VerticalAlignment="Top" Width="251">
-            <Button Content="Save" HorizontalAlignment="Left" Margin="128,221,0,0" VerticalAlignment="Top" Width="106" Height="29"/>
-            <Button Content="Add Criteria" HorizontalAlignment="Left" Margin="10,221,0,0" VerticalAlignment="Top" Width="106" Height="29"/>
+            <Button Content="Save" Click ="ButtonSave_Click" HorizontalAlignment="Left" Margin="128,221,0,0" VerticalAlignment="Top" Width="106" Height="29"/>
+            <Button Content="Add Criteria" Click ="ButtonAdd_Click " HorizontalAlignment="Left" Margin="10,221,0,0" VerticalAlignment="Top" Width="106" Height="29"/>
             <TextBox HorizontalAlignment="Left" Height="20" Margin="10,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="231"/>
             <TextBox HorizontalAlignment="Left" Height="20" Margin="10,35,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="231"/>
             <TextBox HorizontalAlignment="Left" Height="20" Margin="10,69,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="231"/>
