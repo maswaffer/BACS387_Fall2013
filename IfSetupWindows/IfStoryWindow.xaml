@@ -1,0 +1,18 @@
+﻿<Window x:Class="IfSetupWindows.IfStoryWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="IfStoryWindow" Height="300" Width="500">
+    <Grid>
+        <Grid HorizontalAlignment="Left" Height="270" VerticalAlignment="Top" Width="219">
+            <Label Content="Please insert Keyword criteria" HorizontalAlignment="Left" Height="26" Margin="11,11,0,0" VerticalAlignment="Top" Width="178"/>
+            <Label Content="Please insert Author criteria" HorizontalAlignment="Left" Margin="11,42,0,0" VerticalAlignment="Top" Width="178" Height="28" RenderTransformOrigin="0.489,0.107"/>
+            <Label Content="Please insert Title criteria" HorizontalAlignment="Left" Margin="11,75,0,0" VerticalAlignment="Top" Width="178" Height="28" RenderTransformOrigin="0.489,0.107"/>
+            <Label Content="Set parameter for check frequency" HorizontalAlignment="Left" Margin="11,108,0,0" VerticalAlignment="Top" Width="208" Height="28" RenderTransformOrigin="0.489,0.107"/>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="260" Margin="219,0,0,0" VerticalAlignment="Top" Width="251">
+            <Button Content="Save" HorizontalAlignment="Left" Margin="128,221,0,0" VerticalAlignment="Top" Width="106" Height="29"/>
+            <Button Content="Add Criteria" HorizontalAlignment="Left" Margin="10,221,0,0" VerticalAlignment="Top" Width="106" Height="29"/>
+        </Grid>
+
+    </Grid>
+</Window>
