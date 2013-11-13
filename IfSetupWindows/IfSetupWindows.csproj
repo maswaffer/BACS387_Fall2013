@@ -54,6 +54,9 @@
     <Compile Include="IfStockPriceWindow.xaml.cs">
       <DependentUpon>IfStockPriceWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="IfWeatherWindow.xaml.cs">
+      <DependentUpon>IfWeatherWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="IfWindow.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -80,6 +83,10 @@
   </ItemGroup>
   <ItemGroup>
     <Page Include="IfStockPriceWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="IfWeatherWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
