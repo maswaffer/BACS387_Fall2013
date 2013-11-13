@@ -17,7 +17,7 @@ namespace IfSetupWindows
     /// <summary>
     /// Interaction logic for IfStoryWindow.xaml
     /// </summary>
-    public partial class IfStoryWindow : IfWindow
+    public partial class IfStoryWindow : Window
     {
         public IfStoryWindow()
         {
