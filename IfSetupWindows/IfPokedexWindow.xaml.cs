@@ -17,9 +17,9 @@ namespace IfSetupWindows
     /// <summary>
     /// Interaction logic for IfPokedexWindow.xaml
     /// </summary>
-    public partial class IfPokedexWindow : Window
+    public partial class IfPokedexWindow : IfWindow
     {
-        public IfPokedexWindow : IfWindow
+        public IfPokedexWindow()
         {
             InitializeComponent();
         }
