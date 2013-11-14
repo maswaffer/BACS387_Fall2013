@@ -51,6 +51,12 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IfFlickrWindow.xaml.cs">
+      <DependentUpon>IfFlickrWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IfPitch.xaml.cs">
+      <DependentUpon>IfPitch.xaml</DependentUpon>
+    </Compile>
     <Compile Include="IfPokedexWindow.xaml.cs">
       <DependentUpon>IfPokedexWindow.xaml</DependentUpon>
     </Compile>
@@ -91,6 +97,14 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="IfFlickrWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="IfPitch.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="IfPokedexWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

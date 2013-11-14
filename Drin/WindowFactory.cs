@@ -21,12 +21,15 @@ namespace Drin
                     return new IfWeatherWindow();
                 case "Pokedex":
                     return new IfPokedexWindow();
-                //case "Flickr":
-                //    return new IfPhotoConditionWindow();
+                case "Flickr":
+                    return new IfFlickrWindow();
                 case "News":
                     return new IfStoryWindow();
                 case "Woot":
                     return new IfWoot();
+                case "Pitch":
+                    return new IfPitch();
+                            
                 default:
                     return null;
             }
@@ -41,7 +44,7 @@ namespace Drin
                 "Pokedex",
                 "Flickr",
                 "News",
-                "Baseball",
+                "Pitch",
                 "Woot"
             };
         }
