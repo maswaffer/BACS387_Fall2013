@@ -29,7 +29,17 @@ namespace IfSetupWindows
 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void AddCriteriaButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void SaveButton_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void CloseButton_Click(object sender, RoutedEventArgs e)
         {
 
         }
