@@ -2,8 +2,21 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:y="clr-namespace:IfSetupWindows"  
-        Title="IfPokedexWindow" Height="300" Width="450">
+        Title="IfPokedexWindow" Height="346" Width="556">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="70*"/>
+            <ColumnDefinition Width="151*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox HorizontalAlignment="Left" Height="24" Margin="10,48,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="123" Grid.Column="2" TextChanged="TextBox_TextChanged"/>
+        <Label Content="Label" HorizontalAlignment="Left" Height="24" Margin="0,48,0,0" VerticalAlignment="Top" Width="69" Grid.Column="1"/>
+        <Image HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="91" Margin="0,48,0,0" Grid.Column="1"/>
+        <Label Content="Select Criteria" HorizontalAlignment="Left" Height="28" Margin="0,101,0,0" VerticalAlignment="Top" Width="91" Grid.Column="1"/>
+        <ComboBox Grid.Column="2" HorizontalAlignment="Left" Height="28" Margin="10,101,0,0" VerticalAlignment="Top" Width="123"/>
+        <Button Content="Add Criteria" Grid.Column="2" HorizontalAlignment="Left" Height="26" Margin="56,279,0,0" VerticalAlignment="Top" Width="77" Click="Button_Click"/>
+        <Button Content="Save" Grid.Column="2" HorizontalAlignment="Left" Height="26" Margin="177,279,0,0" VerticalAlignment="Top" Width="61"/>
+        <Button Content="Close" Grid.Column="2" HorizontalAlignment="Left" Height="26" Margin="283,279,0,0" VerticalAlignment="Top" Width="59"/>
 
     </Grid>
 </y:IfWindow>

@@ -10,7 +10,7 @@
         <Label Content="Enter your zip code." HorizontalAlignment="Left" Margin="29,56,0,0" VerticalAlignment="Top"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="393,59,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" BorderBrush="Black"/>
         <Label Content="Select your critera." HorizontalAlignment="Left" Margin="29,98,0,0" VerticalAlignment="Top"/>
-        <ComboBox HorizontalAlignment="Left" Margin="393,102,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox HorizontalAlignment="Left" Margin="393,102,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged"/>
 
     </Grid>
 </y:IfWindow>
