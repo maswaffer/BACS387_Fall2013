@@ -1,0 +1,10 @@
+﻿<y:IfWindow x:Class="IfSetupWindows.IfPhotoConditionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="IfPhotoConditionWindow" Height="300" Width="300"
+        xmlns:y ="clr-namespace:IfSetupWindows">
+        
+    <Grid>
+        
+    </Grid>
+</y:IfWindow>
