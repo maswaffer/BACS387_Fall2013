@@ -8,14 +8,22 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         
-        <Label Content="Condition: "/>
-        
+        <Label HorizontalAlignment="Center" VerticalAlignment="Center" Content="Condition: "/>
+        <ComboBox Text="Is not open" Grid.Row="0" Grid.Column="1">
+            <ComboBoxItem>condition1</ComboBoxItem>
+            <ComboBoxItem>condition1</ComboBoxItem>
+            <ComboBoxItem>condition1</ComboBoxItem>
+        </ComboBox>
     </Grid>
 </y:IfWindow>
