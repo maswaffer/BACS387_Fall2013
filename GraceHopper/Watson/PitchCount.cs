@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Watson
 {
-    class PitchCount
+    public class PitchCount
     {
         int Balls { get; set; }
         int Strikes { get; set; }

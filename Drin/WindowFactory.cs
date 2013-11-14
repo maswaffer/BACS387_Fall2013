@@ -21,8 +21,8 @@ namespace Drin
                     return new IfWeatherWindow();
                 case "Pokedex":
                     return new IfPokedexWindow();
-                case "Flickr":
-                    return new IfPhotoConditionWindow();
+                //case "Flickr":
+                //    return new IfPhotoConditionWindow();
                 case "News":
                     return new IfStoryWindow();
                 case "Woot":

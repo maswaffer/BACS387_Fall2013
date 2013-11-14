@@ -51,12 +51,6 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IfPhotoConditionWindow.xaml.cs">
-      <DependentUpon>IfPhotoConditionWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="IfPitchIsWindow.xaml">
-      <DependentUpon>IfPitchIsWindow.xaml.cs</DependentUpon>
-    </Compile>
     <Compile Include="IfPokedexWindow.xaml.cs">
       <DependentUpon>IfPokedexWindow.xaml</DependentUpon>
     </Compile>
