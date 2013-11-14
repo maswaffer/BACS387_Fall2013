@@ -17,7 +17,7 @@ namespace IfSetupWindows
     /// <summary>
     /// Interaction logic for IfWeatherWindow.xaml
     /// </summary>
-    public partial class IfWeatherWindow : Window
+    public partial class IfWeatherWindow : IfWindow
     {
         public IfWeatherWindow()
         {
