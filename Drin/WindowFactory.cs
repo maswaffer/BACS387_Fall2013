@@ -26,7 +26,7 @@ namespace Drin
                 case "News":
                     return new IfStoryWindow();
                 case "Woot":
-                    return new IfWoot();
+                    return new IfActionTriggerWindow();
                 case "Pitch":
                     return new IfPitch();
                             

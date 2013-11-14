@@ -17,9 +17,9 @@ namespace IfSetupWindows
     /// <summary>
     /// Interaction logic for Window1.xaml
     /// </summary>
-    public partial class IfWoot : IfWindow
+    public partial class IfActionTriggerWindow : IfWindow
     {
-        public IfWoot()
+        public IfActionTriggerWindow()
         {
             InitializeComponent();
         }

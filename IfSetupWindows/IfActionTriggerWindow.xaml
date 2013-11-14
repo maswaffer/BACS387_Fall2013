@@ -1,4 +1,4 @@
-﻿<y:IfWindow x:Class="IfSetupWindows.IfWoot"
+﻿<y:IfWindow x:Class="IfSetupWindows.IfActionTriggerWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:y="clr-namespace:IfSetupWindows"   
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
