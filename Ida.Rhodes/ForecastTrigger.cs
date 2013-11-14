@@ -8,6 +8,14 @@ namespace Ida.Rhodes
 {
     public class ForecastTrigger : ITrigger
     {
+
+        public ForecastTrigger(int zipcode)
+        {
+            Zipcode = zipcode;
+            Service = new WeatherService();
+            Criteria = new List<ICriteria<Forecast>>();
+        }
+
         private int Zipcode { get; set; }
         private List<ICriteria<Forecast>> Criteria { get; set; }
         private WeatherService Service { get; set; }
