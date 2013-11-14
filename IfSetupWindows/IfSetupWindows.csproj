@@ -54,6 +54,9 @@
     <Compile Include="IfPhotoConditionWindow.xaml.cs">
       <DependentUpon>IfPhotoConditionWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="IfPitchIsWindow.xaml">
+      <DependentUpon>IfPitchIsWindow.xaml.cs</DependentUpon>
+    </Compile>
     <Compile Include="IfPokedexWindow.xaml.cs">
       <DependentUpon>IfPokedexWindow.xaml</DependentUpon>
     </Compile>
@@ -94,10 +97,6 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="IfPhotoConditionWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="IfPokedexWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
