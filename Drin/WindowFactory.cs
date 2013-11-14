@@ -17,6 +17,16 @@ namespace Drin
             {
                 case "Stock Price":
                     return new IfStockPriceWindow();
+                case "Weather":
+                    return new IfWeatherWindow();
+                case "Pokedex":
+                    return new IfPokedexWindow();
+                case "Flickr":
+                    return new IfPhotoConditionWindow();
+                case "News":
+                    return new IfStoryWindow();
+                case "Woot":
+                    return new IfWoot();
                 default:
                     return null;
             }
@@ -26,7 +36,13 @@ namespace Drin
         {
             return new List<string>
             {
-                "Stock Price"
+                "Stock Price",
+                "Weather",
+                "Pokedex",
+                "Flickr",
+                "News",
+                "Baseball",
+                "Woot"
             };
         }
 
