@@ -1,6 +1,7 @@
-﻿<Window x:Class="IfSetupWindows.IfStoryWindow"
+﻿<y:IfWindow x:Class="IfSetupWindows.IfStoryWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:y="clr-namespace:IfSetupWindows"
         Title="Set Story Criteria" Height="300" Width="500">
     <Grid>
         <Grid HorizontalAlignment="Left" Height="270" VerticalAlignment="Top" Width="219">
@@ -25,4 +26,4 @@
         </Grid>
 
     </Grid>
-</Window>
+</y:IfWindow>
