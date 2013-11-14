@@ -16,5 +16,7 @@ namespace Woot
 
         public class EventSites
         { public static object Daily { get; set; } }
+
+        public class 
     }
 }
