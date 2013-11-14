@@ -18,7 +18,7 @@ namespace Woot
             var service = new WootService();
             var events = service.GetEvents(WootService.EventType.tools, WootService.EventSites.Daily);
 
-            var one = events.one();
+            /*var one = events.one();
             foreach (var offer in one.Offers)
             {
                 Console.WriteLine(offer.Title);
@@ -27,7 +27,7 @@ namespace Woot
                 {
                     Console.WriteLine("Sale Price:" + item.SalePrice);
                 }
-            }
+            }*/
             Console.ReadKey();
         }
     }
