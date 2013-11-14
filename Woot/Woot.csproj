@@ -45,7 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Action.cs" />
+    <Compile Include="ActionTrigger.cs" />
     <Compile Include="Class.cs" />
     <Compile Include="Criteria.cs" />
     <Compile Include="Definition.cs" />
@@ -63,6 +63,12 @@
     <EmbeddedResource Include="SequenceDiagram.sequencediagram.layout">
       <DependentUpon>SequenceDiagram.sequencediagram</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{d3e1dc31-e7f5-496b-bc6d-1d64e18cd7a8}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

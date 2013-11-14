@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Woot
 {
-    class Offer : Action
+    class Offer : ActionTrigger
     {
         public string Features { get; set; }
         public string Snippet { get; set; }

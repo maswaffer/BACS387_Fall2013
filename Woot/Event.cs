@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,7 +9,7 @@ namespace Woot
 {
     class Event
     {
-        public static object tools;
+        public static object Tools;
         public static object Daily;
         public DateTime EndDate { get; set; }
         public Guid Id { get; set; }
@@ -17,5 +18,8 @@ namespace Woot
         public string Title { get; set; }
         public string Type { get; set; }
         public List<Offer> Offers { get; set; }
+
+        public void one();
+
     }
 }

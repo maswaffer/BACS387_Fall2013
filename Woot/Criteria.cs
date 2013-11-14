@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Woot
 {
-    public class Criteria : Action
+    public class Criteria : ActionTrigger
     {
         //Error checking will ensure that all input will return the proper data
         //This method will check letters, numbers, and other character inputs
