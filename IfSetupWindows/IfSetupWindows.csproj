@@ -51,6 +51,9 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IfPokedexWindow.xaml.cs">
+      <DependentUpon>IfPokedexWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="IfStockPriceWindow.xaml.cs">
       <DependentUpon>IfStockPriceWindow.xaml</DependentUpon>
     </Compile>
@@ -85,6 +88,10 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="IfPokedexWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="IfStockPriceWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
