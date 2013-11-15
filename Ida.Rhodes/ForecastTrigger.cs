@@ -12,27 +12,27 @@ namespace Ida.Rhodes
         public ForecastTrigger(int zipcode)
         {
             Zipcode = zipcode;
-            Service = new WeatherService();
-            Criteria = new List<ICriteria<Forecast>>();
+            RonBurgundy = new TellMeTheForecast();
+            CriteriaList = new List<ICriteria<Forecast>>();
         }
 
         private int Zipcode { get; set; }
-        private List<ICriteria<Forecast>> Criteria { get; set; }
-        private WeatherService Service { get; set; }
+        private List<ICriteria<Forecast>> CriteriaList { get; set; }
+        private TellMeTheForecast RonBurgundy { get; set; }
 
         public void AddCriteria<T>(ICriteria<T> criteria) where T : new()
         {
-            Criteria.Add(criteria as ICriteria<Forecast>);
+            CriteriaList.Add(criteria as ICriteria<Forecast>);
         }
 
         public string Message { get; set; }
 
         public bool CheckCondition()
         {
-            var condition = Service.GetForecast(Zipcode);
-            foreach (var criteria in Criteria)
+            var LatestForecast = RonBurgundy.GetForecast(Zipcode);
+            foreach (var criteria in CriteriaList)
             {
-                var isMet = criteria.Check(condition);
+                var isMet = criteria.Check(LatestForecast);
                 if (isMet)
                 {
                     Message = criteria.Message;
@@ -45,7 +45,7 @@ namespace Ida.Rhodes
         public override string ToString()
         {
             var criteriaDescriptions = new List<string>();
-            foreach (var c in Criteria)
+            foreach (var c in CriteriaList)
             {
                 criteriaDescriptions.Add(c.ToString());
             }

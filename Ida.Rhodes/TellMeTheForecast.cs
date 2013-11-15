@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ida.Rhodes
 {
-    public class WeatherService
+    public class TellMeTheForecast
     {
         public Forecast GetForecast(int zipcode)
         {
