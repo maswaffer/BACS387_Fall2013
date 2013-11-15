@@ -19,7 +19,7 @@ namespace Woot
         public string Type { get; set; }
         public List<Offer> Offers { get; set; }
 
-        public void one();
+        //public void one();
 
     }
 }

@@ -19,11 +19,11 @@ namespace Ida.Rhodes
 
             return new Forecast
             {
-                ChanceOfPrecip = 50,
-                HighTemp = 70,
+                //ChanceOfPrecip = 50,
+                //HighTemp = 70,
                 LowTemp = 40,
                 Timestamp = DateTime.Now,
-                ZipCode = 80634
+                ZipCode = zipcode
             };
         }
     }

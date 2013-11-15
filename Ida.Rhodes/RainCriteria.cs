@@ -13,12 +13,12 @@ namespace Ida.Rhodes
             get { return "Will it rain today?"; }
             set { }
         }
-
+        public int UserPrecipThreshold { get; set; }
         public string Message { get; set; }
 
         public bool Check(Forecast value)
         {
-            if (value.ChanceOfPrecip >= 50)
+            if (value.ChanceOfPrecip >= UserPrecipThreshold)
             {
                 Message = string.Format("The latest forecast calls for a {0}% chance of precipitation", value.ChanceOfPrecip);
                 return true;
