@@ -20,7 +20,7 @@ namespace Ida.Rhodes
         {
             if (value.ChanceOfPrecip >= UserPrecipThreshold)
             {
-                Message = string.Format("The latest forecast calls for a {0}% chance of precipitation", value.ChanceOfPrecip);
+                Message = string.Format("The latest forecast calls for a {0}% chance of precipitation.  ", value.ChanceOfPrecip);
                 return true;
             }
             return false;

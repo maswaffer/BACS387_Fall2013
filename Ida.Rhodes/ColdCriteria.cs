@@ -14,15 +14,25 @@ namespace Ida.Rhodes
             set { }
         }
 
+        public string AboveOrBelow { get; set; }
         public string Message { get; set; }
+        public int UserTemp { get; set; }
 
         public bool Check(Forecast value)
         {
-            if (value.HighTemp <= 40)
-            {
-                Message = string.Format("Cold today, with a hgh temperature of {0} degrees", value.HighTemp);
-                return true;
-            }
+            if (AboveOrBelow == "Below")            
+                if (value.HighTemp < UserTemp)
+                {
+                    Message = string.Format("Cold today, with a high temperature of {0} degrees.  ", value.HighTemp);
+                    return true;
+                }
+
+            else if(AboveOrBelow == "Above")
+                if (value.HighTemp >= UserTemp)
+                {
+                    Message = string.Format("Warm today, with a high temperature of {0} degrees.  ", value.HighTemp);
+                    return true;
+                }            
             return false;
         }
 
