@@ -18,7 +18,7 @@ namespace Ida.Rhodes
 
         public bool Check(Forecast latest)
         {
-            if (latest.ChanceOfPrecip >= 45)  //we'll replace 45 with UserPrecipThreshold
+            if (latest.ChanceOfPrecip >= UserPrecipThreshold)  //we'll replace 45 with UserPrecipThreshold 
             {
                 Message = string.Format("The latest forecast calls for a {0}% chance of precipitation.  ", latest.ChanceOfPrecip);
                 return true;

@@ -21,14 +21,14 @@ namespace Ida.Rhodes
         public bool Check(Forecast latest)
         {
             if (AboveOrBelow == "Below")
-                if (latest.HighTemp < 35) //we'll replace 35 with UserTemp
+                if (latest.HighTemp < UserTemp) //we'll replace 35 with UserTemp
                 {
                     Message = string.Format("Cold today, with a high temperature of {0} degrees.  ", latest.HighTemp);
                     return true;
                 }
 
             else if(AboveOrBelow == "Above")
-                if (latest.HighTemp >= 35) //we'll replace 35 with UserTemp
+                    if (latest.HighTemp >= UserTemp) //we'll replace 35 with UserTemp
                 {
                     Message = string.Format("Warm today, with a high temperature of {0} degrees.  ", latest.HighTemp);
                     return true;
