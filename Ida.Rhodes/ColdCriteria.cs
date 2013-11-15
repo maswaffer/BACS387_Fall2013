@@ -18,19 +18,19 @@ namespace Ida.Rhodes
         public string Message { get; set; }
         public int UserTemp { get; set; }
 
-        public bool Check(Forecast value)
+        public bool Check(Forecast latest)
         {
-            if (AboveOrBelow == "Below")            
-                if (value.HighTemp < UserTemp)
+            if (AboveOrBelow == "Below")
+                if (latest.HighTemp < 35) //we'll replace 35 with UserTemp
                 {
-                    Message = string.Format("Cold today, with a high temperature of {0} degrees.  ", value.HighTemp);
+                    Message = string.Format("Cold today, with a high temperature of {0} degrees.  ", latest.HighTemp);
                     return true;
                 }
 
             else if(AboveOrBelow == "Above")
-                if (value.HighTemp >= UserTemp)
+                if (latest.HighTemp >= 35) //we'll replace 35 with UserTemp
                 {
-                    Message = string.Format("Warm today, with a high temperature of {0} degrees.  ", value.HighTemp);
+                    Message = string.Format("Warm today, with a high temperature of {0} degrees.  ", latest.HighTemp);
                     return true;
                 }            
             return false;

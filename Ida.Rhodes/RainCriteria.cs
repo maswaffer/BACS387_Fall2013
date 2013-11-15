@@ -16,11 +16,11 @@ namespace Ida.Rhodes
         public int UserPrecipThreshold { get; set; }
         public string Message { get; set; }
 
-        public bool Check(Forecast value)
+        public bool Check(Forecast latest)
         {
-            if (value.ChanceOfPrecip >= UserPrecipThreshold)
+            if (latest.ChanceOfPrecip >= 45)  //we'll replace 45 with UserPrecipThreshold
             {
-                Message = string.Format("The latest forecast calls for a {0}% chance of precipitation.  ", value.ChanceOfPrecip);
+                Message = string.Format("The latest forecast calls for a {0}% chance of precipitation.  ", latest.ChanceOfPrecip);
                 return true;
             }
             return false;
