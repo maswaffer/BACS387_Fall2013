@@ -29,17 +29,22 @@ namespace Ida.Rhodes
 
         public bool CheckCondition()
         {
+            StringBuilder CombinedMessage = new StringBuilder(); 
+            //Thinking we'll use this to combine messages if its cold AND there's precip.
             var LatestForecast = RonBurgundy.GetForecast(Zipcode);
             foreach (var criteria in CriteriaList)
             {
                 var isMet = criteria.Check(LatestForecast);
                 if (isMet)
                 {
-                    Message = criteria.Message;
-                    return true;
-                }
+                    CombinedMessage.Append(criteria.Message);
+                    //Message = criteria.Message;
+                    //return true;
+                }                 
             }
-            return false;
+            if (CombinedMessage.ToString() == "") return false;
+                return true;
+            //return false;
         }
 
         public override string ToString()

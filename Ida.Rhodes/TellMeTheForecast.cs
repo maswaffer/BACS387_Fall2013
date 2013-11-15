@@ -19,8 +19,8 @@ namespace Ida.Rhodes
 
             return new Forecast
             {
-                //ChanceOfPrecip = 50,
-                //HighTemp = 70,
+                ChanceOfPrecip = 50,
+                HighTemp = 15,
                 LowTemp = 40,
                 Timestamp = DateTime.Now,
                 ZipCode = zipcode
