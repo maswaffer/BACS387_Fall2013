@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IfPhotoCondition
 {
-    public class SizeTooSmall : ICriteria
+    public class SizeTooSmall : ICriteria<Photo>
     {
         public string Message { get; set; }
         public int MinSize { get; set; }
@@ -18,9 +18,10 @@ namespace IfPhotoCondition
              * if photo size meets the requirement than return true and message
              * else return false
              */
+           
             if (photoValue.PhotoSize < MinSize)
             {
-                Message = "too small...";
+                Message = "too small...";       
             }
             return false;
         }

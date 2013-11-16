@@ -46,6 +46,8 @@
   <ItemGroup>
     <Compile Include="Flickr.cs" />
     <Compile Include="ICriteria.cs" />
+    <Compile Include="ITrigger.cs" />
+    <Compile Include="NonImplementedException.cs" />
     <Compile Include="Photo.cs" />
     <Compile Include="PhotoConditionTrigger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

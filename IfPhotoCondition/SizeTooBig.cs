@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IfPhotoCondition
 {
-    public class SizeTooBig : ICriteria
+    public class SizeTooBig : ICriteria<Photo>
     {
         public string Message { get; set; }
         public int MaxSize { get; set; }
