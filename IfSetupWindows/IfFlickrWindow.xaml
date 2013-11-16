@@ -56,7 +56,7 @@
             <ControlTemplate.Triggers>
                 <Trigger Property="IsPressed" Value="True">
                     <Setter Property="Opacity" TargetName="shine" Value="0.4"/>
-                    <Setter Property="Background" TargetName="border" Value="#CC000000"/>
+                    <Setter Property="Background" TargetName="border" Value="DeepPink"/>
                     <Setter Property="Visibility" TargetName="glow" Value="Hidden"/>
                 </Trigger>
                 <Trigger Property="IsMouseOver" Value="True">
@@ -97,6 +97,9 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
+        
+        <!--images background here-->
+        <Image Source="bg2.jpg"  Grid.Column ="0" Grid.RowSpan="5" Grid.ColumnSpan="5" Stretch="Fill"/>
 
         <!--choose criteria-->
         <Label Grid.Row="0" 
