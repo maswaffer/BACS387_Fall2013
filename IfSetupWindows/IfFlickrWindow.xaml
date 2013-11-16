@@ -70,8 +70,10 @@
             </ControlTemplate.Triggers>
         </ControlTemplate>
     </Window.Resources>
+    
+    <!--RESOURCE END HERE-->
 
-    <!--Layout here-->
+    <!--LAYOUT START HERE-->
     <Grid>
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -97,9 +99,7 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        
-
-
+        <!--choose criteria-->
         <Label Grid.Row="0" 
                Grid.Column="0" 
                Content="Criteria" 
@@ -131,6 +131,7 @@
             </ComboBox.ToolTip>
         </ComboBox>
 
+        <!--Enter parameter if choose size criteria-->
         <Label Grid.Row="1" 
                Grid.Column="0" 
                Content="Enter Size" 
@@ -152,10 +153,10 @@
                         <TextBlock FontWeight="Bold">Enter photo size</TextBlock>
                     </StackPanel>
                 </ToolTip>
-
             </TextBox.ToolTip>
         </TextBox>
 
+        <!--pick a date if chose date criteria-->
         <Label Content="Select Date: " Grid.Row="2" Grid.Column="0" VerticalAlignment="Center"
                HorizontalAlignment="Left"
                FontSize="16"
@@ -170,8 +171,15 @@
                     Grid.Column="2"
                     Margin="0,7.5,0,8"
                     Grid.ColumnSpan="2"/>
-
-        <Button Grid.Column="2" Grid.Row="3" Margin="0,7.5,5,7.5" Foreground="White" Template="{DynamicResource GlassButton}" Content="Add Criteria"/>
+        
+        
+        <!--Buttons here-->
+        <Button Grid.Column="2" 
+                Grid.Row="3" 
+                Margin="0,7.5,5,7.5" 
+                Foreground="White" 
+                Template="{DynamicResource GlassButton}" 
+                Content="Add Criteria"/>
 
         <Button Template ="{DynamicResource GlassButton}"
                 Grid.Column="2" 
@@ -179,8 +187,7 @@
                 Grid.Row="4" Margin="0,-2,0,15" 
                 Content="Clear"
                 Foreground="White"/>
-
-
+        
         <Button Template="{DynamicResource GlassButton}"
                 Grid.Column="3"
                 Grid.Row="3"
@@ -189,7 +196,6 @@
                 Foreground="WhiteSmoke"
                 BorderBrush="White"
                 />
-
-
     </Grid>
+    <!--LAYOUT END HERE-->
 </y:IfWindow>
