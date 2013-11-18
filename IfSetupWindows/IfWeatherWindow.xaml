@@ -4,7 +4,7 @@
         xmlns:y="clr-namespace:IfSetupWindows"
         Title="IfWeatherWindow" Height="335" Width="550">
     <Grid Margin="-9,-29,2,-8">
-        <CheckBox x:Name="Temp" Content="Temp" HorizontalAlignment="Left" Margin="50,101,0,0" VerticalAlignment="Top" />
+        <CheckBox x:Name="Temp" Content="Temp" HorizontalAlignment="Left" Margin="50,101,0,0" VerticalAlignment="Top"/>
         <CheckBox x:Name="Precip" Content="Precip" HorizontalAlignment="Left" Margin="50,167,0,0" VerticalAlignment="Top" />
         <Slider x:Name="Temp_Select" HorizontalAlignment="Left" Margin="228,98,0,0" VerticalAlignment="Top" Width="261" Maximum="100" Minimum="-20" Value="-20"/>
         <Slider x:Name="Precip_Select" HorizontalAlignment="Left" Margin="228,164,0,0" VerticalAlignment="Top" Width="261" Maximum="99" Minimum="1"/>

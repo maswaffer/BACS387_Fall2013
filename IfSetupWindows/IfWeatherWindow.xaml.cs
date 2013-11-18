@@ -24,17 +24,25 @@ namespace IfSetupWindows
             InitializeComponent();
         }
 
-        public int zipCode { get; set; }
+        public string zipCode { get; set; }
         public bool temp { get; set; }
         public string tempAboveOrBelow { get; set; }
         public int tempValue { get; set; }
         public bool precip { get; set; }
         public int precipValue { get; set; }      
-
+        
 
         private void SetCriteria(object sender, RoutedEventArgs e)
         {
+            zipCode = ZipCode.ToString();
+            temp = Convert.ToBoolean(Temp.IsChecked);
+            precip = Convert.ToBoolean(Precip.IsChecked);
+            tempValue = Convert.ToInt32(Temp_Select.Value);
+            precipValue = Convert.ToInt32(Precip_Select.Value);
 
+            if (Convert.ToBoolean(TempAbove.IsChecked))
+                tempAboveOrBelow = "Above";
+            else tempAboveOrBelow = "Below";
         }
 
         
