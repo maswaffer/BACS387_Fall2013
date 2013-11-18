@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,12 +14,12 @@ namespace Ida.Rhodes
             get { return "Will it rain today?"; }
             set { }
         }
-        public int UserPrecipThreshold { get; set; }
+        public int userPrecipValue { get; set; }
         public string Message { get; set; }
 
         public bool Check(Forecast latest)
         {
-            if (latest.ChanceOfPrecip >= UserPrecipThreshold)  //we'll replace 45 with UserPrecipThreshold 
+            if (latest.ChanceOfPrecip >= userPrecipValue)  //we'll replace 45 with UserPrecipThreshold 
             {
                 Message = string.Format("The latest forecast calls for a {0}% chance of precipitation.  ", latest.ChanceOfPrecip);
                 return true;

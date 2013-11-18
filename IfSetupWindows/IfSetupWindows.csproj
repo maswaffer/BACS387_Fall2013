@@ -135,6 +135,10 @@
       <Project>{d3e1dc31-e7f5-496b-bc6d-1d64e18cd7a8}</Project>
       <Name>Common</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Ida.Rhodes\Ida.Rhodes.csproj">
+      <Project>{4d57563d-ff27-4f73-93a8-0b2f9be7b094}</Project>
+      <Name>Ida.Rhodes</Name>
+    </ProjectReference>
     <ProjectReference Include="..\IfStockPrice\IfStockPrice.csproj">
       <Project>{1134aa5d-f606-40a1-a8fb-ebce0c18d4e9}</Project>
       <Name>IfStockPrice</Name>

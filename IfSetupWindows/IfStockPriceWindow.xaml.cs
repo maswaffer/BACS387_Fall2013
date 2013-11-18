@@ -29,7 +29,7 @@ namespace IfSetupWindows
 
             CriteriaType.Items.Add(new PriceIsHighCriteria());
             CriteriaType.Items.Add(new PriceChangeGreaterThan());
-
+            
             CriteriaSelected = new List<ICriteria<Stock>>();
             HideParameterSections();
         }

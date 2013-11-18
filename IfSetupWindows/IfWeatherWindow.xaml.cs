@@ -11,6 +11,9 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Common;
+using Ida.Rhodes;
+
 
 namespace IfSetupWindows
 {
@@ -22,16 +25,18 @@ namespace IfSetupWindows
         public IfWeatherWindow()
         {
             InitializeComponent();
-
+            CriteriaSelected = new List<ICriteria<Forecast>>();
             
         }
+
+        private List<ICriteria<Forecast>> CriteriaSelected { get; set; }
 
         public string zipCode { get; set; }
         public bool temp { get; set; }
         public string tempAboveOrBelow { get; set; }
-        public int tempValue { get; set; }
+        public int userTempValue { get; set; }
         public bool precip { get; set; }
-        public int precipValue { get; set; }      
+        public int userPrecipValue { get; set; }      
         
 
         private void SetCriteria(object sender, RoutedEventArgs e)
@@ -39,13 +44,15 @@ namespace IfSetupWindows
             zipCode = ZipCode.ToString();
             temp = Convert.ToBoolean(Temp.IsChecked);
             precip = Convert.ToBoolean(Precip.IsChecked);
-            tempValue = Convert.ToInt32(Temp_Select.Value);
-            precipValue = Convert.ToInt32(Precip_Select.Value);
+            userTempValue = Convert.ToInt32(Temp_Select.Value);
+            userPrecipValue = Convert.ToInt32(Precip_Select.Value);
 
             if (Convert.ToBoolean(TempAbove.IsChecked))
                 tempAboveOrBelow = "Above";
             else tempAboveOrBelow = "Below";
 
+            //if (temp == true);
+                
 
         }
 

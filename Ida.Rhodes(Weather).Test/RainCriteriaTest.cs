@@ -20,7 +20,7 @@ namespace Ida.Rhodes_Weather_.Test
         [TestMethod]
         public void RainCriteriaMet()
         {
-            criteria.UserPrecipThreshold = 50;
+            criteria.userPrecipValue = 50;
 
             var forecast = new Forecast
             {

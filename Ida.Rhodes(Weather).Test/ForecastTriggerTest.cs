@@ -23,10 +23,10 @@ namespace Ida.Rhodes_Weather_.Test
         public void TestForecastTrigger()
         {
             var rainCriteria = new RainCriteria();
-            rainCriteria.UserPrecipThreshold = 45;
+            rainCriteria.userPrecipValue = 45;
             var coldCriteria = new ColdCriteria();
-            coldCriteria.AboveOrBelow = "Below";
-            coldCriteria.UserTemp = 35;
+            coldCriteria.tempAboveOrBelow = "Below";
+            coldCriteria.userTempValue = 35;
             trigger.AddCriteria(rainCriteria);
             trigger.AddCriteria(coldCriteria);
 
