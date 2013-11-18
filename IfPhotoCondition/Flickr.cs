@@ -12,29 +12,33 @@ namespace IfPhotoCondition
 
         ///<summary>
         /// Adding some Code using Flickr API
-        /// here
+        /// We put the key and secret key here
         /// </summary>
         #region
-        // do something in here
+        // field key and secret are read only
+        private readonly string key = "2da36d66a5f11fd563c507848f84ee3e";
+        private readonly string secret = "7cb1e013d1374c52";
 
+        // properties here
+        public FlickrNet.Flickr Service { get; set; }
+
+        // constructor for Flicrk, once instanciate creating a
+        // new service using the key and secret above
+        public Flickr()
+        {
+            // FlickrNet.Flickr method has 4 overloadings 
+            // we are using the one that pass key and secret
+            Service = new FlickrNet.Flickr(key,secret);
+        }
 
         #endregion
 
-        // properties here
-        public FlickrNet.Flickr Service {get;set;}
+        
 
 
          
-        // there will be a constructor for flickr here...
-        public Flickr()
-        {
-            Service = new FlickrNet.Flickr();
-        }
+        
 
-        // go to flickr API get the photo value
-        public Photo GetPhoto()
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }
