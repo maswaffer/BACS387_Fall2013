@@ -12,8 +12,7 @@
             <RadioButton x:Name="TempAbove" Content="Above" HorizontalAlignment="Left" VerticalAlignment="Top" IsChecked="True"/>
             <RadioButton x:Name="TempBelow" Content="Below" HorizontalAlignment="Left" VerticalAlignment="Top" />
         </StackPanel>
-        <Button Content="Add Criteria" HorizontalAlignment="Left" Margin="218,292,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="Save" HorizontalAlignment="Left" Margin="331,292,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Save" HorizontalAlignment="Left" Margin="331,292,0,0" VerticalAlignment="Top" Width="75" Click="SetCriteria"/>
         <Button Content="Close" HorizontalAlignment="Left" Margin="438,292,0,0" VerticalAlignment="Top" Width="75" />
         <Label Content="Enter your zip code." HorizontalAlignment="Left" Margin="29,56,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="ZipCode" HorizontalAlignment="Left" Height="23" Margin="149,59,0,0" TextWrapping="Wrap" Text="80634" VerticalAlignment="Top" Width="120" BorderBrush="Black"/>

@@ -24,6 +24,19 @@ namespace IfSetupWindows
             InitializeComponent();
         }
 
+        public int zipCode { get; set; }
+        public bool temp { get; set; }
+        public string tempAboveOrBelow { get; set; }
+        public int tempValue { get; set; }
+        public bool precip { get; set; }
+        public int precipValue { get; set; }      
+
+
+        private void SetCriteria(object sender, RoutedEventArgs e)
+        {
+
+        }
+
         
     }
 }
