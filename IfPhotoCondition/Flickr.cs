@@ -31,7 +31,28 @@ namespace IfPhotoCondition
             Service = new FlickrNet.Flickr(key,secret);
         }
 
+        // this will be use instead of the GetPhoto method outside
+        public PhotoCollection GetPhotosByArea(BoundaryBox box)
+        {
+
+            // PhotoSearchOptions is comming FlickrNet
+            var options = new PhotoSearchOptions();
+            options.BoundaryBox = box;
+            options.PerPage = 10;
+            options.Tags = "flood,water";
+
+            return Service.PhotosSearch(options);
+        }
+
         #endregion
+
+        // will delete this method soon
+        public Photo GetPhoto()
+        {
+            // to get rid of the error
+            Photo dummyPhoto = new Photo();
+            return dummyPhoto;
+        }
 
         
 
