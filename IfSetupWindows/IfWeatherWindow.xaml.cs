@@ -22,6 +22,8 @@ namespace IfSetupWindows
         public IfWeatherWindow()
         {
             InitializeComponent();
+
+            
         }
 
         public string zipCode { get; set; }
@@ -43,6 +45,8 @@ namespace IfSetupWindows
             if (Convert.ToBoolean(TempAbove.IsChecked))
                 tempAboveOrBelow = "Above";
             else tempAboveOrBelow = "Below";
+
+
         }
 
         
