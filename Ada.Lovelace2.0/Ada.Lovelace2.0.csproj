@@ -50,7 +50,7 @@
     <Compile Include="GoogleNews.cs" />
     <Compile Include="ICriteria.cs" />
     <Compile Include="Keyword.cs" />
-    <Compile Include="NewsCriteriaTrigger.cs" />
+    <Compile Include="NewsStoryTrigger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Publisher.cs" />
     <Compile Include="Story.cs" />

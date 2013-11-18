@@ -127,6 +127,10 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Ada.Lovelace2.0\Ada.Lovelace2.0.csproj">
+      <Project>{4d0028e2-34ff-4130-8c10-5a771a685502}</Project>
+      <Name>Ada.Lovelace2.0</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Common\Common.csproj">
       <Project>{d3e1dc31-e7f5-496b-bc6d-1d64e18cd7a8}</Project>
       <Name>Common</Name>

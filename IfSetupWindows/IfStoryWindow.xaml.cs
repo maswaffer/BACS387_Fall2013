@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Common;
+using Ada.Lovelace2._0;
 
 namespace IfSetupWindows
 {
@@ -22,6 +24,27 @@ namespace IfSetupWindows
         public IfStoryWindow()
         {
             InitializeComponent();
+
+            CriteriaSelected = new List<ICriteria<Story>>();
+        }
+
+        private List<ICriteria<Story>> CriteriaSelected {get;set;}
+
+
+        private void SaveButton_Click(object sender, RoutedEventArgs e)
+        {
+            var keyword = Keyword.Text;
+            var author = Author.Text;
+            var title = Title.Text;
+
+
+            /*TriggertoProcess = new NewsStoryTrigger();
+            foreach (var c in CriteriaSelected)
+            {
+                TriggertoProcess.AddCriteria<Story>(c);
+            }
+            */
+            Close();
         }
     }
 }

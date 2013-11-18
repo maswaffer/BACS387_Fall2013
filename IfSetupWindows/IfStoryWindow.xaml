@@ -13,9 +13,9 @@
         <Grid HorizontalAlignment="Left" Height="260" Margin="219,0,0,0" VerticalAlignment="Top" Width="251">
             <Button Content="Save"  HorizontalAlignment="Left" Margin="128,221,0,0" VerticalAlignment="Top" Width="106" Height="29"/>
             <Button Content="Add Criteria" HorizontalAlignment="Left" Margin="10,221,0,0" VerticalAlignment="Top" Width="106" Height="29"/>
-            <TextBox HorizontalAlignment="Left" Height="20" Margin="10,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="231"/>
-            <TextBox HorizontalAlignment="Left" Height="20" Margin="10,35,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="231"/>
-            <TextBox HorizontalAlignment="Left" Height="20" Margin="10,69,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="231"/>
+            <TextBox HorizontalAlignment="Left" Height="20" Margin="10,10,0,0" TextWrapping="Wrap" Name="Keyword" Text="" VerticalAlignment="Top" Width="231"/>
+            <TextBox HorizontalAlignment="Left" Height="20" Margin="10,35,0,0" TextWrapping="Wrap" Name="Author" Text="" VerticalAlignment="Top" Width="231"/>
+            <TextBox HorizontalAlignment="Left" Height="20" Margin="10,69,0,0" TextWrapping="Wrap" Name="Title" Text="" VerticalAlignment="Top" Width="231"/>
             <ComboBox HorizontalAlignment="Left" Margin="10,114,0,0" VerticalAlignment="Top" Width="231">
                 <ComboBoxItem Content="Once a Week" HorizontalAlignment="Left" Width="222"/>
                 <ComboBoxItem Content="Twice a Week" HorizontalAlignment="Left" Width="222"/>

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ada.Lovelace2._0
 {
-    public class NewsCriteriaTrigger
+    public class NewsStoryTrigger
     {
         public CriteriaChecker CriteriaCheck {get; set;}
 
