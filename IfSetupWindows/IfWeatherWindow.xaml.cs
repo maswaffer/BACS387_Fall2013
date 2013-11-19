@@ -30,20 +30,20 @@ namespace IfSetupWindows
 
         private List<ICriteria<Forecast>> CriteriaSelected { get; set; }
 
-        public bool temp { get; set; }
+        public bool tempChecked { get; set; }
         public string tempAboveOrBelow { get; set; }
-        public bool precip { get; set; }                   
+        public bool precipChecked { get; set; }                   
 
         private void SetCriteria(object sender, RoutedEventArgs e)
         {
-            temp = Convert.ToBoolean(Temp.IsChecked);
-            precip = Convert.ToBoolean(Precip.IsChecked);
+            tempChecked = Convert.ToBoolean(Temp.IsChecked);
+            precipChecked = Convert.ToBoolean(Precip.IsChecked);
             
             if (Convert.ToBoolean(TempAbove.IsChecked))
                 tempAboveOrBelow = "Above";
             else tempAboveOrBelow = "Below";
 
-            if (temp == true)
+            if (tempChecked == true)
             {
                 var coldCriteria = new ColdCriteria();
                 coldCriteria.tempAboveOrBelow = tempAboveOrBelow;
@@ -51,7 +51,7 @@ namespace IfSetupWindows
                 CriteriaSelected.Add(coldCriteria);
             }
 
-            if (precip == true)
+            if (precipChecked == true)
             {
                 var rainCriteria = new RainCriteria();
                 rainCriteria.userPrecipValue = Convert.ToInt32(Precip_Select.Value);
