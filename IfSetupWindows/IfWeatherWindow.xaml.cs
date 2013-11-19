@@ -53,6 +53,10 @@ namespace IfSetupWindows
             else tempAboveOrBelow = "Below";
         }
 
+        //if (temp == true);
+
+        //These enable/disable the Temparature and Precipitation sliders and buttons for better user experience.
+
         private void Temp_Checked(object sender, RoutedEventArgs e)
         {
             Temp_Select.IsEnabled = true;
@@ -62,14 +66,7 @@ namespace IfSetupWindows
         private void Precip_Checked(object sender, RoutedEventArgs e)
         {
                 Precip_Select.IsEnabled = true;
-        }
-            //if (temp == true);
-                
-
-        private void Close_Click(object sender, RoutedEventArgs e)
-        {
-            this.Close();
-        }
+        }    
 
         private void Temp_Unchecked(object sender, RoutedEventArgs e)
         {
@@ -80,6 +77,12 @@ namespace IfSetupWindows
         private void Precip_Unchecked(object sender, RoutedEventArgs e)
         {
             Precip_Select.IsEnabled = false;
+        }
+
+        //Closes the window... HAH
+        private void Close_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }
