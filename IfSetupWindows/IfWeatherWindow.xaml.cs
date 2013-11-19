@@ -58,12 +58,11 @@ namespace IfSetupWindows
                 CriteriaSelected.Add(rainCriteria);
             }
 
-            //This isn't working..."can't convert Ida.Rhodes.ForecastTrigger to Common.ITrigger".  Looks like the all the 'usings' are in place
-            /*TriggertoProcess = new ForecastTrigger(ZipCode.ToString());
+            TriggertoProcess = new ForecastTrigger(ZipCode.ToString());
             foreach (var c in CriteriaSelected)
             {
                 TriggertoProcess.AddCriteria<Forecast>(c);
-            }*/
+            }
 
         }      
 
