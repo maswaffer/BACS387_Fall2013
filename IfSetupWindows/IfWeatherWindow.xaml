@@ -190,7 +190,7 @@
         <GroupBox Header="Temperature" HorizontalAlignment="Left" Margin="10,73,0,0" VerticalAlignment="Top" Width="520" Height="88">
             <Grid HorizontalAlignment="Left" Margin="0,0,-2,-8" Width="510">
                 <CheckBox x:Name="Temp" Content="Turn On Temparature Monitoring" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" Checked="Temp_Checked" Unchecked="Temp_Unchecked"/>
-                <Slider x:Name="Temp_Select" HorizontalAlignment="Left" Margin="10,47,0,0" VerticalAlignment="Top" Width="487" Maximum="100" Minimum="-20" Value="80" Background="White" IsEnabled="False" ToolTip="" AutoToolTipPlacement="TopLeft" LargeChange="0" Focusable="False">
+                <Slider x:Name="Temp_Select" HorizontalAlignment="Left" Margin="10,47,0,0" VerticalAlignment="Top" Width="490" Maximum="100" Minimum="-20" Value="80" Background="White" IsEnabled="False" ToolTip="" AutoToolTipPlacement="TopLeft" LargeChange="0" Focusable="False">
                     <Slider.Resources>
                         <Style x:Key="HorizontalSliderUpThumbStyle" TargetType="{x:Type Thumb}">
                             <Setter Property="OverridesDefaultStyle" Value="true"/>
@@ -372,9 +372,9 @@
                         </Style>
                     </Slider.Resources>
                 </Slider>
-                <Grid x:Name="RelationGrid" HorizontalAlignment="Left" Height="16" Margin="356,10,0,0" VerticalAlignment="Top" Width="141" IsEnabled="False">
+                <Grid x:Name="RelationGrid" HorizontalAlignment="Left" Height="16" Margin="339,10,0,0" VerticalAlignment="Top" Width="158" IsEnabled="False">
                     <RadioButton x:Name="TempAbove" Content="Above" HorizontalAlignment="Left" VerticalAlignment="Top" IsChecked="True"/>
-                    <RadioButton x:Name="TempBelow" Content="Below" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="97,0,0,0" />
+                    <RadioButton x:Name="TempBelow" Content="Below" VerticalAlignment="Top" Margin="97,0,-15,0" />
                 </Grid>
             </Grid>
         </GroupBox>

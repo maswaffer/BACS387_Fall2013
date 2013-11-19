@@ -72,7 +72,7 @@ namespace IfSetupWindows
         private void Temp_Checked(object sender, RoutedEventArgs e)
         {
             Temp_Select.IsEnabled = true;
-            //RelationGrid.IsEnabled = true;  ...RelationGrid does not exist
+            RelationGrid.IsEnabled = true;
         }
 
         private void Precip_Checked(object sender, RoutedEventArgs e)
@@ -83,7 +83,7 @@ namespace IfSetupWindows
         private void Temp_Unchecked(object sender, RoutedEventArgs e)
         {
             Temp_Select.IsEnabled = false;
-            //RelationGrid.IsEnabled = false;  ...RelationGrid does not exist
+            RelationGrid.IsEnabled = false;
         }
         
         private void Precip_Unchecked(object sender, RoutedEventArgs e)
