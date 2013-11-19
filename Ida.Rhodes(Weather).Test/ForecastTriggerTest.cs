@@ -24,7 +24,7 @@ namespace Ida.Rhodes_Weather_.Test
         {
             var rainCriteria = new RainCriteria();
             rainCriteria.userPrecipValue = 45;
-            var coldCriteria = new ColdCriteria();
+            var coldCriteria = new TempCriteria();
             coldCriteria.tempAboveOrBelow = "Below";
             coldCriteria.userTempValue = 35;
             trigger.AddCriteria(rainCriteria);

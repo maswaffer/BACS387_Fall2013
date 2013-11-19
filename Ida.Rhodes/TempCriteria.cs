@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Ida.Rhodes
 {
-    public class ColdCriteria : ICriteria<Forecast>
+    public class TempCriteria : ICriteria<Forecast>
     {
         public string Name
         {

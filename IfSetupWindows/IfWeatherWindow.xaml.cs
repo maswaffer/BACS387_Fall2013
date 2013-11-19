@@ -45,10 +45,10 @@ namespace IfSetupWindows
 
             if (tempChecked == true)
             {
-                var coldCriteria = new ColdCriteria();
-                coldCriteria.tempAboveOrBelow = tempAboveOrBelow;
-                coldCriteria.userTempValue = Convert.ToInt32(Temp_Select.Value);
-                CriteriaSelected.Add(coldCriteria);
+                var tempCriteria = new TempCriteria();
+                tempCriteria.tempAboveOrBelow = tempAboveOrBelow;
+                tempCriteria.userTempValue = Convert.ToInt32(Temp_Select.Value);
+                CriteriaSelected.Add(tempCriteria);
             }
 
             if (precipChecked == true)
