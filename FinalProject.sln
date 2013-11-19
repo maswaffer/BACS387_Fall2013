@@ -25,7 +25,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IFTESTS", "IFTESTS", "{67EF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IfStockPrice.Test", "IfStockPrice.Test\IfStockPrice.Test.csproj", "{CE6B712B-7D91-474F-BC1B-CCA2F3F4F9E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ada.Lovelace2.0", "Ada.Lovelace2.0\Ada.Lovelace2.0.csproj", "{4D0028E2-34FF-4130-8C10-5A771A685502}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IfNewsStory", "Ada.Lovelace2.0\IfNewsStory.csproj", "{4D0028E2-34FF-4130-8C10-5A771A685502}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Woot", "Woot\Woot.csproj", "{7C7F11BC-69DF-4FA8-BB0D-9687DEFCB8A1}"
 EndProject
@@ -75,34 +75,34 @@ Global
 		SccProjectTopLevelParentUniqueName8 = FinalProject.sln
 		SccProjectName8 = IfStockPrice.Test
 		SccLocalPath8 = IfStockPrice.Test
-		SccProjectUniqueName9 = Ada.Lovelace2.0\\Ada.Lovelace2.0.csproj
+		SccProjectUniqueName9 = Woot\\Woot.csproj
 		SccProjectTopLevelParentUniqueName9 = FinalProject.sln
-		SccProjectName9 = Ada.Lovelace2.0
-		SccLocalPath9 = Ada.Lovelace2.0
-		SccProjectUniqueName10 = Woot\\Woot.csproj
+		SccProjectName9 = Woot
+		SccLocalPath9 = Woot
+		SccProjectUniqueName10 = Pokedex\\Barbara.Liskov.csproj
 		SccProjectTopLevelParentUniqueName10 = FinalProject.sln
-		SccProjectName10 = Woot
-		SccLocalPath10 = Woot
-		SccProjectUniqueName11 = Pokedex\\Barbara.Liskov.csproj
+		SccProjectName10 = Pokedex
+		SccLocalPath10 = Pokedex
+		SccProjectUniqueName11 = GraceHopper\\Watson\\Watson.csproj
 		SccProjectTopLevelParentUniqueName11 = FinalProject.sln
-		SccProjectName11 = Pokedex
-		SccLocalPath11 = Pokedex
-		SccProjectUniqueName12 = GraceHopper\\Watson\\Watson.csproj
+		SccProjectName11 = GraceHopper/Watson
+		SccLocalPath11 = GraceHopper\\Watson
+		SccProjectUniqueName12 = IfPhotoCondition\\IfPhotoCondition.csproj
 		SccProjectTopLevelParentUniqueName12 = FinalProject.sln
-		SccProjectName12 = GraceHopper/Watson
-		SccLocalPath12 = GraceHopper\\Watson
-		SccProjectUniqueName13 = IfPhotoCondition\\IfPhotoCondition.csproj
+		SccProjectName12 = IfPhotoCondition
+		SccLocalPath12 = IfPhotoCondition
+		SccProjectUniqueName13 = Ida.Rhodes\\Ida.Rhodes.csproj
 		SccProjectTopLevelParentUniqueName13 = FinalProject.sln
-		SccProjectName13 = IfPhotoCondition
-		SccLocalPath13 = IfPhotoCondition
-		SccProjectUniqueName14 = Ida.Rhodes\\Ida.Rhodes.csproj
+		SccProjectName13 = Ida.Rhodes
+		SccLocalPath13 = Ida.Rhodes
+		SccProjectUniqueName14 = Ida.Rhodes(Weather).Test\\Ida.Rhodes(Weather).Test.csproj
 		SccProjectTopLevelParentUniqueName14 = FinalProject.sln
-		SccProjectName14 = Ida.Rhodes
-		SccLocalPath14 = Ida.Rhodes
-		SccProjectUniqueName15 = Ida.Rhodes(Weather).Test\\Ida.Rhodes(Weather).Test.csproj
+		SccProjectName14 = Ida.Rhodes(Weather).Test
+		SccLocalPath14 = Ida.Rhodes(Weather).Test
+		SccProjectUniqueName15 = Ada.Lovelace2.0\\IfNewsStory.csproj
 		SccProjectTopLevelParentUniqueName15 = FinalProject.sln
-		SccProjectName15 = Ida.Rhodes(Weather).Test
-		SccLocalPath15 = Ida.Rhodes(Weather).Test
+		SccProjectName15 = Ada.Lovelace2.0
+		SccLocalPath15 = Ada.Lovelace2.0
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
