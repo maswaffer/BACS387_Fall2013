@@ -33,6 +33,10 @@ namespace IfSetupWindows
         private List<ICriteria<Story>> CriteriaSelected {get;set;}
 
 
+
+        private void AddCriteriaButton_Click(object sender, RoutedEventArgs e)
+        {
+        }
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
             var keyword = Keyword.Text;
