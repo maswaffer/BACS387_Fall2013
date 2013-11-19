@@ -2,21 +2,32 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:y="clr-namespace:IfSetupWindows"
-        Title="IfWeatherWindow" Height="335" Width="550">
-    <Grid Margin="-9,-29,2,-8">
-        <CheckBox x:Name="Temp" Content="Temp" HorizontalAlignment="Left" Margin="50,101,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="Precip" Content="Precip" HorizontalAlignment="Left" Margin="50,167,0,0" VerticalAlignment="Top" />
-        <Slider x:Name="Temp_Select" HorizontalAlignment="Left" Margin="228,98,0,0" VerticalAlignment="Top" Width="261" Maximum="100" Minimum="-20" Value="-20"/>
-        <Slider x:Name="Precip_Select" HorizontalAlignment="Left" Margin="228,164,0,0" VerticalAlignment="Top" Width="261" Maximum="99" Minimum="1"/>
-        <StackPanel Margin="137,88,359,214" Orientation="Vertical" Width="53">
-            <RadioButton x:Name="TempAbove" Content="Above" HorizontalAlignment="Left" VerticalAlignment="Top" IsChecked="True"/>
-            <RadioButton x:Name="TempBelow" Content="Below" HorizontalAlignment="Left" VerticalAlignment="Top" />
-        </StackPanel>
-        <Button Content="Save" HorizontalAlignment="Left" Margin="331,292,0,0" VerticalAlignment="Top" Width="75" Click="SetCriteria"/>
-        <Button Content="Close" HorizontalAlignment="Left" Margin="438,292,0,0" VerticalAlignment="Top" Width="75" />
-        <Label Content="Enter your zip code." HorizontalAlignment="Left" Margin="29,56,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="ZipCode" HorizontalAlignment="Left" Height="23" Margin="149,59,0,0" TextWrapping="Wrap" Text="80634" VerticalAlignment="Top" Width="120" BorderBrush="Black"/>
-        <Label Content="Select your critera." HorizontalAlignment="Left" Margin="29,30,0,0" VerticalAlignment="Top"/>
+        Title="WeatherTrigger" Height="327" Width="550">
+    <Grid Margin="0,0,2,2">
+        <Button x:Name="Save" Content="Save" HorizontalAlignment="Left" Margin="366,268,0,0" VerticalAlignment="Top" Width="75" Click="SetCriteria" ToolTip="Save the Criteria"/>
+        <Button x:Name="Close" Content="&amp;Close" HorizontalAlignment="Left" Margin="455,268,0,0" VerticalAlignment="Top" Width="75" Click="Close_Click" ToolTip="Closes the window" />
+        <GroupBox Header="Temperature" HorizontalAlignment="Left" Margin="10,73,0,0" VerticalAlignment="Top" Width="520" Height="88">
+            <Grid HorizontalAlignment="Left" Margin="0,0,-2,-8" Width="510">
+                <CheckBox x:Name="Temp" Content="Turn On Temparature Monitoring" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" Checked="Temp_Checked" Unchecked="Temp_Unchecked"/>
+                <Slider x:Name="Temp_Select" HorizontalAlignment="Left" Margin="10,47,0,0" VerticalAlignment="Top" Width="487" Maximum="100" Minimum="-20" Value="80" Background="White" IsEnabled="False" ToolTip="" AutoToolTipPlacement="TopLeft"/>
+                <Grid x:Name="RelationGrid" HorizontalAlignment="Left" Height="16" Margin="356,10,0,0" VerticalAlignment="Top" Width="141" IsEnabled="False">
+                    <RadioButton x:Name="TempAbove" Content="Above" HorizontalAlignment="Left" VerticalAlignment="Top" IsChecked="True"/>
+                    <RadioButton x:Name="TempBelow" Content="Below" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="97,0,0,0" />
+                </Grid>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Precipitation" HorizontalAlignment="Left" Margin="10,166,0,0" VerticalAlignment="Top" Width="520" Height="88">
+            <Grid HorizontalAlignment="Left" Margin="0,0,-2,-8" Width="510">
+                <Slider x:Name="Precip_Select" HorizontalAlignment="Left" Margin="10,47,0,0" VerticalAlignment="Top" Width="489" Maximum="100" Minimum="1" IsEnabled="False" Value="50" ToolTip="Select the precipitation change (%)" AutoToolTipPlacement="TopLeft"/>
+                <CheckBox x:Name="Precip" Content="Turn On Precipitation Monitoring" HorizontalAlignment="Left" Margin="10,9,0,0" VerticalAlignment="Top" Checked="Precip_Checked" Unchecked="Precip_Unchecked" />
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Location" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="520" Height="58">
+            <Grid HorizontalAlignment="Left" Margin="0,0,-2,-8" Width="509">
+                <Label Content="Enter your zip code." HorizontalAlignment="Left" Margin="1,10,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="ZipCode" HorizontalAlignment="Left" Height="23" Margin="113,10,0,0" TextWrapping="Wrap" Text="80634" VerticalAlignment="Top" Width="120" BorderBrush="Black" ToolTip="Enter your 6 Digit Zip Code"/>
+            </Grid>
+        </GroupBox>
         <!--<ComboBox HorizontalAlignment="Left" Margin="393,102,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged"/>-->
 
     </Grid>

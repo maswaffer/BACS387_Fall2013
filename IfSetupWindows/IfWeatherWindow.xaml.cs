@@ -25,6 +25,7 @@ namespace IfSetupWindows
         public IfWeatherWindow()
         {
             InitializeComponent();
+            ZipCode.Focus();
             CriteriaSelected = new List<ICriteria<Forecast>>();
             
         }
@@ -50,12 +51,35 @@ namespace IfSetupWindows
             if (Convert.ToBoolean(TempAbove.IsChecked))
                 tempAboveOrBelow = "Above";
             else tempAboveOrBelow = "Below";
+        }
 
+        private void Temp_Checked(object sender, RoutedEventArgs e)
+        {
+            Temp_Select.IsEnabled = true;
+            RelationGrid.IsEnabled = true;
+        }
+
+        private void Precip_Checked(object sender, RoutedEventArgs e)
+        {
+                Precip_Select.IsEnabled = true;
+        }
             //if (temp == true);
                 
 
+        private void Close_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
 
+        private void Temp_Unchecked(object sender, RoutedEventArgs e)
+        {
+            Temp_Select.IsEnabled = false;
+            RelationGrid.IsEnabled = false;
+        }
         
+        private void Precip_Unchecked(object sender, RoutedEventArgs e)
+        {
+            Precip_Select.IsEnabled = false;
+        }
     }
 }
