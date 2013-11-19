@@ -14,7 +14,7 @@ namespace Ida.Rhodes_Weather_.Test
         public void Setup()
         {
             criteria = new RainCriteria();
-            trigger = new ForecastTrigger(80634);
+            trigger = new ForecastTrigger("80634");
         }
 
         [TestMethod]
