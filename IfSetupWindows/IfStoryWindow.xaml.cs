@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using Common;
+using Ada.Lovelace2._0;
+
 
 
 namespace IfSetupWindows
@@ -25,10 +27,10 @@ namespace IfSetupWindows
         {
             InitializeComponent();
 
-            //CriteriaSelected = new List<ICriteria<Story>>();
+            CriteriaSelected = new List<ICriteria<Story>>();
         }
 
-        //private List<ICriteria<Story>> CriteriaSelected {get;set;}
+        private List<ICriteria<Story>> CriteriaSelected {get;set;}
 
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)
@@ -38,12 +40,12 @@ namespace IfSetupWindows
             var title = Title.Text;
 
 
-            /*TriggertoProcess = new NewsStoryTrigger();
+            //TriggertoProcess = new NewsCriteriaTrigger();
             foreach (var c in CriteriaSelected)
             {
                 TriggertoProcess.AddCriteria<Story>(c);
             }
-            */
+            
             Close();
         }
     }
