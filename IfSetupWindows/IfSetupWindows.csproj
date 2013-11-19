@@ -135,10 +135,6 @@
       <Project>{4d57563d-ff27-4f73-93a8-0b2f9be7b094}</Project>
       <Name>Ida.Rhodes</Name>
     </ProjectReference>
-    <ProjectReference Include="..\IfNewsStory\IfNewsStory.csproj">
-      <Project>{4d0028e2-34ff-4130-8c10-5a771a685502}</Project>
-      <Name>IfNewsStory</Name>
-    </ProjectReference>
     <ProjectReference Include="..\IfStockPrice\IfStockPrice.csproj">
       <Project>{1134aa5d-f606-40a1-a8fb-ebce0c18d4e9}</Project>
       <Name>IfStockPrice</Name>
