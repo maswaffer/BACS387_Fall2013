@@ -51,16 +51,28 @@ namespace IfSetupWindows
             if (Convert.ToBoolean(TempAbove.IsChecked))
                 tempAboveOrBelow = "Above";
             else tempAboveOrBelow = "Below";
-        }
 
-        //if (temp == true);
+            if (temp == true);
+            {
+                var coldCriteria = new ColdCriteria();
+                coldCriteria.tempAboveOrBelow = tempAboveOrBelow;
+                coldCriteria.userTempValue = userTempValue;
+            }
+
+            if (precip == true);
+            {
+                var rainCriteria = new RainCriteria();
+                rainCriteria.userPrecipValue = userPrecipValue;
+            }
+
+        }      
 
         //These enable/disable the Temparature and Precipitation sliders and buttons for better user experience.
 
         private void Temp_Checked(object sender, RoutedEventArgs e)
         {
             Temp_Select.IsEnabled = true;
-            RelationGrid.IsEnabled = true;
+            //RelationGrid.IsEnabled = true;
         }
 
         private void Precip_Checked(object sender, RoutedEventArgs e)
@@ -71,7 +83,7 @@ namespace IfSetupWindows
         private void Temp_Unchecked(object sender, RoutedEventArgs e)
         {
             Temp_Select.IsEnabled = false;
-            RelationGrid.IsEnabled = false;
+            //RelationGrid.IsEnabled = false;
         }
         
         private void Precip_Unchecked(object sender, RoutedEventArgs e)
