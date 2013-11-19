@@ -10,14 +10,14 @@ namespace Ida.Rhodes
     public class ForecastTrigger : ITrigger
     {
 
-        public ForecastTrigger(int zipcode)
+        public ForecastTrigger(string zipcode)
         {
             Zipcode = zipcode;
             RonBurgundy = new TellMeTheForecast();
             CriteriaList = new List<ICriteria<Forecast>>();
         }
 
-        private int Zipcode { get; set; }
+        private string Zipcode { get; set; }
         private List<ICriteria<Forecast>> CriteriaList { get; set; }
         private TellMeTheForecast RonBurgundy { get; set; }
 

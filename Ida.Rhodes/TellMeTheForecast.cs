@@ -8,7 +8,7 @@ namespace Ida.Rhodes
 {
     public class TellMeTheForecast
     {
-        public Forecast GetForecast(int zipcode)
+        public Forecast GetForecast(string zipcode)
         {
             /*
              * Go to WU API
