@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using FlickrNet;
+//using FlickrNet;
 // using Flickr .NET HERE...
 namespace IfPhotoCondition
 {
@@ -15,34 +15,34 @@ namespace IfPhotoCondition
         /// We put the key and secret key here
         /// </summary>
         #region
-        // field key and secret are read only
-        private readonly string key = "2da36d66a5f11fd563c507848f84ee3e";
-        private readonly string secret = "7cb1e013d1374c52";
+        //// field key and secret are read only
+        //private readonly string key = "2da36d66a5f11fd563c507848f84ee3e";
+        //private readonly string secret = "7cb1e013d1374c52";
 
-        // properties here
-        public FlickrNet.Flickr Service { get; set; }
+        //// properties here
+        //public FlickrNet.Flickr Service { get; set; }
 
-        // constructor for Flicrk, once instanciate creating a
-        // new service using the key and secret above
-        public Flickr()
-        {
-            // FlickrNet.Flickr method has 4 overloadings 
-            // we are using the one that pass key and secret
-            Service = new FlickrNet.Flickr(key,secret);
-        }
+        //// constructor for Flicrk, once instanciate creating a
+        //// new service using the key and secret above
+        //public Flickr()
+        //{
+        //    // FlickrNet.Flickr method has 4 overloadings 
+        //    // we are using the one that pass key and secret
+        //    Service = new FlickrNet.Flickr(key, secret);
+        //}
 
-        // this will be use instead of the GetPhoto method outside
-        public PhotoCollection GetPhotosByArea(BoundaryBox box)
-        {
+        //// this will be use instead of the GetPhoto method outside
+        //public PhotoCollection GetPhotosByArea(BoundaryBox box)
+        //{
 
-            // PhotoSearchOptions is comming FlickrNet
-            var options = new PhotoSearchOptions();
-            options.BoundaryBox = box;
-            options.PerPage = 10;
-            options.Tags = "flood,water";
+        //    // PhotoSearchOptions is comming FlickrNet
+        //    var options = new PhotoSearchOptions();
+        //    options.BoundaryBox = box;
+        //    options.PerPage = 10;
+        //    options.Tags = "flood,water";
 
-            return Service.PhotosSearch(options);
-        }
+        //    return Service.PhotosSearch(options);
+        //}
 
         #endregion
 
@@ -53,13 +53,5 @@ namespace IfPhotoCondition
             Photo dummyPhoto = new Photo();
             return dummyPhoto;
         }
-
-        
-
-
-         
-        
-
-        
     }
 }
