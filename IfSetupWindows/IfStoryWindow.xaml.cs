@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using Common;
-using IfNewsStory;
+
 
 namespace IfSetupWindows
 {
@@ -25,10 +25,10 @@ namespace IfSetupWindows
         {
             InitializeComponent();
 
-            CriteriaSelected = new List<ICriteria<Story>>();
+            //CriteriaSelected = new List<ICriteria<Story>>();
         }
 
-        private List<ICriteria<Story>> CriteriaSelected {get;set;}
+        //private List<ICriteria<Story>> CriteriaSelected {get;set;}
 
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)
