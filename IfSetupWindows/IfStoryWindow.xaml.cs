@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using Common;
-using Ada.Lovelace2._0;
+using IfNewsStory;
 
 namespace IfSetupWindows
 {
