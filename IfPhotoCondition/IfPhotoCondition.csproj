@@ -56,6 +56,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SizeTooBig.cs" />
     <Compile Include="SizeTooSmall.cs" />
+    <Compile Include="TagNotMatch.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Common\Common.csproj">
