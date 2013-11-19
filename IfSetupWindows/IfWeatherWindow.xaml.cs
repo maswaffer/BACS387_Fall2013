@@ -14,7 +14,6 @@ using System.Windows.Shapes;
 using Common;
 using Ida.Rhodes;
 
-
 namespace IfSetupWindows
 {
     /// <summary>
@@ -26,28 +25,20 @@ namespace IfSetupWindows
         {
             InitializeComponent();
             ZipCode.Focus();
-            CriteriaSelected = new List<ICriteria<Forecast>>();
-            
+            CriteriaSelected = new List<ICriteria<Forecast>>();            
         }
 
         private List<ICriteria<Forecast>> CriteriaSelected { get; set; }
 
-        public string zipCode { get; set; }
         public bool temp { get; set; }
         public string tempAboveOrBelow { get; set; }
-        public int userTempValue { get; set; }
-        public bool precip { get; set; }
-        public int userPrecipValue { get; set; }      
-        
+        public bool precip { get; set; }                   
 
         private void SetCriteria(object sender, RoutedEventArgs e)
         {
-            zipCode = ZipCode.ToString();
             temp = Convert.ToBoolean(Temp.IsChecked);
             precip = Convert.ToBoolean(Precip.IsChecked);
-            userTempValue = Convert.ToInt32(Temp_Select.Value);
-            userPrecipValue = Convert.ToInt32(Precip_Select.Value);
-
+            
             if (Convert.ToBoolean(TempAbove.IsChecked))
                 tempAboveOrBelow = "Above";
             else tempAboveOrBelow = "Below";
@@ -56,14 +47,23 @@ namespace IfSetupWindows
             {
                 var coldCriteria = new ColdCriteria();
                 coldCriteria.tempAboveOrBelow = tempAboveOrBelow;
-                coldCriteria.userTempValue = userTempValue;
+                coldCriteria.userTempValue = Convert.ToInt32(Temp_Select.Value);
+                CriteriaSelected.Add(coldCriteria);
             }
 
             if (precip == true);
             {
                 var rainCriteria = new RainCriteria();
-                rainCriteria.userPrecipValue = userPrecipValue;
+                rainCriteria.userPrecipValue = Convert.ToInt32(Precip_Select.Value);
+                CriteriaSelected.Add(rainCriteria);
             }
+
+            //This isn't working..."can't convert Ida.Rhodes.ForecastTrigger to Common.ITrigger".  Looks like the all the 'usings' are in place
+            /*TriggertoProcess = new ForecastTrigger(ZipCode.ToString());
+            foreach (var c in CriteriaSelected)
+            {
+                TriggertoProcess.AddCriteria<Forecast>(c);
+            }*/
 
         }      
 
