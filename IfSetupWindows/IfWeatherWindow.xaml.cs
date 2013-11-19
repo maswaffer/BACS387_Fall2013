@@ -43,7 +43,7 @@ namespace IfSetupWindows
                 tempAboveOrBelow = "Above";
             else tempAboveOrBelow = "Below";
 
-            if (temp == true);
+            if (temp == true)
             {
                 var coldCriteria = new ColdCriteria();
                 coldCriteria.tempAboveOrBelow = tempAboveOrBelow;
@@ -51,7 +51,7 @@ namespace IfSetupWindows
                 CriteriaSelected.Add(coldCriteria);
             }
 
-            if (precip == true);
+            if (precip == true)
             {
                 var rainCriteria = new RainCriteria();
                 rainCriteria.userPrecipValue = Convert.ToInt32(Precip_Select.Value);

@@ -1,9 +1,9 @@
-﻿<y:IfWindow x:Class="IfSetupWIndows.IfWeatherWindow"
+﻿<y:IfWindow
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:y="clr-namespace:IfSetupWindows"
         xmlns:Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Classic" x:Class="IfSetupWindows.IfWeatherWindow"
-        Title="Weather Trigger Configuration" Height="327" Width="550">
+        Title="Weather Trigger Configuration" Height="334.463" Width="550">
     <y:IfWindow.Resources>
         <Style x:Key="HorizontalSliderUpThumbStyle" TargetType="{x:Type Thumb}">
             <Setter Property="OverridesDefaultStyle" Value="true"/>
