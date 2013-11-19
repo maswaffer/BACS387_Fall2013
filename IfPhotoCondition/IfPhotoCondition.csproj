@@ -36,7 +36,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="FlickrNet">
-      <HintPath>..\..\..\..\Downloads\FlickrNet-3.7.0\FlickrNet.dll</HintPath>
+      <HintPath>Lib\FlickrNet.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
