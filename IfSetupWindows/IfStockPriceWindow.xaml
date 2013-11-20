@@ -11,7 +11,8 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="25"/>
             <RowDefinition Height="25"/>
-            <RowDefinition Height="250*"/>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="200*"/>
             <RowDefinition Height="25"/>
         </Grid.RowDefinitions>
         <Label Content="Select Stock Symbol"  HorizontalAlignment="Left" VerticalAlignment="Top"/>
@@ -21,7 +22,10 @@
         <Label Name="Parameters" Content="Set Criteria Parameters" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <StackPanel Grid.Column="1" Name="PercentChangeParams" HorizontalAlignment="Stretch" Grid.Row="2" Orientation="Horizontal">
             <Label Content="Percentage change limit:"/>
-            <TextBox Name="PercentChange" Text="%" HorizontalAlignment="Stretch"  TextAlignment="Right" Width="150"/>
+            <TextBox Name="PercentChange" Text="%" HorizontalAlignment="Stretch" Height="30" VerticalAlignment="Top" TextAlignment="Right" Width="150"/>
+        </StackPanel>
+        <StackPanel Name="ConfiguredCriteria" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2">
+            
         </StackPanel>
         <StackPanel Grid.Column="1" Grid.Row="99" Orientation="Horizontal" HorizontalAlignment="Right">
             <Button Content="Add Criteria" Click="AddCriteriaButton_Click"   Margin="0 0 30 0" VerticalAlignment="Bottom" Width="75"/>

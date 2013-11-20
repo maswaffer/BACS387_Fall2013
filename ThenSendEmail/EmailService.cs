@@ -12,17 +12,15 @@ namespace ThenSendEmail
     {
         public void SendEmail(string recipient, string message)
         {
-            var email = new MailMessage("maswaffer@gmail.com", recipient);
+            var email = new MailMessage("bacs387@outlook.com", recipient);
             email.Subject = "If this then that message";
             email.Body = message;
 
-            var client = new SmtpClient();
+            var client = new SmtpClient("smtp.live.com", 587);
             client.DeliveryMethod = SmtpDeliveryMethod.Network;
-            client.UseDefaultCredentials = false;
             client.EnableSsl = true;
-            client.Host = "smtp.gmail.com";
-            client.Port = 465;
-            client.Credentials = new NetworkCredential("xxxxxxx@gmail.com", "yyyyyy");
+            client.UseDefaultCredentials = false;
+            client.Credentials = new NetworkCredential("bacs387@outlook.com", "B@cs387!");
             client.Send(email);
         }
     }

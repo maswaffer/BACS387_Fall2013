@@ -22,5 +22,11 @@ namespace ThenSendEmail
         {
             Service.SendEmail(Recipient, message);
         }
+
+        public override string ToString()
+        {
+            var message = string.Format("Send email to {0}", Recipient);
+            return message;
+        }
     }
 }

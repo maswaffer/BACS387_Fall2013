@@ -111,6 +111,10 @@
       <Project>{b4b462f3-1712-4c30-be83-ce03acc5d7cc}</Project>
       <Name>IfSetupWindows</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ThenSetupWindows\ThenSetupWindows.csproj">
+      <Project>{475bd1a7-b395-4ef1-8494-bb22285c9b70}</Project>
+      <Name>ThenSetupWindows</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

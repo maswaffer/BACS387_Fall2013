@@ -57,7 +57,7 @@ namespace IfStockPrice
                 criteriaDescriptions.Add(c.ToString());
             }
 
-            return "If stock " + string.Join(" or ", criteriaDescriptions);
+            return "Stock " + string.Join(" or ", criteriaDescriptions);
         }
 
 

@@ -16,5 +16,11 @@ namespace Common
 
         public ITrigger Trigger { get; private set; }
         public IAction Action { get; private set; }
+
+        public override string ToString()
+        {
+            var str = string.Format("IF[{0}] THEN[{1}]", Trigger.ToString(), Action.ToString());
+            return str;
+        }
     }
 }

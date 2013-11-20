@@ -26,5 +26,11 @@ namespace IfStockPrice
 
         public decimal PercentChange { get; set; }
 
+        public override string ToString()
+        {
+            var str = string.Format("Price change is greater than {0}%", PercentChange);
+            return str;
+        }
+
     }
 }

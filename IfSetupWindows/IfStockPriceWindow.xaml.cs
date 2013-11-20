@@ -66,10 +66,14 @@ namespace IfSetupWindows
             var selected = CriteriaType.SelectedItem as ICriteria<Stock>;
             if (selected is PriceChangeGreaterThan)
             {
-                ((PriceChangeGreaterThan)selected).PercentChange = Convert.ToDecimal(PercentChange.Text);
+                var percent = PercentChange.Text.Replace("%", "");
+                ((PriceChangeGreaterThan)selected).PercentChange = Convert.ToDecimal(percent);
             }
             CriteriaSelected.Add(selected);
             HideParameterSections();
+            CriteriaType.SelectedIndex = -1;
+
+            ConfiguredCriteria.Children.Add(new TextBlock { Text = selected.ToString() });
         }
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)

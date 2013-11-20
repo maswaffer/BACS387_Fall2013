@@ -27,6 +27,7 @@ namespace Drin
         {
             InitializeComponent();
             TriggerTypes.ItemsSource = WindowFactory.GetTriggerTypes();
+            ActionTypes.ItemsSource = WindowFactory.GetActionTypes();
             Tank = new Tank();
         }
 
@@ -34,7 +35,7 @@ namespace Drin
         private IAction ActionToAdd { get; set; }
         private Tank Tank { get; set; }
 
-        private void AddTrigger_Click(object sender, RoutedEventArgs e)
+        private void ConfigureTrigger_Click(object sender, RoutedEventArgs e)
         {
             var triggerType = TriggerTypes.SelectedItem.ToString();
             var window = WindowFactory.GetTriggerWindow(triggerType);
@@ -45,14 +46,21 @@ namespace Drin
             window.Show();
         }
 
-        private void AddAction_Click(object sender, RoutedEventArgs e)
+        private void ConfigureAction_Click(object sender, RoutedEventArgs e)
         {
-
+            var actionType = ActionTypes.SelectedItem.ToString();
+            var window = WindowFactory.GetActionWindow(actionType);
+            window.ProcessAction((t) =>
+            {
+                ActionToAdd = t;
+            });
+            window.Show();
         }
 
         private void AddRule_Click(object sender, RoutedEventArgs e)
         {
             var rule = new Rule(TriggerToAdd, ActionToAdd);
+            AddedRules.Children.Add(new TextBlock { Text = rule.ToString() });
             Tank.Fill(rule);
         }
 

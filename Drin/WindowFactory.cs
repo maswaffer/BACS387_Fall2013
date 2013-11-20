@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using Common;
 using IfSetupWindows;
+using ThenSetupWindows;
 
 namespace Drin
 {
@@ -46,6 +47,24 @@ namespace Drin
                 "News",
                 "Pitch",
                 "Woot"
+            };
+        }
+
+        public static ThenWindow GetActionWindow(string selection)
+        {
+            switch (selection)
+            {
+                case "Email":
+                    return new ThenSendEmailWindow();
+                default:
+                    return null;
+            }
+        }
+
+        public static List<string> GetActionTypes()
+        {
+            return new List<string>{
+                "Email"
             };
         }
 
