@@ -8,7 +8,6 @@ namespace Common
 {
     public interface IAction
     {
-        string Recipient { get; set; }
         void SendNotification(string message);
     }
 }

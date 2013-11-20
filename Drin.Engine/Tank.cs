@@ -7,23 +7,17 @@ using Common;
 
 namespace Drin.Engine
 {
-    public class Tank
+    public class Tank : List<Rule>
     {
-        public Tank()
-        {
-            Rules = new List<Rule>();
-        }
-
-        private List<Rule> Rules { get; set; }
-
+     
         public void Fill(Rule rule)
         {
-            Rules.Add(rule);
+            this.Add(rule);
         }
 
         public void Fill(IList<Rule> rules)
         {
-            Rules.AddRange(rules);
+            this.AddRange(rules);
         }
     }
 }

@@ -9,9 +9,9 @@
             <RowDefinition Height="272*"/>
         </Grid.RowDefinitions>
         <ScrollViewer HorizontalAlignment="Left" Height="272" Margin="0" Grid.Row="2" VerticalAlignment="Top" Width="750">
-            <StackPanel x:Name="Rules" Height="262" Width="740" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <StackPanel x:Name="ProgressReport" Height="262" Width="740" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         </ScrollViewer>
-        <Button x:Name="StartEngine" Grid.Row="1" Content="Start Engine"/>
+        <Button x:Name="StartEngine" Click="StartEngine_Click" Grid.Row="1" Content="Start Engine"/>
         <Grid   Margin="10,10,0,0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" >
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="193*"/>

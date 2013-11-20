@@ -29,11 +29,33 @@ namespace Drin
             TriggerTypes.ItemsSource = WindowFactory.GetTriggerTypes();
             ActionTypes.ItemsSource = WindowFactory.GetActionTypes();
             Tank = new Tank();
+            Motor = new Motor();
+            Motor.Tank = Tank;
+
+            Motor.CheckingRule += (t) =>
+            {
+                Dispatcher.Invoke(() =>
+                {
+                    ProgressReport.Children.Add(new TextBlock { Text = t });
+                });
+            };
+
+            Motor.NotificationSent += (t) =>
+            {
+                ProgressReport.Children.Add(new TextBlock { Text = t });
+            };
+
+            Motor.StatusUpdate += (t) =>
+            {
+                //TODO: Finish this
+            };
+              
         }
 
         private ITrigger TriggerToAdd { get; set; }
         private IAction ActionToAdd { get; set; }
         private Tank Tank { get; set; }
+        private Motor Motor { get; set; }
 
         private void ConfigureTrigger_Click(object sender, RoutedEventArgs e)
         {
@@ -62,6 +84,11 @@ namespace Drin
             var rule = new Rule(TriggerToAdd, ActionToAdd);
             AddedRules.Children.Add(new TextBlock { Text = rule.ToString() });
             Tank.Fill(rule);
+        }
+
+        private void StartEngine_Click(object sender, RoutedEventArgs e)
+        {
+            Task.Factory.StartNew(Motor.Start);
         }
 
 
