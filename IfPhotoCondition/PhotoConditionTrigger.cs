@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace IfPhotoCondition
 {
-    class PhotoConditionTrigger : ITrigger
+    public class PhotoConditionTrigger : ITrigger
     {
         // constructor photoconditionTrigger
         public PhotoConditionTrigger()

@@ -190,6 +190,7 @@
                 Grid.Column="2" 
                 Grid.ColumnSpan="2" 
                 Grid.Row="4" Margin="0,-2,0,15" 
+                Opacity="0.75"
                 Content="Clear"
                 Click="Clear_Click"
                 Foreground="White"/>
@@ -201,7 +202,8 @@
                 Margin="5,7.5,0,7.5"
                 Foreground="WhiteSmoke"
                 BorderBrush="White"
-                />
+                Click="Save_Click"/>
+                
     </Grid>
     <!--LAYOUT END HERE-->
 </y:IfWindow>
