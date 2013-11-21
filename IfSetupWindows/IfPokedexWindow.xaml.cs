@@ -25,16 +25,30 @@ namespace IfSetupWindows
         public IfPokedexWindow()
         {
             InitializeComponent();
+            Criteria.Items.Add(new NameMatchCriteria());
+            
             CriteriaChosen = new List<ICriteria<Pokedex>>();
+            
         }
 
         private List<ICriteria<Pokedex>> CriteriaChosen { get; set; }
 
         private void AddCriteriaButton_Click(object sender, RoutedEventArgs e)
         {
-            //var selected = CriteriaType.SelectedItem as ICriteria<Pokedex>;
-            
-            //CriteriaChosen.Add(selected);
+            var selected = Criteria.SelectedItem as ICriteria<Pokedex>;
+
+            if (selected is NameMatchCriteria)
+            {
+                //var percent = PercentChange.Text.Replace("%", "");
+                //((PriceChangeGreaterThan)selected).PercentChange = Convert.ToDecimal(percent);
+            }
+            CriteriaChosen.Add(selected);
+        }
+
+        private void Criteria_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+           
+            var selection = ((ComboBox)sender).SelectedItem as ICriteria<Pokedex>;
         }
 
         public void SaveButton_Click(object sender, RoutedEventArgs e)
@@ -56,5 +70,7 @@ namespace IfSetupWindows
         {//closes the window :)
             this.Close();
         }
+
+       
     }
 }
