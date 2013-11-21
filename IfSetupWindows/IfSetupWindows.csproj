@@ -55,8 +55,8 @@
     <Compile Include="IfFlickrWindow.xaml.cs">
       <DependentUpon>IfFlickrWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="IfPitch.xaml.cs">
-      <DependentUpon>IfPitch.xaml</DependentUpon>
+    <Compile Include="IfPitchWindow.xaml.cs">
+      <DependentUpon>IfPitchWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="IfPokedexWindow.xaml.cs">
       <DependentUpon>IfPokedexWindow.xaml</DependentUpon>
@@ -102,7 +102,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="IfPitch.xaml">
+    <Page Include="IfPitchWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
