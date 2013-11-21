@@ -15,8 +15,16 @@ namespace Ada.Lovelace2._0
 
         public bool Check(Story value)
         {
-            
-            throw new NotImplementedException();
+            bool match = false; 
+            if (value.Title.Equals(Keyword))
+            {
+                match = true; 
+            }
+            else
+            {
+                match = false; 
+            }
+            return match; 
         }
 
         //Specific to our criteria
