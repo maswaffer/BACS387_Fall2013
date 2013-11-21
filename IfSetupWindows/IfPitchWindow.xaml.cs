@@ -39,7 +39,7 @@ namespace IfSetupWindows
 
         private void acptBtn_Click(object sender, RoutedEventArgs e)
         {
-            var team = TeamSelect.Text;
+            //var team = TeamSelect.Text;
            //TriggertoProcess = new BaseballCriteriaTrigger();
             foreach (var c in CriteriaSelected)
             {

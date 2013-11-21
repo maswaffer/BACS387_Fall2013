@@ -13,7 +13,7 @@
         <Label Content="Select Criteria" HorizontalAlignment="Left" Margin="0,64,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
         <Button x:Name="acptBtn" Content="Accept" HorizontalAlignment="Left" Margin="116,204,0,0" VerticalAlignment="Top" Width="102" Grid.Column="1" Click="acptBtn_Click"/>
         <Button x:Name="Close" Content="Close" HorizontalAlignment="Left" Margin="246,204,0,0" VerticalAlignment="Top" Width="109" Grid.Column="1" Click="Close_Click" />
-        <TextBox x:Name="TeamSelect" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="201,17,0,0" TextWrapping="Wrap" Text="ANI" VerticalAlignment="Top" Width="88" TextChanged="TextBox_TextChanged_1"/>
+        <!--<TextBox x:Name="TeamSelect" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="201,17,0,0" TextWrapping="Wrap" Text="ANI" VerticalAlignment="Top" Width="88" TextChanged="TextBox_TextChanged_1"/>-->
 
 
     </Grid>

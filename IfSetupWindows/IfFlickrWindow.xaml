@@ -115,11 +115,12 @@
                Foreground="White"
                Margin="40,0,0,0"/>
 
-        <ComboBox x:Name="comboCriteria" Grid.Row="0"  Grid.ColumnSpan="2" Grid.Column="2" Margin="0,7.5,0,7.5">
-            <ComboBoxItem>Minimum photo size</ComboBoxItem>
-            <ComboBoxItem>Maximum photo size</ComboBoxItem>
-            <ComboBoxItem>Date from Jan to June</ComboBoxItem>
-            <ComboBoxItem>Date from Jul to December</ComboBoxItem>
+        <ComboBox x:Name="CriteriaType" 
+                  Grid.Row="0"  
+                  Grid.ColumnSpan="2" 
+                  Grid.Column="2" 
+                  SelectionChanged="CriteriaType_SelectionChanged" 
+                  Margin="0,7.5,0,7.5">    
             <ComboBox.ToolTip>
                 <ToolTip ToolTipService.HasDropShadow="True" 
                          ToolTipService.ShowDuration="2" 
@@ -136,7 +137,8 @@
         <!--Enter parameter if choose size criteria-->
         <Label Grid.Row="1" 
                Grid.Column="0" 
-               Content="Enter Size" 
+               Content="Enter Size"
+               Name="SizeParameter"
                HorizontalAlignment="Left" 
                VerticalAlignment="Center"
                FontSize="16"
@@ -159,7 +161,7 @@
         </TextBox>
 
         <!--pick a date if chose date criteria-->
-        <Label Content="Select Date: " Grid.Row="2" Grid.Column="0" VerticalAlignment="Center"
+        <Label Content="Select Date: " Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" Name="DateParameter"
                HorizontalAlignment="Left"
                FontSize="16"
                Margin="40,0,0,0"
