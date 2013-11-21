@@ -76,7 +76,7 @@ namespace IfSetupWindows
         private void Save_Click(object sender, RoutedEventArgs e)
         {
             // errors here need ask...
-            //TriggertoProcess = new PhotoConditionTrigger();
+            TriggertoProcess = new PhotoConditionTrigger() as ITrigger;
             Close();
         }
 
