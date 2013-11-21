@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ClassLibrary1
+namespace Barabara.Liskov
 {
     public class RandomNumber
     {

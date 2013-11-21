@@ -11,6 +11,9 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Common;
+using Barabara.Liskov;
+
 
 namespace IfSetupWindows
 {
@@ -22,26 +25,36 @@ namespace IfSetupWindows
         public IfPokedexWindow()
         {
             InitializeComponent();
+            CriteriaChosen = new List<ICriteria<Pokedex>>();
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
+        private List<ICriteria<Pokedex>> CriteriaChosen { get; set; }
 
         private void AddCriteriaButton_Click(object sender, RoutedEventArgs e)
         {
-
+            //var selected = CriteriaType.SelectedItem as ICriteria<Pokedex>;
+            
+            //CriteriaChosen.Add(selected);
         }
 
-        private void SaveButton_Click(object sender, RoutedEventArgs e)
+        public void SaveButton_Click(object sender, RoutedEventArgs e)
         {
+            var Number= Numbersomething.Text;
+            
+            TriggertoProcess = new Pokedex(Number);
+            foreach (var c in CriteriaChosen)
+            {
+                TriggertoProcess.AddCriteria<Pokedex>(c);
+            }
+
+            Close();
+
             
         }
 
         private void CloseButton_Click(object sender, RoutedEventArgs e)
-        {
-
+        {//closes the window :)
+            this.Close();
         }
     }
 }

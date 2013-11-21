@@ -144,6 +144,10 @@
       <Project>{1134aa5d-f606-40a1-a8fb-ebce0c18d4e9}</Project>
       <Name>IfStockPrice</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Pokedex\Barbara.Liskov.csproj">
+      <Project>{4e533b8f-0880-44a5-b937-fb26af842c1a}</Project>
+      <Name>Barbara.Liskov</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Resource Include="bg2.jpg" />
