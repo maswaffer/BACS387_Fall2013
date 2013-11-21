@@ -8,18 +8,18 @@
             <ColumnDefinition Width="70*"/>
             <ColumnDefinition Width="579*"/>
         </Grid.ColumnDefinitions>
-        <TextBox x:Name="gamesTxt" HorizontalAlignment="Left" Height="23" Margin="116,113,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="219" Grid.Column="1"/>
+        <TextBox x:Name="gamesTxt" HorizontalAlignment="Left" Height="23" Margin="116,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="219" Grid.Column="1"/>
         <ComboBox x:Name="crt1Cmb1" HorizontalAlignment="Left" Margin="54,18,0,0" VerticalAlignment="Top" Width="235" Grid.Column="1">
             <Button/>
             <MenuItem/>
             <MenuItem/>
         </ComboBox>
         <ComboBox x:Name="crt2Cmb" HorizontalAlignment="Left" Margin="54,68,0,0" VerticalAlignment="Top" Width="235" Grid.Column="1"/>
-        <Label Content="Set Criteria One:" HorizontalAlignment="Left" Margin="0,14,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
-        <Label Content="Set Criteria Two:" HorizontalAlignment="Left" Margin="0,64,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
-        <Label Content="Select Number of Games:" HorizontalAlignment="Left" Margin="10,110,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
-        <Button x:Name="acptBtn" Content="Accept" HorizontalAlignment="Left" Margin="116,204,0,0" VerticalAlignment="Top" Width="102" Grid.Column="1"/>
-        <Button x:Name="Close" Content="Close" HorizontalAlignment="Left" Margin="246,204,0,0" VerticalAlignment="Top" Width="109" Grid.Column="1" />
+        <Label Content="Select Team" HorizontalAlignment="Left" Margin="0,14,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Label Content="Select Criteria" HorizontalAlignment="Left" Margin="0,64,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Label Content="Select Number of Games:" HorizontalAlignment="Left" Margin="0,110,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Button x:Name="acptBtn" Content="Accept" HorizontalAlignment="Left" Margin="116,204,0,0" VerticalAlignment="Top" Width="102" Grid.Column="1" Click="acptBtn_Click"/>
+        <Button x:Name="Close" Content="Close" HorizontalAlignment="Left" Margin="246,204,0,0" VerticalAlignment="Top" Width="109" Grid.Column="1" Click="Close_Click" />
        
 
     </Grid>
