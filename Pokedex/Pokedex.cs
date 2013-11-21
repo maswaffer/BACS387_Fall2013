@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Common;
 
 namespace Barabara.Liskov
 {
@@ -11,25 +12,22 @@ namespace Barabara.Liskov
         // constructor has same name as class, no return value
         public Pokedex()
         {
-            Criteria = new List<ICrteria>();
+           
             var Fake = new NameMatchCriteria();
             Fake.Name = "Charmeleon";
-            Criteria.Add(Fake);
+            Criteria = Fake;
             GetNumber = new RandomNumber();
             File = new PokemonFile();
         }
 
-        public Pokedex(List<ICrteria> criteria)
-        {
-            Criteria = criteria;
-        }
+        
         public string Message { get; set; }
         public RandomNumber GetNumber { get; set; }
         public PokemonFile File { get; set; }
 
-        public List <ICrteria> Criteria{get; set;}
+        public ICriteria<Pokemon> Criteria {get; set;}
     
-        public bool Check()
+        public bool CheckCondition()
         {
             /*
              * get number from random generator
@@ -40,22 +38,26 @@ namespace Barabara.Liskov
              * if not, dont fire trigger
              */
             var number = GetNumber.GetNumber();
-            var pokemon = File.GetPokemon(number);
+            var PokemonList = File.GetPokemon();
 
-            foreach (var Info in Criteria)
+            foreach (var pokemon in PokemonList)
             {
-                if (Info.Matches (pokemon))
+                if (Criteria.Check(pokemon))
                 {
                     Message = pokemon.ToString();
                     return true;
                 }
             }
+           
+                
+            
             return false;
         }
-        
-         
-           
-            
-        
+
+
+        public void AddCriteria<T>(ICriteria<T> criteria) where T : new()
+        {
+            Criteria = criteria as ICriteria<Pokemon>;
+        }
     }
 }

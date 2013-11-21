@@ -45,9 +45,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThenSendEmail.Test", "ThenS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThenSetupWindows", "ThenSetupWindows\ThenSetupWindows.csproj", "{475BD1A7-B395-4EF1-8494-BB22285C9B70}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokemonFile.Test", "PokemonFile.Test\PokemonFile.Test.csproj", "{76953F7D-527A-4448-8019-3DD4ADEAAC0B}"
+EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 18
+		SccNumberOfProjects = 19
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://bacs387.visualstudio.com/defaultcollection
 		SccLocalPath0 = .
@@ -117,6 +119,10 @@ Global
 		SccProjectTopLevelParentUniqueName17 = FinalProject.sln
 		SccProjectName17 = ThenSetupWindows
 		SccLocalPath17 = ThenSetupWindows
+		SccProjectUniqueName18 = PokemonFile.Test\\PokemonFile.Test.csproj
+		SccProjectTopLevelParentUniqueName18 = FinalProject.sln
+		SccProjectName18 = PokemonFile.Test
+		SccLocalPath18 = PokemonFile.Test
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -227,6 +233,12 @@ Global
 		{475BD1A7-B395-4EF1-8494-BB22285C9B70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{475BD1A7-B395-4EF1-8494-BB22285C9B70}.Release|Any CPU.Build.0 = Release|Any CPU
 		{475BD1A7-B395-4EF1-8494-BB22285C9B70}.Release|x86.ActiveCfg = Release|Any CPU
+		{76953F7D-527A-4448-8019-3DD4ADEAAC0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76953F7D-527A-4448-8019-3DD4ADEAAC0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76953F7D-527A-4448-8019-3DD4ADEAAC0B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{76953F7D-527A-4448-8019-3DD4ADEAAC0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76953F7D-527A-4448-8019-3DD4ADEAAC0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76953F7D-527A-4448-8019-3DD4ADEAAC0B}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -246,6 +258,7 @@ Global
 		{AC9A4D50-A923-4483-894C-4B208BBED98C} = {9E55A9E8-E3DF-40BF-8F0F-24460DF73EA5}
 		{CE6B712B-7D91-474F-BC1B-CCA2F3F4F9E2} = {67EF2E48-4A81-4384-A9D9-C6AE4E25A9DD}
 		{3FDA05DD-6708-496F-BA7A-8CC6D82CA4B3} = {67EF2E48-4A81-4384-A9D9-C6AE4E25A9DD}
+		{76953F7D-527A-4448-8019-3DD4ADEAAC0B} = {67EF2E48-4A81-4384-A9D9-C6AE4E25A9DD}
 		{39BB5384-7E0E-4DB3-976F-6BCE522494E9} = {BA5C3BD5-B443-4C56-A3D3-F7AD330D5CAD}
 	EndGlobalSection
 EndGlobal

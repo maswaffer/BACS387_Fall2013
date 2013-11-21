@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:y="clr-namespace:IfSetupWindows"
         Title="Set Play Criteria" Height="280" Width="431">
-    <Grid x:Name="crt1Cmb" Margin="0,0,-63,-30">
+    <!--<Grid x:Name="crt1Cmb" Margin="0,0,-63,-30">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="70*"/>
             <ColumnDefinition Width="579*"/>
@@ -16,5 +16,5 @@
         <!--<TextBox x:Name="TeamSelect" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="201,17,0,0" TextWrapping="Wrap" Text="ANI" VerticalAlignment="Top" Width="88" TextChanged="TextBox_TextChanged_1"/>-->
 
 
-    </Grid>
+    </Grid-->
 </y:IfWindow>

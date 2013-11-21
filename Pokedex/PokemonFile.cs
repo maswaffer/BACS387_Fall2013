@@ -15,9 +15,12 @@ namespace Barabara.Liskov
          * from this site
          * charmeleon	id: 5	height: 11	weight :190
          */
-        public Pokemon GetPokemon(int id)
+        private readonly string DataFileName = "Pokemon.csv";
+
+        public List<Pokemon> GetPokemon()
         {
-            return new Pokemon { Name = "Charmeleon", PokedexNumber = 5, Height = 11, Weight = 90 };
+            //return new Pokemon { Name = "Charmeleon", PokedexNumber = 5, Height = 11, Weight = 90 };
+            return null;
         }
 
     }

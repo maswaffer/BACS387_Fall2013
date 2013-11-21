@@ -9,14 +9,13 @@
             <ColumnDefinition Width="70*"/>
             <ColumnDefinition Width="151*"/>
         </Grid.ColumnDefinitions>
-        <!--<TextBox HorizontalAlignment="Left" Height="24" Margin="10,48,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="160" Grid.Column="2" Name="Numbersomething" TextChanged="TextBox_TextChanged"/>
-        <Label Content="Number" HorizontalAlignment="Left" Height="24" Margin="0,48,0,0" VerticalAlignment="Top" Width="69" Grid.Column="1"/>
+        <TextBox HorizontalAlignment="Left" Height="24" Margin="10,48,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="160" Grid.Column="2" Name="PokemonName" />
+        <Label Content="Name" HorizontalAlignment="Left" Height="24" Margin="0,48,0,0" VerticalAlignment="Top" Width="69" Grid.Column="1"/>
         <Image HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="91" Margin="0,48,0,0" Grid.Column="1"/>
         <Label Content="Select Criteria" HorizontalAlignment="Left" Height="28" Margin="0,101,0,0" VerticalAlignment="Top" Width="91" Grid.Column="1"/>
-        <ComboBox Name="Criteria" Grid.Column="2" HorizontalAlignment="Left" Height="28" Margin="10,101,0,0" VerticalAlignment="Top" Width="160" SelectionChanged="Criteria_SelectionChanged"/>-->
-        <!--<Button Content="Add Criteria" Grid.Column="2" HorizontalAlignment="Left" Height="26" Margin="108,279,0,0" VerticalAlignment="Top" Width="77" Click="Button_Click"/>
-        <Button Content="Save" Grid.Column="2" HorizontalAlignment="Left" Height="26" Margin="220,279,0,0" VerticalAlignment="Top" Width="61" Click="Button_Click_1"/>
-        <Button Content="Close" Grid.Column="2" HorizontalAlignment="Left" Height="26" Margin="315,279,0,0" VerticalAlignment="Top" Width="59" Click="Button_Click_1"/>-->
+        <ComboBox Name="Criteria" Grid.Column="2" HorizontalAlignment="Left" Height="28" Margin="10,101,0,0" VerticalAlignment="Top" Width="160" SelectionChanged="Criteria_SelectionChanged"/>
+        <Button Content="Save" Grid.Column="2" HorizontalAlignment="Left" Height="26" Margin="220,279,0,0" VerticalAlignment="Top" Width="61" Click="SaveButton_Click"/>
+        <Button Content="Cancel" Grid.Column="2" HorizontalAlignment="Left" Height="26" Margin="315,279,0,0" VerticalAlignment="Top" Width="59" Click="CancelButton_Click"/>
 
     </Grid>
 </y:IfWindow>

@@ -43,14 +43,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ICrteria.cs" />
-    <Compile Include="ITrigger.cs" />
     <Compile Include="NameMatchCriteria.cs" />
     <Compile Include="Pokedex.cs" />
     <Compile Include="Pokemon.cs" />
     <Compile Include="PokemonFile.cs" />
     <Compile Include="RandomNumber.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{d3e1dc31-e7f5-496b-bc6d-1d64e18cd7a8}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pokemon.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
