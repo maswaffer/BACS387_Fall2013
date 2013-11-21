@@ -10,6 +10,11 @@ namespace IfPhotoCondition
     {
         public string Message { get; set; }
         public int MinSize { get; set; }
+        public string Name
+        {
+            get { return "Configure Minimum Size"; }
+            set { }
+        }
         public bool isMet(Photo photoValue)
         {
             /*
@@ -25,7 +30,11 @@ namespace IfPhotoCondition
             }
             return false;
         }
-        
+
+        public override string ToString()
+        {
+            return Name;
+        }
 
         // could use delegate ...ask about this...
     }

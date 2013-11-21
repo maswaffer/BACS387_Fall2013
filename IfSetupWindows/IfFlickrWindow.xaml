@@ -183,6 +183,7 @@
                 Margin="0,7.5,5,7.5" 
                 Foreground="White" 
                 Template="{DynamicResource GlassButton}" 
+                Click="AddCriteria_Click"
                 Content="Add Criteria"/>
 
         <Button Template ="{DynamicResource GlassButton}"
@@ -190,6 +191,7 @@
                 Grid.ColumnSpan="2" 
                 Grid.Row="4" Margin="0,-2,0,15" 
                 Content="Clear"
+                Click="Clear_Click"
                 Foreground="White"/>
         
         <Button Template="{DynamicResource GlassButton}"

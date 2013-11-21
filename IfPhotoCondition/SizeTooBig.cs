@@ -10,6 +10,10 @@ namespace IfPhotoCondition
     {
         public string Message { get; set; }
         public int MaxSize { get; set; }
+
+        public string Name { get{ return "Configure Maximum Size";} set{} }
+
+
         public bool isMet(Photo photoValue)
         {
 
@@ -25,5 +29,12 @@ namespace IfPhotoCondition
             }
             return false;
         }
+
+        // to change the name in the combobox
+        public override string ToString()
+        {
+            return Name;
+        }
+        
     }
 }

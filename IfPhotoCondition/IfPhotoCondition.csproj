@@ -54,8 +54,10 @@
     <Compile Include="Photo.cs" />
     <Compile Include="PhotoConditionTrigger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SetDateCriteria.cs" />
     <Compile Include="SizeTooBig.cs" />
     <Compile Include="SizeTooSmall.cs" />
+    <Compile Include="TagCriteria.cs" />
     <Compile Include="TagNotMatch.cs" />
   </ItemGroup>
   <ItemGroup>

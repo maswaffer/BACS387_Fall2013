@@ -25,6 +25,8 @@ namespace IfSetupWindows
             // add more criteria to our combobox
             CriteriaType.Items.Add(new SizeTooBig());
             CriteriaType.Items.Add(new SizeTooSmall());
+            CriteriaType.Items.Add(new SetDateCriteria());
+            CriteriaType.Items.Add(new TagCriteria());
 
             CriteriaSelected = new List<ICriteria<Photo>>();
         }
@@ -32,6 +34,8 @@ namespace IfSetupWindows
         // this is a list of criteria for the combobox
         private List<ICriteria<Photo>> CriteriaSelected { get; set; }
 
+        // Notify that item in comboBox is selected or change
+        // so we know which parameter to disable and to enable
         private void CriteriaType_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             var selected = CriteriaType.SelectedItem as ICriteria<Photo>;
@@ -39,7 +43,29 @@ namespace IfSetupWindows
             {
                 // disable the parameter for Date
                 datePickerBox.IsEnabled = false;
+                txtEnterSize.IsEnabled = true;
             }
+            else if (selected is SetDateCriteria)
+            {
+                //disable the parameter for Size
+                txtEnterSize.IsEnabled = false;
+                datePickerBox.IsEnabled = true;
+            }
+        }
+
+        private void Clear_Click(object sender, RoutedEventArgs e)
+        {
+            // Clear everything
+            txtEnterSize.Text = "";
+            datePickerBox.Text = "";
+            CriteriaType.Text = "";
+        }
+
+        // when user hit the Add Criteria Button...
+        private void AddCriteria_Click(object sender, RoutedEventArgs e)
+        {
+            var selected = CriteriaType.SelectedItem as ICriteria<Photo>;
+
         }
 
         
