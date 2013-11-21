@@ -31,17 +31,17 @@ namespace IfSetupWindows
             CriteriaType.Items.Add(new SetDateCriteria());
             CriteriaType.Items.Add(new TagCriteria());
 
-            CriteriaSelected = new List<IfPhotoCondition.ICriteria<Photo>>();
+            CriteriaSelected = new List<ICriteria<Photo>>();
         }
 
         // this is a list of criteria for the combobox
-        private List<IfPhotoCondition.ICriteria<Photo>> CriteriaSelected { get; set; }
+        private List<ICriteria<Photo>> CriteriaSelected { get; set; }
 
         // Notify that item in comboBox is selected or change
         // so we know which parameter to disable and to enable
         private void CriteriaType_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            var selected = CriteriaType.SelectedItem as IfPhotoCondition.ICriteria<Photo>;
+            var selected = CriteriaType.SelectedItem as ICriteria<Photo>;
             if (selected is SizeTooBig || selected is SizeTooSmall)
             {
                 // disable the parameter for Date
@@ -67,7 +67,7 @@ namespace IfSetupWindows
         // when user hit the Add Criteria Button...
         private void AddCriteria_Click(object sender, RoutedEventArgs e)
         {
-            var selected = CriteriaType.SelectedItem as IfPhotoCondition.ICriteria<Photo>;
+            var selected = CriteriaType.SelectedItem as ICriteria<Photo>;
             CriteriaSelected.Add(selected);
            
         }
@@ -76,7 +76,7 @@ namespace IfSetupWindows
         private void Save_Click(object sender, RoutedEventArgs e)
         {
             // errors here need ask...
-            TriggertoProcess = new PhotoConditionTrigger() as ITrigger;
+            TriggertoProcess = new PhotoConditionTrigger();
             Close();
         }
 

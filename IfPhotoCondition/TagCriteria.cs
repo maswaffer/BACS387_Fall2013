@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Common;
 namespace IfPhotoCondition
 {
     public class TagCriteria:ICriteria<Photo>
@@ -13,7 +13,7 @@ namespace IfPhotoCondition
             get { return "Configure tag"; }
             set{}
         }
-        public bool isMet(Photo photoValue)
+        public bool Check(Photo photoValue)
         {
             throw new NotImplementedException();
         }

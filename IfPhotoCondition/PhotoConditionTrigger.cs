@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-//using Common;
+using Common;
 // trying to using Common 
 
 namespace IfPhotoCondition
@@ -37,7 +37,7 @@ namespace IfPhotoCondition
             foreach (var criteria in listOfCriteria)
             {
                 // photovalue get from Photo
-                criteria.isMet(sizeValue);
+                criteria.Check(sizeValue);
             }
             return true;
         }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Common;
 namespace IfPhotoCondition
 {
     public class SizeTooBig : ICriteria<Photo>
@@ -14,7 +14,7 @@ namespace IfPhotoCondition
         public string Name { get{ return "Configure Maximum Size";} set{} }
 
 
-        public bool isMet(Photo photoValue)
+        public bool Check(Photo photoValue)
         {
 
             /*

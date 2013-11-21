@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Common;
 namespace IfPhotoCondition
 {
     public class SizeTooSmall : ICriteria<Photo>
@@ -15,7 +15,7 @@ namespace IfPhotoCondition
             get { return "Configure Minimum Size"; }
             set { }
         }
-        public bool isMet(Photo photoValue)
+        public bool Check(Photo photoValue)
         {
             /*
              * Check to see if the size of the this photo meets the user input
