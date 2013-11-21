@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ada.Lovelace2._0
 {
-    class GoogleNews
+    public class BingNews
     {
         public void GetStory()
         {

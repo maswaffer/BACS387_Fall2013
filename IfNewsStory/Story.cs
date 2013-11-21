@@ -8,12 +8,12 @@ namespace Ada.Lovelace2._0
 {
     public class Story 
     {
-        string Title { get; set; }
-        string Author { get; set; }
-        string Keywords { get; set; }
-        DateTime storyDate { get; set; }
-        string Publisher { get; set; }
-        string Link { get; set; }
+        public string Title { get; set; }
+        public string Author { get; set; }
+        public string Keywords { get; set; }
+        public DateTime storyDate { get; set; }
+        public string Publisher { get; set; }
+        public string Link { get; set; }
 
         
     }
