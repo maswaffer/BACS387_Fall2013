@@ -45,6 +45,9 @@
   <ItemGroup>
     <Compile Include="Changeup.cs" />
     <Compile Include="iCriteria.cs" />
+    <Compile Include="Play.cs" />
+    <Compile Include="PlayTypeHit.cs" />
+    <Compile Include="PlayTypePitch.cs" />
     <Compile Include="ResultTrigger.cs" />
     <Compile Include="PitchCount.cs" />
     <Compile Include="Knuckleball.cs" />
@@ -53,9 +56,16 @@
     <Compile Include="Fastball.cs" />
     <Compile Include="Pitch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Team.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="ProjectPurpose.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Common.csproj">
+      <Project>{d3e1dc31-e7f5-496b-bc6d-1d64e18cd7a8}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
