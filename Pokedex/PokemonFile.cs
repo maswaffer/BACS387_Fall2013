@@ -20,6 +20,8 @@ namespace Barabara.Liskov
         public List<Pokemon> GetPokemon()
         {
             //return new Pokemon { Name = "Charmeleon", PokedexNumber = 5, Height = 11, Weight = 90 };
+            // put code in to return null for now
+            // want to CONNOR DO CODE FOR THIS
             return null;
         }
 
