@@ -39,23 +39,7 @@ namespace IfSetupWindows
         }
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
-            var keyword = Keyword.Text;
-            var author = Author.Text;
-            var title = Title.Text;
-
-            //Create criteria
-            // - Add keyword to criteria
-            //Create trigger
-            // - Add criteria to trigger
-            //Assign trigger to TriggerToProcess
-            //Call Close
-
-            //TriggertoProcess = new NewsCriteriaTrigger();
-            foreach (var c in CriteriaSelected)
-            {
-                TriggertoProcess.AddCriteria<Story>(c);
-            }
-            
+ 
             Close();
         }
     }
