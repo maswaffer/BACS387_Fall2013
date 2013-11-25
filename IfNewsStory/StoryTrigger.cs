@@ -36,17 +36,8 @@ namespace Ada.Lovelace2._0
 
         public bool CheckCondition()
         {
-           /* var quote = Service.SearchFor(Keyword);
-            foreach (var criteria in Criteria)
-            {
-                var isMet = criteria.Check(quote);
-                if (isMet)
-                {
-                    Message = criteria.Message;
-                    return true;
-                }
-            }
-            * */
+            
+
             return false;
            
         }
