@@ -10,8 +10,8 @@
             <Label Content="Select or enter a story date" HorizontalAlignment="Left" Margin="24,116,0,0" VerticalAlignment="Top" Width="176"/>
         </Grid>
         <Grid HorizontalAlignment="Left" Height="260" Margin="219,0,0,0" VerticalAlignment="Top" Width="251">
-            <Button Content="Save"  HorizontalAlignment="Left" Margin="128,221,0,0" VerticalAlignment="Top" Width="106" Height="29"/>
-            <Button Content="Add Criteria" HorizontalAlignment="Left" Margin="10,221,0,0" VerticalAlignment="Top" Width="106" Height="29"/>
+            <Button Content="Save"  Click="SaveButton_Click" HorizontalAlignment="Left" Margin="128,221,0,0" VerticalAlignment="Top" Width="106" Height="29"/>
+            <Button Content="Cancel" Click="CancelButton_Click" HorizontalAlignment="Left" Margin="-208,221,0,0" VerticalAlignment="Top" Width="106" Height="29"/>
             <ComboBox Name="CriteriaType" HorizontalAlignment="Left" Margin="10,25,0,0" VerticalAlignment="Top" Width="224" SelectionChanged="CriteriaType_SelectionChanged">
 
             </ComboBox>

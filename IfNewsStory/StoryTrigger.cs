@@ -28,8 +28,8 @@ namespace Ada.Lovelace2._0
 
         public void AddCriteria<T>(ICriteria<T> criteria) where T : new()
         {
-            
-            throw new NotImplementedException();
+
+            Criteria.Add(criteria as ICriteria<Story>);
         }
 
         

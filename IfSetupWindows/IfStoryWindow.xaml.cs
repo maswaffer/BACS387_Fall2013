@@ -41,17 +41,24 @@ namespace IfSetupWindows
             var selection = ((ComboBox)sender).SelectedItem as ICriteria<Story>;
 
         }
-
-        private void AddCriteriaButton_Click(object sender, RoutedEventArgs e)
+        private void CancelButton_Click(object sender, RoutedEventArgs e)
         {
-            var selected = CriteriaType.SelectedItem as ICriteria<Story>;
-
+            this.Close();
         }
+
+
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
             
+           
+
+            //ConfiguredCriteria.Children.Add(new TextBlock { Text = selected.ToString() });
+            var selected = CriteriaType.SelectedItem as ICriteria<Story>;
             var keyword = txtKeyword.Text;
             var storyDate = datStoryDate;
+
+            CriteriaSelected.Add(selected);
+            CriteriaType.SelectedIndex = -1;
             TriggertoProcess = new StoryTrigger(keyword);
             foreach (var c in CriteriaSelected)
             {
