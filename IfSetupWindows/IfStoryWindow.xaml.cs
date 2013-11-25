@@ -33,8 +33,14 @@ namespace IfSetupWindows
         }
 
         private List<ICriteria<Story>> CriteriaSelected {get;set;}
+        private void CriteriaType_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
 
 
+
+            var selection = ((ComboBox)sender).SelectedItem as ICriteria<Story>;
+
+        }
 
         private void AddCriteriaButton_Click(object sender, RoutedEventArgs e)
         {
@@ -43,14 +49,15 @@ namespace IfSetupWindows
         }
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
-            //Going to work on this after some food!
-            /*var keyword = txtKeyword.Text;
+            
+            var keyword = txtKeyword.Text;
             TriggertoProcess = new StoryTrigger(keyword);
             foreach (var c in CriteriaSelected)
             {
-                TriggertoProcess.AddCriteria<Stock>(c);
+                TriggertoProcess.AddCriteria<Story>(c);
             }
- */
+             
+ 
             Close();
         }
     }
