@@ -6,17 +6,17 @@
     <Grid>
         <Grid HorizontalAlignment="Left" Height="270" VerticalAlignment="Top" Width="219">
             <Label Content="Please Select Criteria Type" HorizontalAlignment="Left" Height="24" Margin="24,25,0,0" VerticalAlignment="Top" Width="185"/>
-            <Label Content="Enter the words to search" HorizontalAlignment="Left" Margin="21,72,0,0" VerticalAlignment="Top" Width="188"/>
+            <Label Content="Enter Author or Title" HorizontalAlignment="Left" Margin="21,72,0,0" VerticalAlignment="Top" Width="188"/>
+            <Label Content="Select or enter a story date" HorizontalAlignment="Left" Margin="24,116,0,0" VerticalAlignment="Top" Width="176"/>
         </Grid>
         <Grid HorizontalAlignment="Left" Height="260" Margin="219,0,0,0" VerticalAlignment="Top" Width="251">
             <Button Content="Save"  HorizontalAlignment="Left" Margin="128,221,0,0" VerticalAlignment="Top" Width="106" Height="29"/>
             <Button Content="Add Criteria" HorizontalAlignment="Left" Margin="10,221,0,0" VerticalAlignment="Top" Width="106" Height="29"/>
-            <ComboBox HorizontalAlignment="Left" Margin="10,25,0,0" VerticalAlignment="Top" Width="224">
-                <ComboBoxItem Content="Author" HorizontalAlignment="Left" Width="222"/>
-                <ComboBoxItem Content="Title" HorizontalAlignment="Left" Width="222"/>
-                <ComboBoxItem Content="keyword" HorizontalAlignment="Left" Width="222"/>
+            <ComboBox HorizontalAlignment="Left" Margin="10,25,0,0" VerticalAlignment="Top" Width="224" Name="CriteriaType" SelectionChanged="CriteriaType_SelectionChanged">
+
             </ComboBox>
-            <TextBox HorizontalAlignment="Left" Height="23" Margin="10,72,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="224"/>
+            <TextBox Name="txtKeyword" HorizontalAlignment="Left" Height="23" Margin="10,72,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="224"/>
+            <DatePicker HorizontalAlignment="Left" Margin="30,116,0,0" VerticalAlignment="Top" Width="179"/>
         </Grid>
 
     </Grid>

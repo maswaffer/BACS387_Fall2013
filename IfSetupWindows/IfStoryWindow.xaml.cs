@@ -26,6 +26,8 @@ namespace IfSetupWindows
         public IfStoryWindow()
         {
             InitializeComponent();
+            CriteriaType.Items.Add(new TitleCriteria());
+            CriteriaType.Items.Add(new AuthorCriteria());
 
             CriteriaSelected = new List<ICriteria<Story>>();
         }
@@ -36,10 +38,19 @@ namespace IfSetupWindows
 
         private void AddCriteriaButton_Click(object sender, RoutedEventArgs e)
         {
+            var selected = CriteriaType.SelectedItem as ICriteria<Story>;
+
         }
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
- 
+            //Going to work on this after some food!
+            /*var keyword = txtKeyword.Text;
+            TriggertoProcess = new StoryTrigger(keyword);
+            foreach (var c in CriteriaSelected)
+            {
+                TriggertoProcess.AddCriteria<Stock>(c);
+            }
+ */
             Close();
         }
     }

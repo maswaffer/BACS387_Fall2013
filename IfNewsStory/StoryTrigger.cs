@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace Ada.Lovelace2._0
 {
-    public class CriteriaTrigger : ITrigger
+    public class StoryTrigger : ITrigger
     {
-        public CriteriaTrigger()
+        public StoryTrigger()
         {
             //Create service
         }

@@ -5,9 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Ada.Lovelace2._0
 {
-    public class KeywordCriteria : ICriteria<Story>
+    public class AuthorCriteria : ICriteria<Story>
     {
         //ICriteria
         public string Name { get; set; }
@@ -16,7 +17,7 @@ namespace Ada.Lovelace2._0
         public bool Check(Story value)
         {
             bool match = false; 
-            if (value.Title.Equals(Keyword))
+            if (value.Author.Equals(Keyword))
             {
                 match = true; 
             }

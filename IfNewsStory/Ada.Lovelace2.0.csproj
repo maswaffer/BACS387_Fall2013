@@ -44,10 +44,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AuthorCriteria.cs" />
     <Compile Include="BingSearchContainer.cs" />
-    <Compile Include="CriteriaTrigger.cs" />
+    <Compile Include="StoryTrigger.cs" />
     <Compile Include="BingNews.cs" />
-    <Compile Include="KeywordCriteria.cs" />
+    <Compile Include="TitleCriteria.cs" />
     <Compile Include="NewsService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Story.cs" />
