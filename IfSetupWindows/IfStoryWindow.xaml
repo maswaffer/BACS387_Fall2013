@@ -16,7 +16,7 @@
 
             </ComboBox>
             <TextBox Name="txtKeyword" HorizontalAlignment="Left" Height="23" Margin="10,72,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="224"/>
-            <DatePicker HorizontalAlignment="Left" Margin="30,116,0,0" VerticalAlignment="Top" Width="179"/>
+            <DatePicker HorizontalAlignment="Left" Margin="30,116,0,0" VerticalAlignment="Top" Width="179" Name="datStoryDate"/>
         </Grid>
 
     </Grid>

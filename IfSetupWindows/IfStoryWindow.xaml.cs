@@ -51,6 +51,7 @@ namespace IfSetupWindows
         {
             
             var keyword = txtKeyword.Text;
+            var storyDate = datStoryDate;
             TriggertoProcess = new StoryTrigger(keyword);
             foreach (var c in CriteriaSelected)
             {
