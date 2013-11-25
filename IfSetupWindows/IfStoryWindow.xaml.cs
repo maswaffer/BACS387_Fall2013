@@ -48,11 +48,8 @@ namespace IfSetupWindows
 
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)
-        {
-            
-           
-
-            //ConfiguredCriteria.Children.Add(new TextBlock { Text = selected.ToString() });
+        {         
+                        
             var selected = CriteriaType.SelectedItem as ICriteria<Story>;
             var keyword = txtKeyword.Text;
             var storyDate = datStoryDate;
