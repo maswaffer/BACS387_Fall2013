@@ -22,10 +22,7 @@ namespace Ada.Lovelace2._0
         private List<ICriteria<Story>> Criteria {get;set;}
         private NewsService Service {get;set;}
 
-        public bool CheckCondition()
-        {
-            throw new NotImplementedException();
-        }
+
 
         public string Message { get; set; }
 
@@ -34,6 +31,26 @@ namespace Ada.Lovelace2._0
             
             throw new NotImplementedException();
         }
+
+        
+
+        public bool CheckCondition()
+        {
+           /* var quote = Service.SearchFor(Keyword);
+            foreach (var criteria in Criteria)
+            {
+                var isMet = criteria.Check(quote);
+                if (isMet)
+                {
+                    Message = criteria.Message;
+                    return true;
+                }
+            }
+            * */
+            return false;
+           
+        }
+         
 
         //specialization
         // Criteria
