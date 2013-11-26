@@ -5,7 +5,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
 namespace Ada.Lovelace2._0
 {
     public class AuthorCriteria : ICriteria<Story>
@@ -14,6 +13,7 @@ namespace Ada.Lovelace2._0
         public string Name { get; set; }
         public string Message { get; set; }
         public DateTime Date { get; set; }
+       
         public bool Check(Story value)
         {
             bool match = false; 

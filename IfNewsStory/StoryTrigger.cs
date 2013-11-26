@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Bing; 
 
 namespace Ada.Lovelace2._0
 {
@@ -15,30 +16,25 @@ namespace Ada.Lovelace2._0
             Keyword = keyword;
             Service = new NewsService("Bwb3narbj9BNklDtldaerYmHlwlUHswxfVagdbuzBHs");
             Criteria = new List<ICriteria<Story>>();
-
-             
         }
+
         private string Keyword { get; set; }
         private List<ICriteria<Story>> Criteria {get;set;}
         private NewsService Service {get;set;}
-        private bool match = false; 
-
-
+        private bool match = false;
+        private IEnumerable<NewsResult> BingArticles { get; set; }
 
         public string Message { get; set; }
 
         public void AddCriteria<T>(ICriteria<T> criteria) where T : new()
         {
-
             Criteria.Add(criteria as ICriteria<Story>);
         }
 
-        
-
         public bool CheckCondition()
         {
-            Service.Results = Service.SearchFor(Keyword); 
-            
+            BingArticles = Service.SearchFor(Keyword); 
+  
 
             return match;
            
