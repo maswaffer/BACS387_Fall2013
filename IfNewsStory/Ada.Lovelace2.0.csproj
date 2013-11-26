@@ -47,7 +47,6 @@
     <Compile Include="AuthorCriteria.cs" />
     <Compile Include="BingSearchContainer.cs" />
     <Compile Include="StoryTrigger.cs" />
-    <Compile Include="BingNews.cs" />
     <Compile Include="TitleCriteria.cs" />
     <Compile Include="NewsService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

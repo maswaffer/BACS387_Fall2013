@@ -31,9 +31,13 @@ namespace Ada.Lovelace2._0
             Criteria.Add(criteria as ICriteria<Story>);
         }
 
+        //public void getKeyword
+        //{
+        //}
+
         public bool CheckCondition()
         {
-            BingArticles = Service.SearchFor(Keyword); 
+            
   
 
             return match;

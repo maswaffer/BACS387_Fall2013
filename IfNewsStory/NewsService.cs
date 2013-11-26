@@ -17,9 +17,10 @@ namespace Ada.Lovelace2._0
 
         public string BingAccountKey { get; set; }
         public IEnumerable<NewsResult> Results { get; set; }
+        public List<Story> searchResults { get; set; }
 
 
-        public IEnumerable<NewsResult> SearchFor(string query)
+        public List<Story> SearchFor(string query)
         {
 
             // Create a Bing container.
@@ -43,12 +44,15 @@ namespace Ada.Lovelace2._0
             var newsResults = newsQuery.Execute();
 
             //for each result in news results; create a list of stories; convert to a list of stories
+            Story values = new Story(); 
             foreach (var result in newsResults)
             {
-                
+                values.Title = result.Title;
+                values.storyDate = (DateTime)result.Date;
+                searchResults.Add(values); 
             }
 
-           return newsResults;
+           return searchResults;
         }
     }
 }
