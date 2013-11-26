@@ -42,6 +42,12 @@ namespace Ada.Lovelace2._0
             // Run the query and display the results.
             var newsResults = newsQuery.Execute();
 
+            //for each result in news results; create a list of stories; convert to a list of stories
+            foreach (var result in newsResults)
+            {
+                
+            }
+
            return newsResults;
         }
     }
