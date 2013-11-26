@@ -44,7 +44,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AuthorCriteria.cs" />
     <Compile Include="BingSearchContainer.cs" />
     <Compile Include="StoryTrigger.cs" />
     <Compile Include="TitleCriteria.cs" />

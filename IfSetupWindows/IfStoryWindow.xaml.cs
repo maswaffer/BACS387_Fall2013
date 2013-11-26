@@ -27,7 +27,7 @@ namespace IfSetupWindows
         {
             InitializeComponent();
             CriteriaType.Items.Add(new TitleCriteria());
-            CriteriaType.Items.Add(new AuthorCriteria());
+            
 
             CriteriaSelected = new List<ICriteria<Story>>();
         }
