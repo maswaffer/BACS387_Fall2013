@@ -16,6 +16,8 @@ namespace Ada.Lovelace2._0
         }
 
         public string BingAccountKey { get; set; }
+        public IEnumerable<NewsResult> Results { get; set; }
+
 
         public IEnumerable<NewsResult> SearchFor(string query)
         {

@@ -13,7 +13,7 @@ namespace Ada.Lovelace2._0
         {
             //Create service
             Keyword = keyword;
-            //Service = new NewsService();
+            Service = new NewsService("Bwb3narbj9BNklDtldaerYmHlwlUHswxfVagdbuzBHs");
             Criteria = new List<ICriteria<Story>>();
 
              
@@ -21,6 +21,7 @@ namespace Ada.Lovelace2._0
         private string Keyword { get; set; }
         private List<ICriteria<Story>> Criteria {get;set;}
         private NewsService Service {get;set;}
+        private bool match = false; 
 
 
 
@@ -36,9 +37,10 @@ namespace Ada.Lovelace2._0
 
         public bool CheckCondition()
         {
+            Service.Results = Service.SearchFor(Keyword); 
             
 
-            return false;
+            return match;
            
         }
          
