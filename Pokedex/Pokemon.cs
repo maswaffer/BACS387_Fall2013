@@ -15,7 +15,12 @@ namespace Barabara.Liskov
 
          public override string ToString()
          {
-             return string.Format ("PokedexNumber: {0}, Name: {1}, Height: {2}, Weight: {3}", PokedexNumber, Name, Height, Weight);
+             
+             return string.Format ("PokedexNumber: {0}, Name: {1}, Weight: {2}, Height: {3}", PokedexNumber, Name, Weight, Height);
          }
+
+
+
+         
     }
 }

@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 
 namespace Barabara.Liskov
 {
@@ -19,11 +21,29 @@ namespace Barabara.Liskov
 
         public List<Pokemon> GetPokemon()
         {
+            List<Pokemon> finalList = new List<Pokemon>();
             //return new Pokemon { Name = "Charmeleon", PokedexNumber = 5, Height = 11, Weight = 90 };
             // put code in to return null for now
             // want to CONNOR DO CODE FOR THIS
-            return null;
+            var lines = File.ReadAllLines(DataFileName);
+
+            foreach (var line in lines)
+            {
+                //This splits the line by commas into an array of strings. 
+                var splitByCommas = line.Split(',');
+                var species = new Pokemon
+                {
+                    PokedexNumber = Convert.ToInt32(splitByCommas[0]),
+                    Name = splitByCommas[1],
+                    Height = Convert.ToInt32(splitByCommas[3]),
+                    Weight = Convert.ToInt32(splitByCommas[4])
+                };
+                finalList.Add(species);
+            }
+
+
+            return finalList;
         }
 
-    }
+     }
 }

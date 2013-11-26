@@ -14,7 +14,7 @@ namespace Barabara.Liskov
         {
            
             var Fake = new NameMatchCriteria();
-            Fake.Name = "Charmeleon";
+            //Fake.Name = "Charmeleon";
             Criteria = Fake;
             GetNumber = new RandomNumber();
             File = new PokemonFile();
@@ -48,8 +48,7 @@ namespace Barabara.Liskov
                     return true;
                 }
             }
-           
-                
+               
             
             return false;
         }
