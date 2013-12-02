@@ -33,6 +33,6 @@
             </Button.Background>
         </Button>
         <TextBlock HorizontalAlignment="Left" Height="26" Margin="10,10,0,0" Grid.Row="2" TextWrapping="Wrap" Text="Category" VerticalAlignment="Top" Width="94" Background="#FFFFFCFC" FontSize="16" FontWeight="Bold"/>
-        <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="25" Margin="3,11,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="204"/>
+        <ComboBox Grid.Column="1" HorizontalAlignment="Left" Margin="3,11,0,0" Grid.Row="2" VerticalAlignment="Top" Width="204" Height="25"/>
     </Grid>
 </y:IfWindow>
