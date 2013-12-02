@@ -13,5 +13,7 @@ namespace Ida.Rhodes
         public int HighTemp { get; set; }
         public int LowTemp { get; set; }
         public int ChanceOfPrecip { get; set; }
+        public int HourlyTemp { get; set; }
+        public int HourlyChanceOfPrecip { get; set; }
     }
 }
