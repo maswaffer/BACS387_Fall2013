@@ -15,13 +15,16 @@ namespace Ida.Rhodes
         public Forecast GetForecast(string zipcode)
         {
             var hourlies = GetHourlies(zipcode);
+            //For ChanceOfPrecip, get max HourlyChanceOfPrecip from hourlies --CH
+            //For HighTemp, get max HourlyTemp from hourlies --CH
+            //For LowTemp, get min HourlyTemp from hourlies --CH
 
             Forecast Latest;
             Latest = new Forecast();
             
-                Latest.ChanceOfPrecip = 0;
-                Latest.HighTemp = 15;
-                Latest.LowTemp = 40;
+                Latest.ChanceOfPrecip = 0; //max HourlyChanceOfPrecip --CH
+                Latest.HighTemp = 15;  //max HourlyTemp --CH
+                Latest.LowTemp = 40;  //min HourlyTemp --CH
                 Latest.Timestamp = DateTime.Now;
                 Latest.ZipCode = zipcode;
             
@@ -47,6 +50,8 @@ namespace Ida.Rhodes
                 var forecasts = (from el in xml.Descendants("forecast")
                                select new Forecast
                                {
+                                   //I dont think we need the datetime from each hourly do we?  --CH
+                                   //We'll just say "there's rain in the forecast" or "its gonna be above/below 'X'" --CH
                                    /*Timestamp = new DateTime(
                                                             Convert.ToInt32(el.Descendants("year").First().Value),
                                                             Convert.ToInt32(el.Descendants("mon").First().Value),
