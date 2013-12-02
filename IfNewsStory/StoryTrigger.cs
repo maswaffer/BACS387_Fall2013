@@ -23,6 +23,7 @@ namespace Ada.Lovelace2._0
         private NewsService Service {get;set;}
         private bool match = false;
         private IEnumerable<NewsResult> BingArticles { get; set; }
+        private TitleCriteria title = new TitleCriteria(); 
 
         public string Message { get; set; }
 
@@ -30,10 +31,6 @@ namespace Ada.Lovelace2._0
         {
             Criteria.Add(criteria as ICriteria<Story>);
         }
-
-        //public void getKeyword
-        //{
-        //}
 
         public bool CheckCondition()
         {

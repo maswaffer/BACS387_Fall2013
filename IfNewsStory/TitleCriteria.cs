@@ -34,5 +34,10 @@ namespace Ada.Lovelace2._0
         //Specific to our criteria
         public string Keyword { get; set; }
 
+        //public void getKeyword
+        //{
+        //title.Keyword = keyword;
+        //}
+
     }
 }
