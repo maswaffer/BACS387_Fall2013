@@ -51,17 +51,13 @@ namespace IfSetupWindows
         {         
                         
             var selected = CriteriaType.SelectedItem as ICriteria<Story>;
+            var TitleCriteria = new TitleCriteria();
+            TitleCriteria.Keyword = Title;
             var keyword = txtKeyword.Text;
             var storyDate = datStoryDate;
+            
 
-            CriteriaSelected.Add(selected);
-            CriteriaType.SelectedIndex = -1;
-            TriggertoProcess = new StoryTrigger(keyword);
-            foreach (var c in CriteriaSelected)
-            {
-                TriggertoProcess.AddCriteria<Story>(c);
-            }
-             
+
  
             Close();
         }
