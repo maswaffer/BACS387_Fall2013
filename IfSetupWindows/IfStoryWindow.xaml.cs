@@ -51,10 +51,13 @@ namespace IfSetupWindows
         {         
                         
             var selected = CriteriaType.SelectedItem as ICriteria<Story>;
-            var TitleCriteria = new TitleCriteria();
-            TitleCriteria.Keyword = Title;
-            var keyword = txtKeyword.Text;
-            var storyDate = datStoryDate;
+            var TitleInfo = new TitleCriteria();
+           
+            TitleInfo.Keyword = txtKeyword.Text;
+            
+
+            
+            
             
 
 
