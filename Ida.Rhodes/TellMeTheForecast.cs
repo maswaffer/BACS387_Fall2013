@@ -6,6 +6,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
+using System.IO;
 
 namespace Ida.Rhodes
 {
@@ -13,6 +14,8 @@ namespace Ida.Rhodes
     {
         public Forecast GetForecast(string zipcode)
         {
+            var hourlies = GetHourlies(zipcode);
+
             Forecast Latest;
             Latest = new Forecast();
             
@@ -39,7 +42,7 @@ namespace Ida.Rhodes
                 var client = new WebClient();
                 var response = client.DownloadString(urlFixed);
                 var xml = XElement.Parse(response);
-
+            
                 //builds forecasts using the parsed XML information
                 var forecasts = (from el in xml.Descendants("forecast")
                                select new Forecast
@@ -55,8 +58,7 @@ namespace Ida.Rhodes
                                    HourlyChanceOfPrecip = Convert.ToInt32(el.Descendants("pop").FirstOrDefault().Value),
                                    HourlyTemp = Convert.ToInt32(el.Descendants("english").FirstOrDefault().Value)
                                }).ToList();
-                return forecasts;
-            
+                return forecasts;            
         }
             
             
