@@ -13,9 +13,9 @@ namespace Barabara.Liskov
         public Pokedex()
         {
            
-            var Fake = new NameMatchCriteria();
+            var NameMatch = new NameMatchCriteria();
             //Fake.Name = "Charmeleon";
-            Criteria = Fake;
+            Criteria = NameMatch;
             GetNumber = new RandomNumber();
             File = new PokemonFile();
         }
@@ -24,7 +24,7 @@ namespace Barabara.Liskov
         public string Message { get; set; }
         public RandomNumber GetNumber { get; set; }
         public PokemonFile File { get; set; }
-
+        //used icriteria<pokemon> because pokemon is a strongly written format of type T to be set as 
         public ICriteria<Pokemon> Criteria {get; set;}
     
         public bool CheckCondition()
