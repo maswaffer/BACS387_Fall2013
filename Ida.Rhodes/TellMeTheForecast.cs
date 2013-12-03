@@ -11,6 +11,10 @@ using System.IO;
 namespace Ida.Rhodes
 {
     public class TellMeTheForecast
+
+    /*“I’m Brick Tamland. People seem to like me because I’m polite and I’m rarely late. 
+      I like ice cream and I really enjoy a nice pair of slacks. 
+      Years later, a doctor will tell me I have an IQ of 48 and am what some people call mentally retarded… MAYONAISSE !”*/
     {
         public Forecast GetForecast(string zipcode)
         {
@@ -74,7 +78,8 @@ namespace Ida.Rhodes
                 }).ToList();
             return hourlyForecasts;            
         }         
-            
+        
+        //if we wanted to get City, ST from zipcode...
         /*public string[] GetLocation(string zipcode)
         {
             var zipURL = @"http://ziptasticapi.com/{0}";

@@ -11,7 +11,7 @@ namespace Ida.Rhodes
     {
         public string Name
         {
-            get { return "Will it be cold today?"; }
+            get { return "It's so damn hot... milk was a bad choice. -Ron Burgundy"; }
             set { }
         }
 
@@ -22,14 +22,14 @@ namespace Ida.Rhodes
         public bool Check(Forecast latest)
         {
             if (tempAboveOrBelow == "Below")
-                if (latest.LowTemp < userTempValue) //we'll replace 35 with UserTemp
+                if (latest.LowTemp < userTempValue) 
                 {
                     Message = string.Format("Cold today, with a high temperature of {0} degrees.  ", latest.HighTemp);
                     return true;
                 }
 
             else if(tempAboveOrBelow == "Above")
-                    if (latest.HighTemp >= userTempValue) //we'll replace 35 with UserTemp
+                    if (latest.HighTemp >= userTempValue) 
                 {
                     Message = string.Format("Warmer today, with a high temperature of {0} degrees.  ", latest.HighTemp);
                     return true;

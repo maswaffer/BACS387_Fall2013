@@ -13,13 +13,13 @@ namespace Ida.Rhodes
         public ForecastTrigger(string zipcode)
         {
             Zipcode = zipcode;
-            RonBurgundy = new TellMeTheForecast();
+            BrickTamland = new TellMeTheForecast();  //“I’m Brick Tamland. When there’s weather to report… I report the weather.”
             CriteriaList = new List<ICriteria<Forecast>>();
         }
 
         private string Zipcode { get; set; }
         private List<ICriteria<Forecast>> CriteriaList { get; set; }
-        private TellMeTheForecast RonBurgundy { get; set; }
+        private TellMeTheForecast BrickTamland { get; set; }
 
         public void AddCriteria<T>(ICriteria<T> criteria) where T : new()
         {
@@ -32,7 +32,7 @@ namespace Ida.Rhodes
         {
             StringBuilder CombinedMessage = new StringBuilder(); 
             //Thinking we'll use this to combine messages if its cold AND there's precip.
-            var LatestForecast = RonBurgundy.GetForecast(Zipcode);
+            var LatestForecast = BrickTamland.GetForecast(Zipcode);
             foreach (var criteria in CriteriaList)
             {
                 var isMet = criteria.Check(LatestForecast);
