@@ -11,13 +11,14 @@ namespace Ada.Lovelace2._0
     {
         //ICriteria
         public string Name { get; set; }
+
         public string Message { get; set; }
         public DateTime Date { get; set; }
 
         public bool Check(Story value)
         {
             bool match = false; 
-            if (value.Title.Equals(Keyword))
+            if (value.Title.Contains(Keyword))
             {
                 if (value.storyDate.Equals(Date))
                 {
