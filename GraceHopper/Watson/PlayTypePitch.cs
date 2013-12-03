@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace Watson
 {
-    public class PlayTypePitch
+    public class PlayTypePitch : ITrigger<Play>
     {
+        public string Play
+        {
+            get { return "Was a play made by the Pitcher?"; }
+            set { }
+        }
+
+        public string Message { get; set; }
+
+
     }
 }
