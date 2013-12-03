@@ -189,7 +189,7 @@
         <Button x:Name="Close" Content="Close" HorizontalAlignment="Left" Margin="455,268,0,0" VerticalAlignment="Top" Width="75" Click="Close_Click" ToolTip="Closes the window" />
         <GroupBox Header="Temperature" HorizontalAlignment="Left" Margin="10,73,0,0" VerticalAlignment="Top" Width="520" Height="88">
             <Grid HorizontalAlignment="Left" Margin="0,0,-2,-8" Width="510">
-                <CheckBox x:Name="Temp" Content="Turn On Temparature Monitoring" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" Checked="Temp_Checked" Unchecked="Temp_Unchecked"/>
+                <CheckBox x:Name="Temp" Content="Turn On Temparature Monitoring" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" Checked="Temp_Checked" Unchecked="Temp_Unchecked" ToolTip="This will enable the monitoring of temperature, and the relation of that temperature to your set criteria"/>
                 <Slider x:Name="Temp_Select" HorizontalAlignment="Left" Margin="10,47,0,0" VerticalAlignment="Top" Width="490" Maximum="100" Minimum="-20" Value="80" Background="White" IsEnabled="False" ToolTip="" AutoToolTipPlacement="TopLeft" LargeChange="0" Focusable="False">
                     <Slider.Resources>
                         <Style x:Key="HorizontalSliderUpThumbStyle" TargetType="{x:Type Thumb}">
@@ -381,13 +381,13 @@
         <GroupBox Header="Precipitation" HorizontalAlignment="Left" Margin="10,166,0,0" VerticalAlignment="Top" Width="520" Height="88">
             <Grid HorizontalAlignment="Left" Margin="0,0,-2,-8" Width="510">
                 <Slider x:Name="Precip_Select" HorizontalAlignment="Left" Margin="10,47,0,0" VerticalAlignment="Top" Width="489" Maximum="100" Minimum="1" IsEnabled="False" Value="50" ToolTip="Select the precipitation change (%)" AutoToolTipPlacement="TopLeft" Focusable="False" LargeChange="0"/>
-                <CheckBox x:Name="Precip" Content="Turn On Precipitation Monitoring" HorizontalAlignment="Left" Margin="10,9,0,0" VerticalAlignment="Top" Checked="Precip_Checked" Unchecked="Precip_Unchecked" />
+                <CheckBox x:Name="Precip" Content="Turn On Precipitation Monitoring" HorizontalAlignment="Left" Margin="10,9,0,0" VerticalAlignment="Top" Checked="Precip_Checked" Unchecked="Precip_Unchecked" ToolTip="This will enable the monitoring of precipitation, and the relation of that precipitation to your set criteria" />
             </Grid>
         </GroupBox>
         <GroupBox Header="Location" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="520" Height="58">
             <Grid HorizontalAlignment="Left" Margin="0,0,-2,-8" Width="509">
-                <Label Content="Enter your zip code." HorizontalAlignment="Left" Margin="1,10,0,0" VerticalAlignment="Top"/>
-                <TextBox x:Name="ZipCode" HorizontalAlignment="Left" Height="23" Margin="113,10,0,0" TextWrapping="Wrap" Text="80634" VerticalAlignment="Top" Width="120" BorderBrush="Black" ToolTip="Enter your 6 Digit Zip Code"/>
+                <Label Content="Enter your zip code." HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="24"/>
+                <TextBox x:Name="ZipCode" HorizontalAlignment="Left" Height="24" Margin="125,10,0,0" TextWrapping="Wrap" Text="80634" VerticalAlignment="Top" Width="120" BorderBrush="Black" ToolTip="Enter your 6 Digit Zip Code"/>
             </Grid>
         </GroupBox>
     </Grid>

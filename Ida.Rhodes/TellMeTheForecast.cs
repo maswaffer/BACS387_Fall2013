@@ -79,18 +79,6 @@ namespace Ida.Rhodes
             return hourlyForecasts;            
         }         
         
-        //if we wanted to get City, ST from zipcode...
-        /*public string[] GetLocation(string zipcode)
-        {
-            var zipURL = @"http://ziptasticapi.com/{0}";
-            var zipURLFixed = string.Format(zipURL,zipcode);
-            var zipClient = new WebClient();
-            var zipResponse = zipClient.DownloadString(zipURLFixed);
-
-            string[] CityState = {"Greeley", "CO"};
-
-            return CityState;
-        }*/
-        
+        //if we wanted to get City, ST from zipcode...http://ziptasticapi.com/{0}";   
     }
 }
