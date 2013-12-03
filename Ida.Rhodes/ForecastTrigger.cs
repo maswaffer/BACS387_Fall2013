@@ -48,7 +48,8 @@ namespace Ida.Rhodes
             //return false;
         }
 
-        public override string ToString()
+        //do we need this?
+        /*public override string ToString()
         {
             var criteriaDescriptions = new List<string>();
             foreach (var c in CriteriaList)
@@ -58,6 +59,6 @@ namespace Ida.Rhodes
 
             //make message here.
             return "";
-        }
+        }*/
     }
 }
