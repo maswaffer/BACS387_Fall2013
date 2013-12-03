@@ -20,10 +20,11 @@ namespace Ada.Lovelace2._0
 
         private string Keyword { get; set; }
         private List<ICriteria<Story>> Criteria {get;set;}
+        private List<Story> searchResults = new List<Story>(); 
         private NewsService Service {get;set;}
         private bool match = false;
         private IEnumerable<NewsResult> BingArticles { get; set; }
-        private TitleCriteria title = new TitleCriteria(); 
+        private TitleCriteria title = new TitleCriteria();
 
         public string Message { get; set; }
 
@@ -34,7 +35,23 @@ namespace Ada.Lovelace2._0
 
         public bool CheckCondition()
         {
-            
+            int size = 0; 
+            searchResults = Service.SearchFor(Keyword); 
+            while (size <= 10)
+            {
+                if (title.Check(searchResults[size]) == true)
+                {
+                    Message = "Here is the link to the article that you requested" + searchResults[size].Link;
+                    match = true; 
+                }
+                else
+                {
+                    match = false; 
+                    size++; 
+                }
+            }
+
+
   
 
             return match;
