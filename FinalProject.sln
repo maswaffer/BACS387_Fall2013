@@ -47,9 +47,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThenSetupWindows", "ThenSet
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokemonFile.Test", "PokemonFile.Test\PokemonFile.Test.csproj", "{76953F7D-527A-4448-8019-3DD4ADEAAC0B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdaLovelace(Story).Test", "UnitTestProject2\AdaLovelace(Story).Test.csproj", "{8ECBD9A5-BDEE-4060-BC18-0F42D7690EB4}"
+EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 19
+		SccNumberOfProjects = 20
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://bacs387.visualstudio.com/defaultcollection
 		SccLocalPath0 = .
@@ -123,6 +125,10 @@ Global
 		SccProjectTopLevelParentUniqueName18 = FinalProject.sln
 		SccProjectName18 = PokemonFile.Test
 		SccLocalPath18 = PokemonFile.Test
+		SccProjectUniqueName19 = UnitTestProject2\\AdaLovelace(Story).Test.csproj
+		SccProjectTopLevelParentUniqueName19 = FinalProject.sln
+		SccProjectName19 = UnitTestProject2
+		SccLocalPath19 = UnitTestProject2
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -239,6 +245,12 @@ Global
 		{76953F7D-527A-4448-8019-3DD4ADEAAC0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76953F7D-527A-4448-8019-3DD4ADEAAC0B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{76953F7D-527A-4448-8019-3DD4ADEAAC0B}.Release|x86.ActiveCfg = Release|Any CPU
+		{8ECBD9A5-BDEE-4060-BC18-0F42D7690EB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ECBD9A5-BDEE-4060-BC18-0F42D7690EB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ECBD9A5-BDEE-4060-BC18-0F42D7690EB4}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8ECBD9A5-BDEE-4060-BC18-0F42D7690EB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ECBD9A5-BDEE-4060-BC18-0F42D7690EB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8ECBD9A5-BDEE-4060-BC18-0F42D7690EB4}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -259,6 +271,7 @@ Global
 		{CE6B712B-7D91-474F-BC1B-CCA2F3F4F9E2} = {67EF2E48-4A81-4384-A9D9-C6AE4E25A9DD}
 		{3FDA05DD-6708-496F-BA7A-8CC6D82CA4B3} = {67EF2E48-4A81-4384-A9D9-C6AE4E25A9DD}
 		{76953F7D-527A-4448-8019-3DD4ADEAAC0B} = {67EF2E48-4A81-4384-A9D9-C6AE4E25A9DD}
+		{8ECBD9A5-BDEE-4060-BC18-0F42D7690EB4} = {67EF2E48-4A81-4384-A9D9-C6AE4E25A9DD}
 		{39BB5384-7E0E-4DB3-976F-6BCE522494E9} = {BA5C3BD5-B443-4C56-A3D3-F7AD330D5CAD}
 	EndGlobalSection
 EndGlobal
