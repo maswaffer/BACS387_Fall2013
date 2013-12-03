@@ -36,6 +36,27 @@ namespace IfSetupWindows
 
         private void SetCriteria(object sender, RoutedEventArgs e)
         {
+            ////This bulds the API call using the apiKey and zipcode
+            //var apiKey = "9a709d3a540125fd";
+            //var url = @"http://api.wunderground.com/api/{0}/hourly/q/{1}.xml";
+            //var urlFixed = string.Format(url, apiKey, ZipCode);
+
+            ////Calls the API and retrieves the XML file that is parsed.
+            //var client = new WebClient();
+            //var response = client.DownloadString(urlFixed);
+            //var xml = XElement.Parse(response);
+
+            //Pulls in the XML information for Zipcode validity check
+
+            //var hourlyForecasts = (from el in xml.Descendants("forecast")
+            //                       select new Forecast
+            //                       {
+            //                           Convert.ToString(el.Descendants("error").FirstOrDefault().Value) != null)
+
+            //                       }).ToList();
+            //return hourlyForecasts;
+            
+            CriteriaSelected.Clear();
             tempChecked = Convert.ToBoolean(Temp.IsChecked);
             precipChecked = Convert.ToBoolean(Precip.IsChecked);
             

@@ -387,7 +387,7 @@
         <GroupBox Header="Location" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="520" Height="58">
             <Grid HorizontalAlignment="Left" Margin="0,0,-2,-8" Width="509">
                 <Label Content="Enter your zip code." HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="24"/>
-                <TextBox x:Name="ZipCode" HorizontalAlignment="Left" Height="24" Margin="125,10,0,0" TextWrapping="Wrap" Text="80634" VerticalAlignment="Top" Width="120" BorderBrush="Black" ToolTip="Enter your 6 Digit Zip Code"/>
+                <TextBox x:Name="ZipCode" HorizontalAlignment="Left" Height="24" Margin="125,10,0,0" TextWrapping="Wrap" Text="80634" VerticalAlignment="Top" Width="120" BorderBrush="Black" ToolTip="Enter your 6 Digit Zip Code" MaxLength="5"/>
             </Grid>
         </GroupBox>
     </Grid>
