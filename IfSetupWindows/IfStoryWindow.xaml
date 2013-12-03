@@ -6,7 +6,7 @@
     <Grid>
         <Grid HorizontalAlignment="Left" Height="270" VerticalAlignment="Top" Width="219">
             <Label Content="Please Select Criteria Type" HorizontalAlignment="Left" Height="24" Margin="24,25,0,0" VerticalAlignment="Top" Width="185"/>
-            <Label Content="Enter Author or Title" HorizontalAlignment="Left" Margin="21,72,0,0" VerticalAlignment="Top" Width="188"/>
+            <Label Content="Enter Keyword" HorizontalAlignment="Left" Margin="21,72,0,0" VerticalAlignment="Top" Width="188"/>
             <Label Content="Select or enter a story date" HorizontalAlignment="Left" Margin="24,116,0,0" VerticalAlignment="Top" Width="176"/>
         </Grid>
         <Grid HorizontalAlignment="Left" Height="260" Margin="219,0,0,0" VerticalAlignment="Top" Width="251">

@@ -54,7 +54,7 @@ namespace IfSetupWindows
             var TitleInfo = new TitleCriteria();
            
             TitleInfo.Keyword = txtKeyword.Text;
-            
+            TitleInfo.Date = datStoryDate.SelectedDate.Value;
 
             
             
