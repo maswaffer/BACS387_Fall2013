@@ -32,20 +32,21 @@ namespace IfPhotoCondition
         }
 
         // this will be use instead of the GetPhoto method outside
-        public IfPhotoCondition.Photo GetPhotosByArea(BoundaryBox box)
+        public IfPhotoCondition.Photo GetPhotosByArea()
         {
-
+            BoundaryBox Greeley = new BoundaryBox(-104.840312, 40.373445, -104.665904, 40.444029d);
             // PhotoSearchOptions is comming FlickrNet
             var options = new PhotoSearchOptions();
-            options.BoundaryBox = box;
-            options.PerPage = 10;
-            options.Tags = "flood,water";
 
+            // creating a set of photo from Service and get the first one
             var collection = Service.PhotosSearch(options);
-            var firstInCollectgion = collection.First();
+            var firstInCollection = collection.First();
 
+            // creating a photo from our own photo class and map data from service photo ---> our Photo class
             var myPhoto = new IfPhotoCondition.Photo();
-            myPhoto.PhotoSize = firstInCollectgion.OriginalWidth;
+            myPhoto.PhotoSize = firstInCollection.OriginalWidth;
+            // come back there modify tag to a list of string not just a string
+            //myPhoto.PhotoTag = firstInCollection.Tags;
             return myPhoto;
         }
 

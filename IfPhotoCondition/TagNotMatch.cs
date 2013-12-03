@@ -11,7 +11,7 @@ namespace IfPhotoCondition
         public string Tag { get; set; }
         public bool Check(Photo photoValue)
         {
-            if (photoValue.PhotoTag != Tag)
+            if (photoValue.PhotoTag.Equals(Tag))
 
             { Message = "Tag not Match"; }
             return true; 

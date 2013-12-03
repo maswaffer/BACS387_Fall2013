@@ -18,7 +18,7 @@ namespace IfPhotoCondition
         }
 
         // 
-        public string PhotoTag { get; set; }
+        public List<string> PhotoTag { get; set; }
         public DateTime PhotoDate { get; set; }
        // communicate with Flickr
         public void goToFlickr()

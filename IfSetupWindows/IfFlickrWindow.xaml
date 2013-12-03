@@ -137,7 +137,7 @@
         <!--Enter parameter if choose size criteria-->
         <Label Grid.Row="1" 
                Grid.Column="0" 
-               Content="Enter Size"
+               Content="Enter Width"
                Name="SizeParameter"
                HorizontalAlignment="Left" 
                VerticalAlignment="Center"

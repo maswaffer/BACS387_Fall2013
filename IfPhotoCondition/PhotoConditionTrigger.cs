@@ -34,11 +34,11 @@ namespace IfPhotoCondition
             listOfCriteria.Add(new SizeTooSmall());
 
             // we have to get photo size from flickr service.
-            //var Value = Service.GetPhotosByArea(Greeley);
+            var Value = Service.GetPhotosByArea();
             foreach (var criteria in listOfCriteria)
             {
                 // photovalue get from Photo
-                //criteria.Check(Value);
+                criteria.Check(Value);
             }
             return true;
         }

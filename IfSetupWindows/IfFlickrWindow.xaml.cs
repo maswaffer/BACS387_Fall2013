@@ -69,6 +69,8 @@ namespace IfSetupWindows
         {
             var selected = CriteriaType.SelectedItem as ICriteria<Photo>;
             CriteriaSelected.Add(selected);
+            MessageBox.Show("Sucessfully added");
+            
            
         }
 
@@ -77,6 +79,11 @@ namespace IfSetupWindows
         {
             // errors here need ask...
             TriggertoProcess = new PhotoConditionTrigger();
+            foreach (var c in CriteriaSelected)
+            {
+                TriggertoProcess.AddCriteria<Photo>(c);
+            }
+            MessageBox.Show("you are saving now...");
             Close();
         }
 
