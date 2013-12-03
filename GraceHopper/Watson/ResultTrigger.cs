@@ -20,17 +20,16 @@ namespace Watson
         private Team Rockies { get; set; }
         public string Message { get; set; }
 
-        /*private bool match = false;
+        private bool match = false;
 
         public void AddCriteria<T>(ICriteria<T> criteria) where T : new()
         {
-
-            Criteria.Add(criteria as ICriteria<Story>);
+            Criteria.Add(criteria as ICriteria<Play>);
         }
 
-        public bool CheckCondition()
+        /*public bool CheckCondition()
         {
-            Team.Results = Team.SearchFor(Play);
+            var LastPlay = Rockies.GetPlay(
 
 
             return match;
