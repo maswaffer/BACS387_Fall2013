@@ -8,12 +8,15 @@
             <ColumnDefinition Width="100*"/>
             <ColumnDefinition Width="321*"/>
         </Grid.ColumnDefinitions>
-        <!--<ComboBox x:Name="PlaySelected" HorizontalAlignment="Left" Margin="76,68,0,0" VerticalAlignment="Top" Width="235" Grid.Column="1" SelectionChanged="PlayType_SelectionChanged"/>
-        <Label Content="Player To Track" HorizontalAlignment="Left" Margin="0,14,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
-        <Label Content="Select Criteria" HorizontalAlignment="Left" Margin="0,64,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <ComboBox x:Name="PlaySelected" HorizontalAlignment="Left" Margin="76,22,0,0" VerticalAlignment="Top" Width="235" Grid.Column="1" SelectionChanged="PlayType_SelectionChanged"/>
+        <Label Content="Player To Track" HorizontalAlignment="Left" Margin="3,68,0,0" VerticalAlignment="Top"/>
+        <Label Content="Select Criteria" HorizontalAlignment="Left" Margin="10,18,0,0" VerticalAlignment="Top"/>
         <Button x:Name="acptBtn" Content="Accept" HorizontalAlignment="Left" Margin="75,204,0,0" VerticalAlignment="Top" Width="102" Grid.Column="1" Click="acptBtn_Click"/>
         <Button x:Name="Close" Content="Close" HorizontalAlignment="Left" Margin="202,204,0,0" VerticalAlignment="Top" Width="109" Grid.Column="1" Click="Close_Click" />
-        <ComboBox x:Name="PlayerSelected" Grid.Column="1" HorizontalAlignment="Left" Margin="76,18,0,0" VerticalAlignment="Top" Width="235" SelectionChanged="ComboBox_SelectionChanged_1"/>-->
+        <ComboBox x:Name="PlayerSelected" Grid.Column="1" HorizontalAlignment="Left" Margin="76,72,0,0" VerticalAlignment="Top" Width="235" SelectionChanged="ComboBox_SelectionChanged_1">
+            <ComboBoxItem Content="Tulo"/>
+            <ComboBoxItem Content="Cargo"/>
+        </ComboBox>
 
 
     </Grid>
