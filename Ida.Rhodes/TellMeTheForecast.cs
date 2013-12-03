@@ -14,17 +14,22 @@ namespace Ida.Rhodes
     {
         public Forecast GetForecast(string zipcode)
         {
+            //new-up a Forecast object called Latest
             Forecast Latest;
             Latest = new Forecast();
 
+            //Call the GetHourlies method which will assemble a list of 36 hourly forecasts into this var hourlies
             var hourlies = GetHourlies(zipcode);
-            int i = 0;
+            
+            //setup for loop through hourlies...initialize ChanceOfPrecip, HighTemp, and LowTemp to hourlies[0] values, and start hourlies counter at 1 (since we know 0)
             Latest.ChanceOfPrecip = hourlies[0].HourlyChanceOfPrecip;
             Latest.HighTemp = hourlies[0].HourlyTemp;
             Latest.LowTemp = hourlies[0].HourlyTemp;
+            int i = 1;
+
+            //loop through hourlies to find max ChanceOfPrecip, HighTemp, and LowTemp
             foreach (Forecast hourly in hourlies)                
-            {
-                
+            {          
                 if (Latest.ChanceOfPrecip > hourlies[i].HourlyChanceOfPrecip)
                     Latest.ChanceOfPrecip = Latest.ChanceOfPrecip;
                 else Latest.ChanceOfPrecip = hourlies[i].HourlyChanceOfPrecip;
@@ -37,74 +42,50 @@ namespace Ida.Rhodes
                     Latest.LowTemp = Latest.LowTemp;
                 else Latest.LowTemp = hourlies[i].HourlyTemp;
                 i++;
-            }
-            //For ChanceOfPrecip, get max HourlyChanceOfPrecip from hourlies --CH
-            //For HighTemp, get max HourlyTemp from hourlies --CH
-            //For LowTemp, get min HourlyTemp from hourlies --CH
+            }         
 
-                        
-                //Latest.ChanceOfPrecip = 0; //max HourlyChanceOfPrecip --CH
-                //Latest.HighTemp = 15;  //max HourlyTemp --CH
-                //Latest.LowTemp = 40;  //min HourlyTemp --CH
-                Latest.Timestamp = DateTime.Now;
-                Latest.ZipCode = zipcode;
+            Latest.Timestamp = DateTime.Now;
+            Latest.ZipCode = zipcode;
             
             return Latest;
         }
         
         public List<Forecast> GetHourlies(string zipcode)
         {
-                //These pull the City and state using the ZipCode
-                var ZipCode = zipcode;
+            //These pull the City and state using the ZipCode
+            var ZipCode = zipcode;
 
-                //This bulds the API call using the apiKey, City, State, etc.
-                var apiKey = "9a709d3a540125fd";
-                var url = @"http://api.wunderground.com/api/{0}/hourly/q/{1}.xml";
-                var urlFixed = string.Format(url, apiKey, ZipCode);
+            //This bulds the API call using the apiKey and zipcode
+            var apiKey = "9a709d3a540125fd";
+            var url = @"http://api.wunderground.com/api/{0}/hourly/q/{1}.xml";
+            var urlFixed = string.Format(url, apiKey, ZipCode);
 
-                //Calls the API and retrieves the XML file that is parsed.
-                var client = new WebClient();
-                var response = client.DownloadString(urlFixed);
-                var xml = XElement.Parse(response);
+            //Calls the API and retrieves the XML file that is parsed.
+            var client = new WebClient();
+            var response = client.DownloadString(urlFixed);
+            var xml = XElement.Parse(response);
             
-                //builds forecasts using the parsed XML information
-                var forecasts = (from el in xml.Descendants("forecast")
-                               select new Forecast
-                               {
-                                   //I dont think we need the datetime from each hourly do we?  --CH
-                                   //We'll just say "there's rain in the forecast" or "its gonna be above/below 'X'" --CH
-                                   /*Timestamp = new DateTime(
-                                                            Convert.ToInt32(el.Descendants("year").First().Value),
-                                                            Convert.ToInt32(el.Descendants("mon").First().Value),
-                                                            Convert.ToInt32(el.Descendants("mday").First().Value),
-                                                            Convert.ToInt32(el.Descendants("hour").First().Value),
-                                                            Convert.ToInt32(el.Descendants("min").First().Value),
-                                                            Convert.ToInt32(el.Descendants("sec").First().Value)
-                                                            ),*/
-                                   HourlyChanceOfPrecip = Convert.ToInt32(el.Descendants("pop").FirstOrDefault().Value),
-                                   HourlyTemp = Convert.ToInt32(el.Descendants("english").FirstOrDefault().Value)
-                               }).ToList();
-                return forecasts;            
-        }
+            //builds forecasts using the parsed XML information
+            var hourlyForecasts = (from el in xml.Descendants("forecast")
+                select new Forecast
+                {
+                    HourlyChanceOfPrecip = Convert.ToInt32(el.Descendants("pop").FirstOrDefault().Value),
+                    HourlyTemp = Convert.ToInt32(el.Descendants("english").FirstOrDefault().Value)
+                }).ToList();
+            return hourlyForecasts;            
+        }         
             
-            
+        //public string[] GetLocation(string zipcode)
+        //{
+        //    var zipURL = @"http://ziptasticapi.com/{0}";
+        //    var zipURLFixed = string.Format(zipURL,zipcode);
+        //    var zipClient = new WebClient();
+        //    var zipResponse = zipClient.DownloadString(zipURLFixed);
 
-            //public int Precipitation()
-            //{
-            //    int rainChance = 
-            //}
+        //    string[] CityState = {"Greeley", "CO"};
 
-            //public string[] GetLocation(string zipcode)
-            //{
-            //    var zipURL = @"http://ziptasticapi.com/{0}";
-            //    var zipURLFixed = string.Format(zipURL,zipcode);
-            //    var zipClient = new WebClient();
-            //    var zipResponse = zipClient.DownloadString(zipURLFixed);
-
-            //    string[] CityState = {"Greeley", "CO"};
-
-            //    return CityState;
-            //}
+        //    return CityState;
+        //}
         
     }
 }
