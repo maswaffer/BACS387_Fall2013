@@ -45,7 +45,7 @@ namespace Watson
         }
 
         private string PlayerID { get; set; }
-        private List<ICriteria<Play>> Criteria { get; set; }
+        private List<ICriteria<Play>>Criteria { get; set; }
         private PlaysForPlayer Tulo { get; set; }
 
         public void AddCriteria<T>(ICriteria<T> criteria) where T : new()
@@ -57,17 +57,21 @@ namespace Watson
 
         public bool CheckCondition()
         {
-            /*var LastPlay = Tulo.GetPlay(PlayerID);
+            var LastPlay = Tulo.GetPlay(PlayerID);
 
-            foreach (var criteria in Criteria)
+            foreach (Play play in LastPlay)
             {
-                var isPlay = criteria.Check(LastPlay);
-                if (isPlay) 
+                foreach (var criteria in Criteria)
                 {
-                    Message = criteria.Message;
-                    return true;
+                    var isPlay = criteria.Check(play);
+                    if (isPlay)
+                    {
+                        Message = criteria.Message;
+                        return true;
+                    }
                 }
-            }*/
+                
+            }
             return false;
         }
 
