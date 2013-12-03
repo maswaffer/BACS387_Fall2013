@@ -13,6 +13,7 @@ namespace Ada.Lovelace2._0
         public NewsService(string accountKey)
         {
             BingAccountKey = accountKey;
+            searchResults = new List<Story>(); 
         }
 
         public string BingAccountKey { get; set; }

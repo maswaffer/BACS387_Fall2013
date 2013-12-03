@@ -14,7 +14,7 @@ namespace Ada.Lovelace2._0
         {
             //Create service
             Keyword = keyword;
-            Service = new NewsService("Bwb3narbj9BNklDtldaerYmHlwlUHswxfVagdbuzBHs");
+            Service = new NewsService("2Q2yOlhzs/CflQI7amq22KrGBgxX3OyQk2mjsYPmZy0");
             Criteria = new List<ICriteria<Story>>();
         }
 
