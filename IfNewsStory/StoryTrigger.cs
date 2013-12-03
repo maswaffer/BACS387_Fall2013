@@ -55,10 +55,5 @@ namespace Ada.Lovelace2._0
            
         }
          
-
-        //specialization
-        // Criteria
-        // Service
-
     }
 }
