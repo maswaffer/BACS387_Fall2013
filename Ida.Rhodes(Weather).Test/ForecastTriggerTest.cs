@@ -27,8 +27,9 @@ namespace Ida.Rhodes_Weather_.Test
             var coldCriteria = new TempCriteria();
             coldCriteria.tempAboveOrBelow = "Below";
             coldCriteria.userTempValue = 35;
-            trigger.AddCriteria(rainCriteria);
+            
             trigger.AddCriteria(coldCriteria);
+            trigger.AddCriteria(rainCriteria);
 
 
             var isMet = trigger.CheckCondition();
