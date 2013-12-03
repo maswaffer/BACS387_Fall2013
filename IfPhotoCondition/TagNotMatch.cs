@@ -6,14 +6,18 @@ using System.Threading.Tasks;
 using Common;
 namespace IfPhotoCondition
 {
-    class TagNotMatch : ICriteria<Photo>
+    public class TagNotMatch : ICriteria<Photo>
     {
+        public string Tag { get; set; }
         public bool Check(Photo photoValue)
         {
-            throw new NotImplementedException();
+            if (photoValue.PhotoTag != Tag)
+
+            { Message = "Tag not Match"; }
+            return true; 
         }
 
-        public string Name { get; set; }
+        public string Name { get { return "Configure Tag"; } set { } }
         public string Message
         {
             get
