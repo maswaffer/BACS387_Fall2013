@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Watson
 {
-    /*public class PlayTypePitch : ICriteria<Play>
+    public class PlayTypePitch : ICriteria<Play>
     {
         public string Pitcher
         {
@@ -15,21 +16,23 @@ namespace Watson
         }
 
         public string Message { get; set; }
+        public string Name { get; set; }
 
-        public bool Check(Play Pitcher)
+
+        public bool Check (Play Player)
         {
-            if (Pitcher.PlayCode.Contains('K'))
+            if (Player.PlayCode.Contains('K'))
             {
-                Message = string.Format("The Pitcher has recorded a strikeout");
+                Message = ("The Pitcher has recorded a strikeout");
                 return true;
             }
-            if (Pitcher.PlayCode.Contains('W'))
+            else if (Player.PlayCode.Contains('W'))
             {
-                Message = string.Format("The Pitcher has recorded a walk");
+                Message = ("The Pitcher has recorded a walk");
                 return true;
             }
-
-            return false;
+            else 
+                return false;
         }
-    }*/
+    }
 }

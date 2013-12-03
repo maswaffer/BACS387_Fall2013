@@ -40,13 +40,13 @@ namespace Watson
         public ResultTrigger(string player)
         {
             PlayerID = player;
-            Rockies = new PlaysForPlayer();
+            Tulo = new PlaysForPlayer();
             Criteria = new List<ICriteria<Play>>();
         }
 
         private string PlayerID { get; set; }
         private List<ICriteria<Play>> Criteria { get; set; }
-        private PlaysForPlayer Rockies { get; set; }
+        private PlaysForPlayer Tulo { get; set; }
 
         public void AddCriteria<T>(ICriteria<T> criteria) where T : new()
         {
@@ -57,14 +57,18 @@ namespace Watson
 
         public bool CheckCondition()
         {
-            /*var LastPlay = Rockies.GetPlay(PlayerID);
+            /*var LastPlay = Tulo.GetPlay(PlayerID);
+
             foreach (var criteria in Criteria)
             {
-                var isMet = criteria.Check(LastPlay);
-                
+                var isPlay = criteria.Check(LastPlay);
+                if (isPlay) 
+                {
+                    Message = criteria.Message;
+                    return true;
+                }
             }*/
-            return true;
-            //return false;
+            return false;
         }
 
 

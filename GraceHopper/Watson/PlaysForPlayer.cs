@@ -23,13 +23,13 @@ namespace Watson
 
                 if (splitByComma[0] == "play" & splitByComma[3] == playerID)
                 {
-                    var player = new Play
+                    var nextPlay = new Play
                     {
                         PlayerID = splitByComma[3],
                         PlayCode = splitByComma[6]
                     };
 
-                    Plays.Add(player);
+                    Plays.Add(nextPlay);
                 }
 
             }
