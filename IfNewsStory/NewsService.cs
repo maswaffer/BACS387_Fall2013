@@ -49,6 +49,7 @@ namespace Ada.Lovelace2._0
             {
                 values.Title = result.Title;
                 values.storyDate = (DateTime)result.Date;
+                values.Link = result.Url;
                 searchResults.Add(values); 
             }
 
