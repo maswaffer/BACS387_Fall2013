@@ -16,7 +16,7 @@ namespace PokemonFile.Test
             var File = new Barabara.Liskov.PokemonFile();
             var PokemonList = File.GetPokemon();
 
-            Assert.AreEqual(779, PokemonList.Count);
+            Assert.AreEqual(778, PokemonList.Count);
 
            
         }
