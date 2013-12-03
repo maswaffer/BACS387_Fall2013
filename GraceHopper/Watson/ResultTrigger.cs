@@ -7,34 +7,34 @@ using Common;
 
 namespace Watson
 {
-    //public class ResultTrigger : ITrigger
-    //{
-    //    //public ResultTrigger(string playcode)
-    //    //{
-    //    //    playcode = "K";
-    //    //    team = new baseteam("ATL");
-    //    //    Criteria = new List<ICriteria<Play>>();
-    //    //}
-    //    //private string playcode { get; set; }
-    //    //private List<ICriteria<Play>> Criteria { get; set; }
-    //    //private Baseteam Team { get; set; }
-    //    //private bool match = false;
+    public class ResultTrigger : ITrigger
+    {
+        public ResultTrigger(string playcode)
+        {
+            Playcode = playcode;
+            Rockies = new Team();
+            Criteria = new List<ICriteria<Play>>();
+        }
+        private string Playcode { get; set; }
+        private List<ICriteria<Play>> Criteria { get; set; }
+        private Team Rockies { get; set; }
+        public string Message { get; set; }
 
-    //    //public string Message { get; set; }
+        /*private bool match = false;
 
-    //    //public void AddCriteria<T>(ICriteria<T> criteria) where T : new()
-    //    //{
+        public void AddCriteria<T>(ICriteria<T> criteria) where T : new()
+        {
 
-    //    //    Criteria.Add(criteria as ICriteria<Story>);
-    //    //}
+            Criteria.Add(criteria as ICriteria<Story>);
+        }
 
-    //    //public bool CheckCondition()
-    //    //{
-    //    //    Team.Results = Team.SearchFor(Play);
+        public bool CheckCondition()
+        {
+            Team.Results = Team.SearchFor(Play);
 
 
-    //    //    return match;
+            return match;
 
-    //    //}
-    //}
+        }*/
+    }
 }
