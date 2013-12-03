@@ -12,7 +12,7 @@ namespace Barabara.Liskov
         public string Name { get; set; }
         public bool Check(Pokemon pokmeoncompare)
         {
-            var Match = pokmeoncompare.Name == Name;
+            var Match = pokmeoncompare.Name == Name.ToLower();
             if (Match)
             {
                 Message = "Found Match";

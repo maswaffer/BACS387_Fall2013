@@ -18,7 +18,7 @@ namespace PokemonFile.Test
 
             Assert.AreEqual(778, PokemonList.Count);
 
-           
+            
         }
     }
 }

@@ -33,7 +33,7 @@ namespace Barabara.Liskov
                 var species = new Pokemon
                 {
                     PokedexNumber = Convert.ToInt32(splitByCommas[0]),
-                    Name = splitByCommas[1],
+                    Name  = splitByCommas[1],
                     Height = Convert.ToInt32(splitByCommas[3]),
                     Weight = Convert.ToInt32(splitByCommas[4])
                 };
