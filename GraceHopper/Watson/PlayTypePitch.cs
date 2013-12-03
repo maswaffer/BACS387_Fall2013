@@ -17,16 +17,16 @@ namespace Watson
 
         public string Message { get; set; }
         public string Name { get; set; }
-
+        public string PlayerID { get; set; }
 
         public bool Check (Play Player)
         {
-            if (Player.PlayCode.Contains('K'))
+            if (Player.PlayCode.Contains('K') & Player.PlayerID == PlayerID)
             {
                 Message = ("The Pitcher has recorded a strikeout");
                 return true;
             }
-            else if (Player.PlayCode.Contains('W'))
+            else if (Player.PlayCode.Contains('W') & Player.PlayerID == PlayerID)
             {
                 Message = ("The Pitcher has recorded a walk");
                 return true;

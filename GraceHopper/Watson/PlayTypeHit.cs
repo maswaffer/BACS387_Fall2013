@@ -18,25 +18,26 @@ namespace Watson
 
         public string Message { get; set; }
         public string Name { get; set; }
+        public string PlayerID { get; set; }
 
         public bool Check(Play Player)
         {
-            if (Player.PlayCode.Contains('S'))
+            if (Player.PlayCode.Contains('S') & Player.PlayerID == PlayerID)
             {
                 Message = ("The Hitter has recorded a Single");
                 return true;
             }
-            else if (Player.PlayCode.Contains('D'))
+            else if (Player.PlayCode.Contains('D') & Player.PlayerID == PlayerID)
             {
                 Message = ("The Hitter has recorded a Double");
                 return true;
             }
-            else if (Player.PlayCode.Contains('T'))
+            else if (Player.PlayCode.Contains('T') & Player.PlayerID == PlayerID)
             {
                 Message = ("The Hitter has recorded a Triple");
                 return true;
             }
-            else if (Player.PlayCode.Contains('H'))
+            else if (Player.PlayCode.Contains('H') & Player.PlayerID == PlayerID)
             {
                 Message = ("The Hitter has recorded a HomeRun!");
                 return true;
