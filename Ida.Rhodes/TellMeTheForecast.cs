@@ -75,17 +75,17 @@ namespace Ida.Rhodes
             return hourlyForecasts;            
         }         
             
-        //public string[] GetLocation(string zipcode)
-        //{
-        //    var zipURL = @"http://ziptasticapi.com/{0}";
-        //    var zipURLFixed = string.Format(zipURL,zipcode);
-        //    var zipClient = new WebClient();
-        //    var zipResponse = zipClient.DownloadString(zipURLFixed);
+        /*public string[] GetLocation(string zipcode)
+        {
+            var zipURL = @"http://ziptasticapi.com/{0}";
+            var zipURLFixed = string.Format(zipURL,zipcode);
+            var zipClient = new WebClient();
+            var zipResponse = zipClient.DownloadString(zipURLFixed);
 
-        //    string[] CityState = {"Greeley", "CO"};
+            string[] CityState = {"Greeley", "CO"};
 
-        //    return CityState;
-        //}
+            return CityState;
+        }*/
         
     }
 }
