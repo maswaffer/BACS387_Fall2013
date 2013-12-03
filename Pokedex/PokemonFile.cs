@@ -24,7 +24,6 @@ namespace Barabara.Liskov
             List<Pokemon> finalList = new List<Pokemon>();
             //return new Pokemon { Name = "Charmeleon", PokedexNumber = 5, Height = 11, Weight = 90 };
             // put code in to return null for now
-            // want to CONNOR DO CODE FOR THIS
             var lines = File.ReadAllLines(DataFileName);
 
             foreach (var line in lines)
