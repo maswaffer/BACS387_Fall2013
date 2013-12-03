@@ -13,9 +13,14 @@ namespace IfPhotoCondition
             get { return "Configure Date"; }
             set { }
         }
+        public DateTime date { get; set; }
         public bool Check(Photo photoValue)
         {
-            throw new NotImplementedException();
+            if (date < photoValue.PhotoDate)
+            {
+                Message = "will work on the message later....for photo date";
+            }
+            return true;
         }
 
         public string Message

@@ -17,6 +17,9 @@ namespace IfPhotoCondition
             set { photoSize = value; }
         }
 
+        // 
+        public string PhotoTag { get; set; }
+        public DateTime PhotoDate { get; set; }
        // communicate with Flickr
         public void goToFlickr()
         {

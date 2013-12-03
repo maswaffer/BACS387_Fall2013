@@ -16,6 +16,7 @@ namespace IfPhotoCondition
             // come back for more work in here
         }
 
+        
         // creating a list of icriteria properties to access somewhere else
         private List<ICriteria<Photo>> ListOfCriteria { get; set; }
 
@@ -33,11 +34,11 @@ namespace IfPhotoCondition
             listOfCriteria.Add(new SizeTooSmall());
 
             // we have to get photo size from flickr service.
-            var sizeValue = Service.GetPhoto();
+            //var Value = Service.GetPhotosByArea(Greeley);
             foreach (var criteria in listOfCriteria)
             {
                 // photovalue get from Photo
-                criteria.Check(sizeValue);
+                //criteria.Check(Value);
             }
             return true;
         }
