@@ -51,9 +51,6 @@ namespace Ada.Lovelace2._0
                 }
             }
 
-
-  
-
             return match;
            
         }
