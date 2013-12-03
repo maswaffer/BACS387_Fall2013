@@ -38,7 +38,7 @@ namespace Ada.Lovelace2._0
             bingContainer.Credentials = new NetworkCredential(BingAccountKey, BingAccountKey);
 
             // Build the query, limiting to 10 results.
-            var newsQuery = bingContainer.News(query, null, market, null, null, null, null, null, null);
+            var newsQuery = bingContainer.News(null, null, market, null, null, null, null, null, null);
             newsQuery = newsQuery.AddQueryOption("$top", 10);
 
             // Run the query and display the results.

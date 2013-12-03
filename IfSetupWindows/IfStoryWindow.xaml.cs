@@ -57,7 +57,8 @@ namespace IfSetupWindows
             TitleInfo.Date = datStoryDate.SelectedDate.Value;
             CriteriaSelected.Add(selected);
 
-            TriggertoProcess = new StoryTrigger(txtKeyword.Text);
+            TriggertoProcess = new StoryTrigger();
+
             
 
 

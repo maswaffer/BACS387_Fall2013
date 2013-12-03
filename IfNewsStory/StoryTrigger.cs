@@ -10,15 +10,13 @@ namespace Ada.Lovelace2._0
 {
     public class StoryTrigger : ITrigger
     {
-        public StoryTrigger(string keyword)
+        public StoryTrigger()
         {
             //Create service
-            Keyword = keyword;
             Service = new NewsService("2Q2yOlhzs/CflQI7amq22KrGBgxX3OyQk2mjsYPmZy0");
             Criteria = new List<ICriteria<Story>>();
         }
 
-        private string Keyword { get; set; }
         private List<ICriteria<Story>> Criteria {get;set;}
         private List<Story> searchResults = new List<Story>(); 
         private NewsService Service {get;set;}
@@ -36,7 +34,7 @@ namespace Ada.Lovelace2._0
         public bool CheckCondition()
         {
             int size = 0; 
-            searchResults = Service.SearchFor(Keyword); 
+            searchResults = Service.SearchFor(null); 
             while (size <= 10)
             {
                 if (title.Check(searchResults[size]) == true)
