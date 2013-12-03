@@ -64,6 +64,8 @@ namespace IfSetupWindows
                 TriggertoProcess.AddCriteria<Forecast>(c);
             }
 
+            MessageBox.Show("Your settings have been saved.");
+
         }      
 
         //These enable/disable the Temparature and Precipitation sliders and buttons for better user experience.
