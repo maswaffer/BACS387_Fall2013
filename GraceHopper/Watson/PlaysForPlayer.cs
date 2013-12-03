@@ -26,7 +26,7 @@ namespace Watson
                     var player = new Play
                     {
                         PlayerID = splitByComma[3],
-                        PlayType = splitByComma[6]
+                        PlayCode = splitByComma[6]
                     };
 
                     Plays.Add(player);

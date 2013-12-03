@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Watson
 {
-    public class PlayTypeHit : ICriteria<Play>
+    /*public class PlayTypeHit : ICriteria<Play>
     {
         public string Offense 
         { 
@@ -30,6 +30,6 @@ namespace Watson
 
         public string playcode { get; set; }
 
-    }
+    }*/
     
 }

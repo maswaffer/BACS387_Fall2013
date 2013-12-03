@@ -18,6 +18,6 @@ namespace Watson
         public string BatterName { get; set; }*/
 
         public string PlayerID { get; set; }
-        public string PlayType { get; set; }
+        public string PlayCode { get; set; }
     }
 }

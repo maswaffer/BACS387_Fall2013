@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Watson
 {
-    public class PlayTypePitch : ITrigger<Play>
+    /*public class PlayTypePitch : ICriteria<Play>
     {
         public string Play
         {
@@ -17,5 +17,5 @@ namespace Watson
         public string Message { get; set; }
 
 
-    }
+    }*/
 }
