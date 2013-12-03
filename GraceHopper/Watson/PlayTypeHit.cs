@@ -9,7 +9,7 @@ namespace Watson
 {
     /*public class PlayTypeHit : ICriteria<Play>
     {
-        public string Offense 
+        /*public string Offense 
         { 
             get { return "Was a play made by the Hitter?"; }
             set { }
@@ -17,15 +17,14 @@ namespace Watson
 
         public bool Check(Play Offense)
         { 
-            if (value.Play.Equals(PlayCode))
-                 {
-                    match = true;
-                }
-             else
+            if (Offense.PlayCode.Contains('H'))
             {
-                match = false; 
+                return true;
             }
-            return match;
+            else
+            {
+                return false; 
+            }
         }
 
         public string playcode { get; set; }
