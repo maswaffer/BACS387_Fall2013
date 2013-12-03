@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.IO;
+using System.Runtime.Remoting.Messaging;
 
 namespace Watson
 {
@@ -7,18 +8,30 @@ namespace Watson
     {
         private readonly string FileName = "2013COL.EVN";
 
-        public List<Team> GetPlayers()
+        public List<Player> GetPlayers()
         {
-            List<Team> roster = new List<Team>();
+            List<Player> roster = new List<Player>();
 
             var allLines = File.ReadAllLines(FileName);
 
             foreach (var line in allLines)
             {
-                if 
+                var splitByComma = line.Split(',');
+                
+                if (splitByComma[0] == "start")
+                {
+                    var player = new Player
+                    {
+                        playerID = splitByComma[1],
+                        Name = splitByComma[2]
+                    };
+
+                    roster.Add(player);
+                }
+                
             }
 
-
+            return roster;
         }
     }
 }
