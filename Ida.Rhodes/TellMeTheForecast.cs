@@ -14,17 +14,38 @@ namespace Ida.Rhodes
     {
         public Forecast GetForecast(string zipcode)
         {
+            Forecast Latest;
+            Latest = new Forecast();
+
             var hourlies = GetHourlies(zipcode);
+            int i = 0;
+            Latest.ChanceOfPrecip = hourlies[0].HourlyChanceOfPrecip;
+            Latest.HighTemp = hourlies[0].HourlyTemp;
+            Latest.LowTemp = hourlies[0].HourlyTemp;
+            foreach (Forecast hourly in hourlies)                
+            {
+                
+                if (Latest.ChanceOfPrecip > hourlies[i].HourlyChanceOfPrecip)
+                    Latest.ChanceOfPrecip = Latest.ChanceOfPrecip;
+                else Latest.ChanceOfPrecip = hourlies[i].HourlyChanceOfPrecip;
+
+                if (Latest.HighTemp > hourlies[i].HourlyTemp)
+                    Latest.HighTemp = Latest.HighTemp;
+                else Latest.HighTemp = hourlies[i].HourlyTemp;
+
+                if (Latest.LowTemp < hourlies[i].HourlyTemp)
+                    Latest.LowTemp = Latest.LowTemp;
+                else Latest.LowTemp = hourlies[i].HourlyTemp;
+                i++;
+            }
             //For ChanceOfPrecip, get max HourlyChanceOfPrecip from hourlies --CH
             //For HighTemp, get max HourlyTemp from hourlies --CH
             //For LowTemp, get min HourlyTemp from hourlies --CH
 
-            Forecast Latest;
-            Latest = new Forecast();
-            
-                Latest.ChanceOfPrecip = 0; //max HourlyChanceOfPrecip --CH
-                Latest.HighTemp = 15;  //max HourlyTemp --CH
-                Latest.LowTemp = 40;  //min HourlyTemp --CH
+                        
+                //Latest.ChanceOfPrecip = 0; //max HourlyChanceOfPrecip --CH
+                //Latest.HighTemp = 15;  //max HourlyTemp --CH
+                //Latest.LowTemp = 40;  //min HourlyTemp --CH
                 Latest.Timestamp = DateTime.Now;
                 Latest.ZipCode = zipcode;
             
