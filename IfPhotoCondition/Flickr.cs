@@ -32,7 +32,7 @@ namespace IfPhotoCondition
         }
 
         // this will be use instead of the GetPhoto method outside
-        public PhotoCollection GetPhotosByArea(BoundaryBox box)
+        public IfPhotoCondition.Photo GetPhotosByArea(BoundaryBox box)
         {
 
             // PhotoSearchOptions is comming FlickrNet
@@ -41,7 +41,12 @@ namespace IfPhotoCondition
             options.PerPage = 10;
             options.Tags = "flood,water";
 
-            return Service.PhotosSearch(options);
+            var collection = Service.PhotosSearch(options);
+            var firstInCollectgion = collection.First();
+
+            var myPhoto = new IfPhotoCondition.Photo();
+            myPhoto.PhotoSize = firstInCollectgion.OriginalWidth;
+            return myPhoto;
         }
 
         #endregion
