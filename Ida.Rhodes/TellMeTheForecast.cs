@@ -30,15 +30,15 @@ namespace Ida.Rhodes
             //loop through hourlies to find max ChanceOfPrecip, HighTemp, and LowTemp
             foreach (Forecast hourly in hourlies)                
             {          
-                if (Latest.ChanceOfPrecip > hourlies[i].HourlyChanceOfPrecip)
+                if (Latest.ChanceOfPrecip >= hourlies[i].HourlyChanceOfPrecip)
                     Latest.ChanceOfPrecip = Latest.ChanceOfPrecip;
                 else Latest.ChanceOfPrecip = hourlies[i].HourlyChanceOfPrecip;
 
-                if (Latest.HighTemp > hourlies[i].HourlyTemp)
+                if (Latest.HighTemp >= hourlies[i].HourlyTemp)
                     Latest.HighTemp = Latest.HighTemp;
                 else Latest.HighTemp = hourlies[i].HourlyTemp;
 
-                if (Latest.LowTemp < hourlies[i].HourlyTemp)
+                if (Latest.LowTemp <= hourlies[i].HourlyTemp)
                     Latest.LowTemp = Latest.LowTemp;
                 else Latest.LowTemp = hourlies[i].HourlyTemp;
                 i++;
