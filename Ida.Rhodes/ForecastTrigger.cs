@@ -39,13 +39,12 @@ namespace Ida.Rhodes
                 if (isMet)
                 {
                     CombinedMessage.Append(criteria.Message);
-                    //Message = criteria.Message;
-                    //return true;
                 }                 
             }
-            if (CombinedMessage.ToString() == "") return false;
+            Message = CombinedMessage.ToString();
+            if (Message== "") return false;
                 return true;
-            //return false;
+            
         }
 
         //do we need this?
