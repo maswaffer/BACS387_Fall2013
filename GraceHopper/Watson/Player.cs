@@ -9,9 +9,7 @@ namespace Watson
 {
     public class Player
     {
-        
         public string playerID { get; set; }
         public string Name { get; set; }      
-    
     }
 }

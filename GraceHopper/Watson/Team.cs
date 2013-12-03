@@ -33,5 +33,33 @@ namespace Watson
 
             return roster;
         }
+
+        public List<Play> GetPlay()
+        {
+            List<Play> Plays = new List<Play>();
+
+            var allLines = File.ReadAllLines(FileName);
+
+            foreach (var line in allLines)
+            {
+                var splitByComma = line.Split(',');
+
+                if (splitByComma[0] == "play")
+                {
+                    var player = new Play
+                    {
+                        PlayerID = splitByComma[3],
+                        PlayType = splitByComma[6]
+                    };
+
+                    Plays.Add(player);
+                }
+
+            }
+
+            return Plays;
+        }
+
+        
     }
 }

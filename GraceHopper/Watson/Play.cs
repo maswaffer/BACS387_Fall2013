@@ -8,13 +8,16 @@ namespace Watson
 {
     public class Play
     {
-        public decimal bases { get; set; }
+      /*public decimal bases { get; set; }
         public string HomeRun { get; set; }
         public decimal RBI { get; set; }
         public int numberBalls { get; set; }
         public int numberstrikes { get; set; }
         public decimal BattingAverage { get; set; }
         public string PitcherName { get; set; }
-        public string BatterName { get; set; }
+        public string BatterName { get; set; }*/
+
+        public string PlayerID { get; set; }
+        public string PlayType { get; set; }
     }
 }
