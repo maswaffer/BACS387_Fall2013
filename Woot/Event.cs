@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Woot
 {
-    class Event
+   public class Event
     {
         public static object Tools;
         public static object Daily;
@@ -17,9 +17,14 @@ namespace Woot
         public DateTime StartDate { get; set; }
         public string Title { get; set; }
         public string Type { get; set; }
-        public List<Offer> Offers { get; set; }
+        //public List<Offer> Offers { get; set; }
 
         //public void one();
 
+
+        public object StartDates()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
