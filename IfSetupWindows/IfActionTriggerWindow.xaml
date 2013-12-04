@@ -34,6 +34,8 @@
             </Button.Background>
         </Button>
         <TextBlock HorizontalAlignment="Left" Height="26" Margin="71,9,0,0" Grid.Row="2" TextWrapping="Wrap" Text="Category" VerticalAlignment="Top" Width="94" Background="#FFFFFCFC" FontSize="16" FontWeight="Bold" Grid.ColumnSpan="2"/>
-        <ComboBox Grid.Column="1" HorizontalAlignment="Left" Margin="64,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="204" Height="25" SelectionChanged="ComboBox_SelectionChanged" Grid.ColumnSpan="2"/>
+        <ComboBox Grid.Column="1" HorizontalAlignment="Left" Margin="64,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="204" Height="25" SelectionChanged="ComboBox_SelectionChanged" Grid.ColumnSpan="2">
+            <ComboBoxItem Content="Sports" HorizontalAlignment="Left" Width="202"/>
+        </ComboBox>
     </Grid>
 </y:IfWindow>
