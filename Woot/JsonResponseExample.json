@@ -1,0 +1,452 @@
+﻿[{
+		"Type" : "Daily",
+		"Id" : "19df5904-5c2a-4fc0-adec-c52a1b20436f",
+		"Title" : "Choose Yours",
+		"Site" : "shirt.woot.com",
+		"StartDate" : "2013-11-01T05:00:00Z",
+		"EndDate" : "2013-11-02T05:00:00Z",
+		"Offers" : [{
+				"Features" : "<p><strong>Design Placement:</strong> Centered</p>\r\n\r\n<p><strong>Design Size:</strong><br />\r\n3X - M, WXL-WL: 14.06” x 18.50”<br />\r\nS, WM-WS, K12 - K8: 11.02” x 14.50”<br />\r\nK6-K4:&nbsp; 7.60” x 10.00”</p>\r\n\r\n<p><strong>Pantone Colors:</strong> White - 546C - 7475C - 550C - 7477C</p>\r\n\r\n<p><strong>Features:</strong></p>\r\n\r\n<ul>\r\n\t<li>Fiber Content: 4.5 oz 100% Combed Ringspun Cotton</li>\r\n\t<li>Manufactured In: Honduras/Nicaragua</li>\r\n\t<li>Printed In: Carrollton, Texas, USA</li>\r\n</ul>\r\n\r\n<p><strong>Sizing Chart:</strong></p>\r\n\r\n<p>Please check our <a class=\"modalPopUp sizingchart\" href=\"http://shirt.woot.com/sizingchart/tee/111\">sizing chart</a> before you order.</p>\r\n",
+				"Id" : "9d559a5f-d97a-4964-a18c-b8bc96bb45c6",
+				"Items" : [{
+						"Id" : "d3bad2fd-363b-464e-ba8c-972118d6d037",
+						"SalePrice" : 12.0,
+						"ListPrice" : null,
+						"Attributes" : [{
+								"Key" : "Color",
+								"Value" : "Black"
+							}, {
+								"Key" : "Size",
+								"Value" : "Men's Small"
+							}
+						],
+						"PurchaseLimit" : 3
+					}, {
+						"Id" : "a4d0d9b1-4176-46e2-812f-21f4998bcd1f",
+						"SalePrice" : 12.0,
+						"ListPrice" : null,
+						"Attributes" : [{
+								"Key" : "Color",
+								"Value" : "Black"
+							}, {
+								"Key" : "Size",
+								"Value" : "Men's Medium"
+							}
+						],
+						"PurchaseLimit" : 3
+					}, {
+						"Id" : "d263b880-994e-4783-80ca-e9c5d67de8ee",
+						"SalePrice" : 12.0,
+						"ListPrice" : null,
+						"Attributes" : [{
+								"Key" : "Color",
+								"Value" : "Black"
+							}, {
+								"Key" : "Size",
+								"Value" : "Men's Large"
+							}
+						],
+						"PurchaseLimit" : 3
+					}, {
+						"Id" : "8c9525fc-1cb3-432f-b8b9-1de509724f53",
+						"SalePrice" : 12.0,
+						"ListPrice" : null,
+						"Attributes" : [{
+								"Key" : "Color",
+								"Value" : "Black"
+							}, {
+								"Key" : "Size",
+								"Value" : "Men's XL"
+							}
+						],
+						"PurchaseLimit" : 3
+					}, {
+						"Id" : "e46abab1-617a-462d-af04-3fc361a179d0",
+						"SalePrice" : 12.0,
+						"ListPrice" : null,
+						"Attributes" : [{
+								"Key" : "Color",
+								"Value" : "Black"
+							}, {
+								"Key" : "Size",
+								"Value" : "Men's 2XL"
+							}
+						],
+						"PurchaseLimit" : 3
+					}, {
+						"Id" : "b8ac36f2-45ab-4061-814b-b4f8778d6092",
+						"SalePrice" : 12.0,
+						"ListPrice" : null,
+						"Attributes" : [{
+								"Key" : "Color",
+								"Value" : "Black"
+							}, {
+								"Key" : "Size",
+								"Value" : "Men's 3XL"
+							}
+						],
+						"PurchaseLimit" : 3
+					}, {
+						"Id" : "e7038a46-5d8b-4f63-b464-1c4492f49d0a",
+						"SalePrice" : 12.0,
+						"ListPrice" : null,
+						"Attributes" : [{
+								"Key" : "Color",
+								"Value" : "Black"
+							}, {
+								"Key" : "Size",
+								"Value" : "Women's Small"
+							}
+						],
+						"PurchaseLimit" : 3
+					}, {
+						"Id" : "572b781e-3875-483a-ac5a-28eaf70a5630",
+						"SalePrice" : 12.0,
+						"ListPrice" : null,
+						"Attributes" : [{
+								"Key" : "Color",
+								"Value" : "Black"
+							}, {
+								"Key" : "Size",
+								"Value" : "Women's Medium"
+							}
+						],
+						"PurchaseLimit" : 3
+					}, {
+						"Id" : "eacfa166-5c31-4b46-ba0f-f627d5bdd0ca",
+						"SalePrice" : 12.0,
+						"ListPrice" : null,
+						"Attributes" : [{
+								"Key" : "Color",
+								"Value" : "Black"
+							}, {
+								"Key" : "Size",
+								"Value" : "Women's Large"
+							}
+						],
+						"PurchaseLimit" : 3
+					}, {
+						"Id" : "c0621c14-47a7-4189-8f99-2233901dc3ec",
+						"SalePrice" : 12.0,
+						"ListPrice" : null,
+						"Attributes" : [{
+								"Key" : "Color",
+								"Value" : "Black"
+							}, {
+								"Key" : "Size",
+								"Value" : "Women's XL"
+							}
+						],
+						"PurchaseLimit" : 3
+					}, {
+						"Id" : "38797482-e0fa-4202-b11f-ab384c769425",
+						"SalePrice" : 12.0,
+						"ListPrice" : null,
+						"Attributes" : [{
+								"Key" : "Color",
+								"Value" : "Black"
+							}, {
+								"Key" : "Size",
+								"Value" : "Kids 4"
+							}
+						],
+						"PurchaseLimit" : 3
+					}, {
+						"Id" : "ed5ca7d6-a26c-46b7-9fdd-17088358b466",
+						"SalePrice" : 12.0,
+						"ListPrice" : null,
+						"Attributes" : [{
+								"Key" : "Color",
+								"Value" : "Black"
+							}, {
+								"Key" : "Size",
+								"Value" : "Kids 6"
+							}
+						],
+						"PurchaseLimit" : 3
+					}, {
+						"Id" : "e2d25c3c-6860-416b-88d4-db32278453ca",
+						"SalePrice" : 12.0,
+						"ListPrice" : null,
+						"Attributes" : [{
+								"Key" : "Color",
+								"Value" : "Black"
+							}, {
+								"Key" : "Size",
+								"Value" : "Kids 8"
+							}
+						],
+						"PurchaseLimit" : 3
+					}, {
+						"Id" : "8fa4f329-a6ff-4347-9891-c8d641d2491c",
+						"SalePrice" : 12.0,
+						"ListPrice" : null,
+						"Attributes" : [{
+								"Key" : "Color",
+								"Value" : "Black"
+							}, {
+								"Key" : "Size",
+								"Value" : "Kids 10"
+							}
+						],
+						"PurchaseLimit" : 3
+					}, {
+						"Id" : "337a1762-f420-4343-8285-9a691b2b5b83",
+						"SalePrice" : 12.0,
+						"ListPrice" : null,
+						"Attributes" : [{
+								"Key" : "Color",
+								"Value" : "Black"
+							}, {
+								"Key" : "Size",
+								"Value" : "Kids 12"
+							}
+						],
+						"PurchaseLimit" : 3
+					}
+				],
+				"Url" : "http://shirt.woot.com/offers/choose-yours?utm_source=version2&utm_medium=json&utm_campaign=api.woot.com",
+				"PercentageRemaining" : 100,
+				"Photos" : [{
+						"Url" : "http://d3gqasl9vmjfd8.cloudfront.net/a7d40cd6-d1fa-48b5-aebd-5a2705dfccd4.png",
+						"Width" : 278,
+						"Height" : 208,
+						"Tags" : []
+					}, {
+						"Url" : "http://d3gqasl9vmjfd8.cloudfront.net/75c9d534-90f4-4aee-9041-3f7db962b59b.png",
+						"Width" : 180,
+						"Height" : 135,
+						"Tags" : []
+					}, {
+						"Url" : "http://d3gqasl9vmjfd8.cloudfront.net/75bb606f-c116-4dbf-be47-b8a3c9ed7895.png",
+						"Width" : 160,
+						"Height" : 120,
+						"Tags" : []
+					}, {
+						"Url" : "http://d3gqasl9vmjfd8.cloudfront.net/ace5450a-5d42-4332-9f22-97df10fcd477.png",
+						"Width" : 114,
+						"Height" : 85,
+						"Tags" : []
+					}, {
+						"Url" : "http://d3gqasl9vmjfd8.cloudfront.net/056e8bda-850c-4adf-90a7-6b2b8f3ea1d9.png",
+						"Width" : 200,
+						"Height" : 100,
+						"Tags" : []
+					}, {
+						"Url" : "http://d3gqasl9vmjfd8.cloudfront.net/b29c5607-e084-4eb4-bb89-5c6dac19f5bb.png",
+						"Width" : 588,
+						"Height" : 441,
+						"Tags" : ["gallery", "fullsize-0"]
+					}, {
+						"Url" : "http://d3gqasl9vmjfd8.cloudfront.net/27be8913-a6b4-4cff-8c2c-078497b250f7.png",
+						"Width" : 588,
+						"Height" : 441,
+						"Tags" : ["gallery", "fullsize-1"]
+					}
+				],
+				"ShippingMethods" : [{
+						"Name" : "Standard",
+						"PerOrderAmount" : 0.0,
+						"PerEventAmount" : 0.0,
+						"PerItemAmount" : 0.0
+					}, {
+						"Name" : "One-Day",
+						"PerOrderAmount" : 0.0,
+						"PerEventAmount" : 5.0,
+						"PerItemAmount" : 0.0
+					}, {
+						"Name" : "Standard International",
+						"PerOrderAmount" : 0.0,
+						"PerEventAmount" : 5.0,
+						"PerItemAmount" : 0.0
+					}
+				],
+				"SoldOut" : false,
+				"Specs" : "",
+				"Subtitle" : "Become A Scientist-ist! ",
+				"Teaser" : " 1st Place in <a href=\"http://shirt.woot.com/derby/archive/327/balance?derbyNumber=327&sort=votes\">Derby #327: Scientists</a>, with 299 votes",
+				"Title" : "Choose Yours",
+				"WriteUp" : "<p>Wouldn't it be fun to be a scientist? To live on the cutting edge of human achievement? To ... play with chemicals and stuff?&nbsp;</p>\r\n\r\n<p>Or would it?&nbsp;</p>\r\n\r\n<p>As a thought experiment to determine whether you would actually enjoy being a scientist, imagine how your current job would work:&nbsp;</p>\r\n\r\n<ul>\r\n\t<li>The best people in your field would review every report, presentation, and project you created.&nbsp;&nbsp;</li>\r\n\t<li>Your best work would not be recognized for years or decades after it was accomplished.&nbsp;</li>\r\n\t<li>None of your family or friends would be able to understand what, exactly, you do.&nbsp;</li>\r\n\t<li>If you made a mistake somewhere in your work, you might alter the course of human history.&nbsp;</li>\r\n\t<li>Your office would be filled with rats.</li>\r\n</ul>\r\n\r\n<p>Still sound compelling? Go get that degree and start an exciting career in science! That's how it works, right?&nbsp;</p>\r\n",
+				"Stats" : {
+					"FirstSucker" : "kateto",
+					"LastPurchase" : "2013-11-02T04:44:31.627Z",
+					"LastWooterToWoot" : "philjgasp",
+					"SiteOrderPace" : 0.0,
+					"OverallOrderPace" : 0.0,
+					"PercentageOfSalesPerDay" : [{
+							"Key" : "Mon",
+							"Value" : 0
+						}, {
+							"Key" : "Tue",
+							"Value" : 0
+						}, {
+							"Key" : "Wed",
+							"Value" : 0
+						}, {
+							"Key" : "Thu",
+							"Value" : 0
+						}, {
+							"Key" : "Fri",
+							"Value" : 100
+						}, {
+							"Key" : "Sat",
+							"Value" : 0
+						}, {
+							"Key" : "Sun",
+							"Value" : 0
+						}
+					],
+					"PercentageOfSalesPerHour" : [{
+							"Key" : "12",
+							"Value" : 6
+						}, {
+							"Key" : "1",
+							"Value" : 3
+						}, {
+							"Key" : "2",
+							"Value" : 2
+						}, {
+							"Key" : "3",
+							"Value" : 2
+						}, {
+							"Key" : "4",
+							"Value" : 1
+						}, {
+							"Key" : "5",
+							"Value" : 3
+						}, {
+							"Key" : "6",
+							"Value" : 5
+						}, {
+							"Key" : "7",
+							"Value" : 8
+						}, {
+							"Key" : "8",
+							"Value" : 9
+						}, {
+							"Key" : "9",
+							"Value" : 7
+						}, {
+							"Key" : "10",
+							"Value" : 8
+						}, {
+							"Key" : "11",
+							"Value" : 6
+						}, {
+							"Key" : "12",
+							"Value" : 5
+						}, {
+							"Key" : "1",
+							"Value" : 5
+						}, {
+							"Key" : "2",
+							"Value" : 4
+						}, {
+							"Key" : "3",
+							"Value" : 3
+						}, {
+							"Key" : "4",
+							"Value" : 3
+						}, {
+							"Key" : "5",
+							"Value" : 4
+						}, {
+							"Key" : "6",
+							"Value" : 3
+						}, {
+							"Key" : "7",
+							"Value" : 3
+						}, {
+							"Key" : "8",
+							"Value" : 3
+						}, {
+							"Key" : "9",
+							"Value" : 2
+						}, {
+							"Key" : "10",
+							"Value" : 4
+						}, {
+							"Key" : "11",
+							"Value" : 2
+						}
+					],
+					"PurchaserExperience" : {
+						"first woot" : 7,
+						"second woot" : 4,
+						"< 10 woots" : 20,
+						"< 25 woots" : 25,
+						"= 25 woots" : 44
+					},
+					"PurchaserSeniority" : {
+						"joined today" : 6,
+						"one week old" : 0,
+						"one month old" : 1,
+						"one year old" : 10,
+						"> one year old" : 83
+					},
+					"QuantityBreakdown" : {
+						"bought 1" : 92,
+						"bought 2" : 7,
+						"bought 3" : 1
+					},
+					"SiteWootsSold" : 81.0,
+					"OverallWootsSold" : 92.0,
+					"SpeedToFirstWoot" : "00:01:16.9170000",
+					"WootsByState" : {
+						"TX" : 59.883151483313668,
+						"KS" : 48.345515332661329,
+						"PA" : 38.006589950758205,
+						"WI" : 60.636451371118206,
+						"DE" : 12.801187690751959,
+						"IN" : 44.320530099113412,
+						"IL" : 54.648276230069392,
+						"NH" : 61.119776125056937,
+						"MD" : 63.7091158740833,
+						"CO" : 59.425037991281179,
+						"DC" : 57.308537323191914,
+						"MI" : 45.3567961852515,
+						"VA" : 51.719177450870788,
+						"ME" : 34.612945330095272,
+						"AK" : 32.368684745970448,
+						"SC" : 42.247176298866506,
+						"RI" : 32.761681682708087,
+						"WA" : 112.81738677766897,
+						"MA" : 73.732661097951961,
+						"NV" : 29.794790646558312,
+						"NY" : 48.047241938375656,
+						"OH" : 55.79669659047746,
+						"SD" : 14.118034915998512,
+						"CT" : 41.809184720727977,
+						"LA" : 22.820010140612553,
+						"NJ" : 40.5297506663681,
+						"MO" : 55.660058699884374,
+						"CA" : 58.932606743035961,
+						"OR" : 63.00767226789695,
+						"MN" : 41.176640259853912,
+						"MT" : 81.323157295324691,
+						"OK" : 42.897799579593418,
+						"FL" : 33.625539482882935,
+						"AR" : 39.420250047867157,
+						"IA" : 41.505615185027466,
+						"VT" : 18.369615652334861,
+						"AL" : 38.477846200401594,
+						"ND" : 68.360246675365374,
+						"ID" : 29.330833520435085,
+						"GA" : 34.409162711476391,
+						"AZ" : 50.351775769904037,
+						"MS" : 23.242611038748734,
+						"TN" : 38.037040834663316,
+						"NC" : 42.191020462913976,
+						"NE" : 37.76278909987019,
+						"WV" : 24.813079088022231,
+						"WY" : 20.394058591881262,
+						"HI" : 59.150402503088415,
+						"NM" : 39.074967098709578,
+						"KY" : 37.084833652168015,
+						"UT" : 83.177278851382511
+					}
+				}
+			}
+		]
+	}
+]

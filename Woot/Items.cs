@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Woot
 {
-    class Items
+    public class Items
     {
         public Guid Id { get; set; }
         public decimal? ListPrice { get; set; }
