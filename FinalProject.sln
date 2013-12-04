@@ -49,9 +49,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokemonFile.Test", "Pokemon
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdaLovelace(Story).Test", "UnitTestProject2\AdaLovelace(Story).Test.csproj", "{8ECBD9A5-BDEE-4060-BC18-0F42D7690EB4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Woot.RealTest", "Woot.RealTest\Woot.RealTest.csproj", "{8D21233E-0E19-497C-8199-DDBC6988663B}"
+EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 20
+		SccNumberOfProjects = 21
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://bacs387.visualstudio.com/defaultcollection
 		SccLocalPath0 = .
@@ -129,6 +131,9 @@ Global
 		SccProjectTopLevelParentUniqueName19 = FinalProject.sln
 		SccProjectName19 = UnitTestProject2
 		SccLocalPath19 = UnitTestProject2
+		SccProjectUniqueName20 = Woot.RealTest\\Woot.RealTest.csproj
+		SccProjectName20 = Woot.RealTest
+		SccLocalPath20 = Woot.RealTest
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -251,6 +256,12 @@ Global
 		{8ECBD9A5-BDEE-4060-BC18-0F42D7690EB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8ECBD9A5-BDEE-4060-BC18-0F42D7690EB4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8ECBD9A5-BDEE-4060-BC18-0F42D7690EB4}.Release|x86.ActiveCfg = Release|Any CPU
+		{8D21233E-0E19-497C-8199-DDBC6988663B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D21233E-0E19-497C-8199-DDBC6988663B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D21233E-0E19-497C-8199-DDBC6988663B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8D21233E-0E19-497C-8199-DDBC6988663B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D21233E-0E19-497C-8199-DDBC6988663B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D21233E-0E19-497C-8199-DDBC6988663B}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
