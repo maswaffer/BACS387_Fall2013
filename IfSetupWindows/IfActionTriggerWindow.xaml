@@ -36,6 +36,13 @@
         <TextBlock HorizontalAlignment="Left" Height="26" Margin="71,9,0,0" Grid.Row="2" TextWrapping="Wrap" Text="Category" VerticalAlignment="Top" Width="94" Background="#FFFFFCFC" FontSize="16" FontWeight="Bold" Grid.ColumnSpan="2"/>
         <ComboBox Grid.Column="1" HorizontalAlignment="Left" Margin="64,10,0,11" Grid.Row="2" Width="204" SelectionChanged="ComboBox_SelectionChanged" Grid.ColumnSpan="2">
             <ComboBoxItem Content="Sports" HorizontalAlignment="Left" Width="202"/>
+            <ComboBoxItem Content="Tech" Height="100" Width="100"/>
+            <ComboBoxItem Content="Accessories" Height="100" Width="100"/>
+            <ComboBoxItem Content="Wine" Height="100" Width="100"/>
+            <ComboBoxItem Content="Kids" Height="100" Width="100"/>
+            <ComboBoxItem Content="Home" Height="100" Width="100"/>
+            <ComboBoxItem Content="Sellout" Height="100" Width="100"/>
+            <ComboBoxItem Content="MainWoot" Height="100" Width="100"/>
         </ComboBox>
     </Grid>
 </y:IfWindow>
