@@ -57,6 +57,12 @@
     <Compile Include="StoryTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IfNewsStory\Ada.Lovelace2.0.csproj">
+      <Project>{4d0028e2-34ff-4130-8c10-5a771a685502}</Project>
+      <Name>Ada.Lovelace2.0</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
