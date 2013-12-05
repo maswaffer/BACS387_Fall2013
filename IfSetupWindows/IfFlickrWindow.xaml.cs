@@ -67,11 +67,20 @@ namespace IfSetupWindows
         // when user hit the Add Criteria Button...
         private void AddCriteria_Click(object sender, RoutedEventArgs e)
         {
-            var selected = CriteriaType.SelectedItem as ICriteria<Photo>;
-            CriteriaSelected.Add(selected);
-            MessageBox.Show("Sucessfully added");
-            
-           
+            // validate the entry first
+            if (txtEnterSize.Text is string)
+            {
+                MessageBox.Show("photo width must be a number");
+                txtEnterSize.Text = "";
+                txtEnterSize.Focus();
+               
+            }
+            else
+            {
+                var selected = CriteriaType.SelectedItem as ICriteria<Photo>;
+                CriteriaSelected.Add(selected);
+                MessageBox.Show("Sucessfully added");
+            }
         }
 
         // save information to the List and close the form
