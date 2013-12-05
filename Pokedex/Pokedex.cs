@@ -12,23 +12,23 @@ namespace Barabara.Liskov
         // constructor has same name as class, no return value
         public Pokedex()
         {
-           
+
             var NameMatch = new NameMatchCriteria();
             //Fake.Name = "Charmeleon";
             var NumberMatch = new PokedexNumberMatchCriteria();
-            Criteria = NameMatch; 
+            Criteria = NameMatch;
             Criteria = NumberMatch;
             GetNumber = new RandomNumber();
             File = new PokemonFile();
         }
 
-        
+
         public string Message { get; set; }
         public RandomNumber GetNumber { get; set; }
         public PokemonFile File { get; set; }
         //used icriteria<pokemon> because pokemon is a strongly written format of type T to be set as 
-        public ICriteria<Pokemon> Criteria {get; set;}
-    
+        public ICriteria<Pokemon> Criteria { get; set; }
+
         public bool CheckCondition()
         {
             /*
@@ -50,8 +50,8 @@ namespace Barabara.Liskov
                     return true;
                 }
             }
-               
-            
+
+
             return false;
         }
 
