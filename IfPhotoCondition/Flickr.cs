@@ -45,6 +45,7 @@ namespace IfPhotoCondition
             // creating a photo from our own photo class and map data from service photo ---> our Photo class
             var myPhoto = new IfPhotoCondition.Photo();
             myPhoto.PhotoSize = firstInCollection.OriginalWidth;
+            myPhoto.ImageLink = firstInCollection.WebUrl;
             // come back there modify tag to a list of string not just a string
             //myPhoto.PhotoTag = firstInCollection.Tags;
             return myPhoto;

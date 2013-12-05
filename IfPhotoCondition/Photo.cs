@@ -17,14 +17,13 @@ namespace IfPhotoCondition
             set { photoSize = value; }
         }
 
-        // 
+        // PhotoTag and DateTime attribute
         public List<string> PhotoTag { get; set; }
         public DateTime PhotoDate { get; set; }
-       // communicate with Flickr
-        public void goToFlickr()
-        {
-            throw new NotImplementedException();
-        }
+
+        // here the the attribute link so that we can get url from service photo and make that a string 
+        public string ImageLink { get; set; }
+       
 
 
     }
