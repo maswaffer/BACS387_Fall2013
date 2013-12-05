@@ -57,15 +57,6 @@ namespace IfPhotoCondition
 
         // implement Message from ITrigger
         public string Message
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
+        { get; set; }
     }
 }

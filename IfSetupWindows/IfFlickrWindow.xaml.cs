@@ -68,19 +68,20 @@ namespace IfSetupWindows
         private void AddCriteria_Click(object sender, RoutedEventArgs e)
         {
             // validate the entry first
-            if (txtEnterSize.Text is string)
-            {
-                MessageBox.Show("photo width must be a number");
-                txtEnterSize.Text = "";
-                txtEnterSize.Focus();
-               
-            }
-            else
-            {
+            //bool testEntry = true;
+
+            //if (true)
+            //{
+            //    //MessageBox.Show("photo width must be a number");
+            //    txtEnterSize.Text = "";
+            //    txtEnterSize.Focus();   
+            //}
+            //else
+            //{
                 var selected = CriteriaType.SelectedItem as ICriteria<Photo>;
                 CriteriaSelected.Add(selected);
                 MessageBox.Show("Sucessfully added");
-            }
+            //}
         }
 
         // save information to the List and close the form

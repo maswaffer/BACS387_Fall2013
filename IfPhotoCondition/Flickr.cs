@@ -37,7 +37,7 @@ namespace IfPhotoCondition
             BoundaryBox Greeley = new BoundaryBox(-104.840312, 40.373445, -104.665904, 40.444029d);
             // PhotoSearchOptions is comming FlickrNet
             var options = new PhotoSearchOptions();
-
+            options.BoundaryBox = Greeley;
             // creating a set of photo from Service and get the first one
             var collection = Service.PhotosSearch(options);
             var firstInCollection = collection.First();
@@ -46,8 +46,11 @@ namespace IfPhotoCondition
             var myPhoto = new IfPhotoCondition.Photo();
             myPhoto.PhotoSize = firstInCollection.OriginalWidth;
             myPhoto.ImageLink = firstInCollection.WebUrl;
-            // come back there modify tag to a list of string not just a string
-            //myPhoto.PhotoTag = firstInCollection.Tags;
+
+            // come back there modify tag to a list of string not just a string ASK QUESTION HERE...
+            // ToList() is an extension method...
+            // Tags is a collection list but photoTag is a list so we need ToList() method
+            myPhoto.PhotoTag = firstInCollection.Tags.ToList();
             return myPhoto;
         }
 
