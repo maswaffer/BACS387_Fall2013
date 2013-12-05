@@ -19,10 +19,10 @@ namespace Barabara.Liskov
         public int GetNumber()
         {
             var RandomGenerator = new Random(DateTime.Now.Millisecond);
-            var Number = RandomGenerator.Next(2, 4);
-            //return Number;
+            var Number = RandomGenerator.Next(1, 150);
+            return Number;
              
-             return 4; 
+             // 4; 
         }
     
 
