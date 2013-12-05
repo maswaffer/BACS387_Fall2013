@@ -2,19 +2,33 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Common;
 
 namespace Woot
 {
-    public class Criteria : ActionTrigger
+    public class Criteria : ICriteria<Event>
     {
         //Error checking will ensure that all input will return the proper data
         //This method will check letters, numbers, and other character inputs
         //If True then the method will continue
-        public void ErrorCheck()
+
+        public string Keyword { get; set; }
+        //public string Category { get; set; }
+
+        public string Name { get; set; }
+
+        public bool Check(Event value)
         {
-            throw new System.NotImplementedException();
+            if (value.Title.Contains(Keyword))
+            {
+                Message = "The item matching your keyword: " + value.Title;
+                return true;
+            }
+            {
+                return false;
+            }
         }
 
-
+        public string Message { get; set; }
     }
 }

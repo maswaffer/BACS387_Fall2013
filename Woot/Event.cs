@@ -17,7 +17,7 @@ namespace Woot
         public DateTime StartDate { get; set; }
         public string Title { get; set; }
         public string Type { get; set; }
-        //public List<Offer> Offers { get; set; }
+        public List<Offer> Offers { get; set; }
 
         //public void one();
 

@@ -11,6 +11,9 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Common;
+using IfStockPrice;
+using Woot;
 
 namespace IfSetupWindows
 {
@@ -33,5 +36,28 @@ namespace IfSetupWindows
         {
 
         }
-    }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            var keyword = Keyword.Text;
+            //var category = Category.SelectedValue.ToString();
+
+            var criteria = new Criteria();
+            criteria.Keyword = keyword;
+            //criteria.Category = category;
+
+            TriggertoProcess = new ActionTrigger();
+            TriggertoProcess.AddCriteria(criteria);
+
+            Close();
+        }
+
+        private void clear_btn_Click(object sender, RoutedEventArgs e)
+        {
+            Keyword.Text = "";
+        }
+
+        }
+        
+    
 }

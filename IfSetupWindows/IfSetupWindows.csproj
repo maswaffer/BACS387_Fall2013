@@ -156,6 +156,10 @@
       <Project>{4e533b8f-0880-44a5-b937-fb26af842c1a}</Project>
       <Name>Barbara.Liskov</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Woot\Woot.csproj">
+      <Project>{7c7f11bc-69df-4fa8-bb0d-9687defcb8a1}</Project>
+      <Name>Woot</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Resource Include="bg2.jpg" />

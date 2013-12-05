@@ -13,10 +13,10 @@ namespace Woot
     {
         private readonly string WootKey = "ec5dfd9da86540feb4e0d97482c12acc";
 
-        public List<Event> GetEvents(string site, string eventType)
+        public List<Event> GetEvents(string site)
         {
             var url = @"http://api.woot.com/2/events.json";
-            var queryString = string.Format("?site={0}&eventType={1}&key={2}", site, eventType, WootKey);
+            var queryString = string.Format("?site={0}&key={2}", site, WootKey);
 
             var fullUrl = url + queryString;
             Console.WriteLine(fullUrl);
@@ -58,7 +58,7 @@ namespace Woot
         public const string Home = "home.woot.com";
         public const string Sport = "sport.woot.com";
         public const string Tech = "tech.woot.com";
-        public const string Pop = "pop.woot.com";
+        //public const string Pop = "pop.woot.com";
         public const string Tools = "tools.woot.com";
         public const string Accessories = "accessories.woot.com";
     }

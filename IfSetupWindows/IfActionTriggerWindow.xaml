@@ -22,8 +22,8 @@
             <ColumnDefinition Width="152*"/>
         </Grid.ColumnDefinitions>
         <TextBlock HorizontalAlignment="Left" Height="24" Margin="71,9,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="94" FontSize="16" FontWeight="Bold" Background="White" Grid.ColumnSpan="2"><Run Background="White" Text="Keywords     "/></TextBlock>
-        <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="25" Margin="64,8,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="204" Grid.ColumnSpan="2"/>
-        <Button Content="Enter" Grid.Column="1" HorizontalAlignment="Left" Height="46" Margin="64,10,0,0" Grid.Row="3" VerticalAlignment="Top" Width="132" FontSize="14" FontWeight="Bold" Grid.RowSpan="2">
+        <TextBox x:Name="Keyword" Grid.Column="1" HorizontalAlignment="Left" Height="25" Margin="64,8,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="204" Grid.ColumnSpan="2"/>
+        <Button Content="Save" Grid.Column="1" HorizontalAlignment="Left" Height="24" Margin="52,16,0,0" Grid.Row="3" VerticalAlignment="Top" Width="110" FontSize="14" FontWeight="Bold" Click="Button_Click">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                     <GradientStop Color="#FFF3F3F3" Offset="0"/>
@@ -33,16 +33,25 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <TextBlock HorizontalAlignment="Left" Height="26" Margin="71,9,0,0" Grid.Row="2" TextWrapping="Wrap" Text="Category" VerticalAlignment="Top" Width="94" Background="#FFFFFCFC" FontSize="16" FontWeight="Bold" Grid.ColumnSpan="2"/>
-        <ComboBox Grid.Column="1" HorizontalAlignment="Left" Margin="64,10,0,11" Grid.Row="2" Width="204" SelectionChanged="ComboBox_SelectionChanged" Grid.ColumnSpan="2">
+        <!--<ComboBox x:Name="Category" Grid.Column="1" HorizontalAlignment="Left" Margin="64,10,0,11" Grid.Row="2" Width="204" SelectionChanged="ComboBox_SelectionChanged" Grid.ColumnSpan="2">
             <ComboBoxItem Content="Sports" HorizontalAlignment="Left" Width="202"/>
-            <ComboBoxItem Content="Tech" Height="100" Width="100"/>
-            <ComboBoxItem Content="Accessories" Height="100" Width="100"/>
-            <ComboBoxItem Content="Wine" Height="100" Width="100"/>
-            <ComboBoxItem Content="Kids" Height="100" Width="100"/>
-            <ComboBoxItem Content="Home" Height="100" Width="100"/>
-            <ComboBoxItem Content="Sellout" Height="100" Width="100"/>
-            <ComboBoxItem Content="MainWoot" Height="100" Width="100"/>
-        </ComboBox>
+            <ComboBoxItem Content="Tech" HorizontalAlignment="Left" Width="202"/>
+            <ComboBoxItem Content="Tools" HorizontalAlignment="Left" Width="202"/>
+            <ComboBoxItem Content="Accessories" HorizontalAlignment="Left" Width="202"/>
+            <ComboBoxItem Content="Kids" HorizontalAlignment="Left" Width="202"/>
+            <ComboBoxItem Content="Shirt" HorizontalAlignment="Left" Width="202"/>
+            <ComboBoxItem Content="Wine" HorizontalAlignment="Left" Width="202"/>
+
+        </ComboBox>-->
+        <Button x:Name="clear_btn" Grid.ColumnSpan="2" Content="Clear" Grid.Column="1" HorizontalAlignment="Left" Margin="183,16,0,0" Grid.Row="3" VerticalAlignment="Top" Width="110" Height="24" Click="clear_btn_Click" FontWeight="Bold">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF0C3206" Offset="1"/>
+                    <GradientStop Color="White"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.579"/>
+                    <GradientStop Color="#FF0C3206" Offset="0.94"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
     </Grid>
 </y:IfWindow>
