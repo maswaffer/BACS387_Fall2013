@@ -11,5 +11,6 @@ namespace Watson
     {
         public string playerID { get; set; }
         public string Name { get; set; }      
+        public bool isPitcher { get; set; }
     }
 }

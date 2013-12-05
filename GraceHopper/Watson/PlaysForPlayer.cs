@@ -21,7 +21,7 @@ namespace Watson
             {
                 var splitByComma = line.Split(',');
 
-                if (splitByComma[0] == "play" & splitByComma[3] == playerID)
+                if (splitByComma[0] == "play" && splitByComma[3] == playerID)
                 {
                     var nextPlay = new Play
                     {

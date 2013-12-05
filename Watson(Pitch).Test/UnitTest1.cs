@@ -7,8 +7,22 @@ namespace Watson_Pitch_.Test
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMethod1()
+        public void ShouldReadFileTeam()
         {
+            var File = new Watson.Team();
+            var Roster = File.GetPlayers();
+
+            Assert.AreEqual(1458, Roster.Count);
         }
+
+        [TestMethod]
+        public void ShouldReadFilePlaysForPlayer()
+        {
+            var File = new Watson.PlaysForPlayer();
+            var TotalPlays = File.GetPlay("tulot001");
+            Assert.AreEqual(318, TotalPlays.Count);
+        }
+
+
     }
 }
