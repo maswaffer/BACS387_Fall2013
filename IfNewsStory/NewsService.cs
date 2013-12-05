@@ -21,9 +21,11 @@ namespace Ada.Lovelace2._0
         public List<Story> searchResults { get; set; }
 
 
-        public List<Story> SearchFor(string query)
+        public List<Story> SearchFor()
         {
 
+            string query = "technology"; 
+            
             // Create a Bing container.
             string rootUrl = "https://api.datamarket.azure.com/Bing/Search";
             var bingContainer = new Bing.BingSearchContainer(new Uri(rootUrl));
@@ -45,9 +47,10 @@ namespace Ada.Lovelace2._0
             var newsResults = newsQuery.Execute();
 
             //for each result in news results; create a list of stories; convert to a list of stories
-            Story values = new Story(); 
+            
             foreach (var result in newsResults)
             {
+                Story values = new Story();
                 values.Title = result.Title;
                 values.storyDate = (DateTime)result.Date;
                 values.Link = result.Url;

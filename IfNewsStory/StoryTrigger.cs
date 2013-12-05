@@ -22,25 +22,27 @@ namespace Ada.Lovelace2._0
         private NewsService Service {get;set;}
         private bool match = false;
         private IEnumerable<NewsResult> BingArticles { get; set; }
-        private TitleCriteria title = new TitleCriteria();
+        private TitleCriteria title { get; set; }
 
         public string Message { get; set; }
 
         public void AddCriteria<T>(ICriteria<T> criteria) where T : new()
         {
-            Criteria.Add(criteria as ICriteria<Story>);
+            //Criteria.Add(criteria as ICriteria<Story>);
+            title = criteria as TitleCriteria; 
         }
 
         public bool CheckCondition()
         {
             int size = 0; 
-            searchResults = Service.SearchFor(null); 
-            while (size <= 10)
+            searchResults = Service.SearchFor(); 
+            while (size < 10)
             {
                 if (title.Check(searchResults[size]) == true)
                 {
                     Message = "Here is the link to the article that you requested" + searchResults[size].Link;
-                    match = true; 
+                    match = true;
+                    break; 
                 }
                 else
                 {

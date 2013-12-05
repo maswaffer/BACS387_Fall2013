@@ -58,6 +58,7 @@ namespace IfSetupWindows
             CriteriaSelected.Add(selected);
 
             TriggertoProcess = new StoryTrigger();
+            TriggertoProcess.AddCriteria(TitleInfo); 
 
             
 

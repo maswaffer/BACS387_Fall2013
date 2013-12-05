@@ -14,6 +14,9 @@ namespace Ada.Lovelace2._0
 
         public string Message { get; set; }
         public DateTime Date { get; set; }
+        
+        public string Keyword { get; set; }
+
 
         public bool Check(Story value)
         {
@@ -24,6 +27,10 @@ namespace Ada.Lovelace2._0
                 {
                     match = true;
                 }
+                else
+                {
+                    match = false; 
+                }
             }
             else
             {
@@ -32,13 +39,8 @@ namespace Ada.Lovelace2._0
             return match; 
         }
 
-        //Specific to our criteria
-        public string Keyword { get; set; }
 
-        //public void getKeyword
-        //{
-        //
-        //}
+
 
     }
 }
