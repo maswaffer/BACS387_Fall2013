@@ -26,7 +26,7 @@ namespace IfSetupWindows
         {
             InitializeComponent();
             Criteria.Items.Add(new NameMatchCriteria());
-            Criteria.Items.Add(new PokedexNumberMatchCriteria());
+            //Criteria.Items.Add(new PokedexNumberMatchCriteria());
             
             CriteriaChosen = new List<ICriteria<Pokedex>>();
             
@@ -44,7 +44,7 @@ namespace IfSetupWindows
         public void SaveButton_Click(object sender, RoutedEventArgs e)
         {
             var Number = PokemonNumber.Text;
-            var NumberCriteria = new PokedexNumberMatchCriteria();
+            //var NumberCriteria = new PokedexNumberMatchCriteria();
 
             var Name = PokemonName.Text;
             var NameCritera = new NameMatchCriteria();
