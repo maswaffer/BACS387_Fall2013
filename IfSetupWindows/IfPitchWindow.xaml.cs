@@ -34,12 +34,26 @@ namespace IfSetupWindows
 
         private void acptBtn_Click(object sender, RoutedEventArgs e)
         {
-            //var team = TeamSelect.Text;
-           // TriggertoProcess = new BaseballCriteriaTrigger();
-            //  TriggertoProcess.AddCriteria<Play>(c);
+            if (PlaySelected.Text == "Watson.PlayTypePitch") 
+            {
+                var PitchCriteria = new PlayTypePitch();
+                PitchCriteria.Name = PlayerSelected.Text;
+                /*foreach (Player search in Team.roster)
+                {
+                    if (search.Name = Playerselected.Text)
+                        PitchCriteria.PlayerID = search.playerID;
+                }*/
+                CriteriaSelected.Add(PitchCriteria);
+            }
 
+            if (PlaySelected.Text == "Watson.PlayTypeHit")
+            {
+                var HitCriteria = new PlayTypeHit();
+                HitCriteria.Name = PlayerSelected.Text;
+                CriteriaSelected.Add(HitCriteria);
+            }
 
-            //Close();
+            Close();
         }
 
         private void Close_Click(object sender, RoutedEventArgs e)
@@ -49,13 +63,14 @@ namespace IfSetupWindows
 
         private void PlayType_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
+            var a = false;
         }
 
         private void ComboBox_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
         {
-
+            var b = false;
         }
+
         
 
     }

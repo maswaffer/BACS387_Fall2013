@@ -14,8 +14,11 @@
         <Button x:Name="acptBtn" Content="Accept" HorizontalAlignment="Left" Margin="75,204,0,0" VerticalAlignment="Top" Width="102" Grid.Column="1" Click="acptBtn_Click"/>
         <Button x:Name="Close" Content="Close" HorizontalAlignment="Left" Margin="202,204,0,0" VerticalAlignment="Top" Width="109" Grid.Column="1" Click="Close_Click" />
         <ComboBox x:Name="PlayerSelected" Grid.Column="1" HorizontalAlignment="Left" Margin="76,72,0,0" VerticalAlignment="Top" Width="235" SelectionChanged="ComboBox_SelectionChanged_1">
-            <ComboBoxItem Content="Tulo"/>
-            <ComboBoxItem Content="Cargo"/>
+            <ComboBoxItem Content="Troy Tulowitzki" IsSelected="True"/>
+            <ComboBoxItem Content="Carlos Gonzalez"/>
+            <ComboBoxItem Content="Todd Helton"/>
+            <ComboBoxItem Content="Jeff Francis"/>
+            <ComboBoxItem Content="Jhoulys Chacin"/>
         </ComboBox>
 
 
