@@ -49,11 +49,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokemonFile.Test", "Pokemon
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdaLovelace(Story).Test", "UnitTestProject2\AdaLovelace(Story).Test.csproj", "{8ECBD9A5-BDEE-4060-BC18-0F42D7690EB4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flickr.Test", "Flickr.Test\Flickr.Test.csproj", "{474A8196-9047-40AF-8F58-4FA4166F9F91}"
-EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 21
+		SccNumberOfProjects = 20
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://bacs387.visualstudio.com/defaultcollection
 		SccLocalPath0 = .
@@ -131,10 +129,6 @@ Global
 		SccProjectTopLevelParentUniqueName19 = FinalProject.sln
 		SccProjectName19 = UnitTestProject2
 		SccLocalPath19 = UnitTestProject2
-		SccProjectUniqueName20 = Flickr.Test\\Flickr.Test.csproj
-		SccProjectTopLevelParentUniqueName20 = FinalProject.sln
-		SccProjectName20 = Flickr.Test
-		SccLocalPath20 = Flickr.Test
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -337,30 +331,6 @@ Global
 		{8ECBD9A5-BDEE-4060-BC18-0F42D7690EB4}.Release|ARM.ActiveCfg = Release|Any CPU
 		{8ECBD9A5-BDEE-4060-BC18-0F42D7690EB4}.Release|x64.ActiveCfg = Release|Any CPU
 		{8ECBD9A5-BDEE-4060-BC18-0F42D7690EB4}.Release|x86.ActiveCfg = Release|Any CPU
-		{474A8196-9047-40AF-8F58-4FA4166F9F91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{474A8196-9047-40AF-8F58-4FA4166F9F91}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{474A8196-9047-40AF-8F58-4FA4166F9F91}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{474A8196-9047-40AF-8F58-4FA4166F9F91}.Debug|ARM.ActiveCfg = Debug|ARM
-		{474A8196-9047-40AF-8F58-4FA4166F9F91}.Debug|ARM.Build.0 = Debug|ARM
-		{474A8196-9047-40AF-8F58-4FA4166F9F91}.Debug|ARM.Deploy.0 = Debug|ARM
-		{474A8196-9047-40AF-8F58-4FA4166F9F91}.Debug|x64.ActiveCfg = Debug|x64
-		{474A8196-9047-40AF-8F58-4FA4166F9F91}.Debug|x64.Build.0 = Debug|x64
-		{474A8196-9047-40AF-8F58-4FA4166F9F91}.Debug|x64.Deploy.0 = Debug|x64
-		{474A8196-9047-40AF-8F58-4FA4166F9F91}.Debug|x86.ActiveCfg = Debug|x86
-		{474A8196-9047-40AF-8F58-4FA4166F9F91}.Debug|x86.Build.0 = Debug|x86
-		{474A8196-9047-40AF-8F58-4FA4166F9F91}.Debug|x86.Deploy.0 = Debug|x86
-		{474A8196-9047-40AF-8F58-4FA4166F9F91}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{474A8196-9047-40AF-8F58-4FA4166F9F91}.Release|Any CPU.Build.0 = Release|Any CPU
-		{474A8196-9047-40AF-8F58-4FA4166F9F91}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{474A8196-9047-40AF-8F58-4FA4166F9F91}.Release|ARM.ActiveCfg = Release|ARM
-		{474A8196-9047-40AF-8F58-4FA4166F9F91}.Release|ARM.Build.0 = Release|ARM
-		{474A8196-9047-40AF-8F58-4FA4166F9F91}.Release|ARM.Deploy.0 = Release|ARM
-		{474A8196-9047-40AF-8F58-4FA4166F9F91}.Release|x64.ActiveCfg = Release|x64
-		{474A8196-9047-40AF-8F58-4FA4166F9F91}.Release|x64.Build.0 = Release|x64
-		{474A8196-9047-40AF-8F58-4FA4166F9F91}.Release|x64.Deploy.0 = Release|x64
-		{474A8196-9047-40AF-8F58-4FA4166F9F91}.Release|x86.ActiveCfg = Release|x86
-		{474A8196-9047-40AF-8F58-4FA4166F9F91}.Release|x86.Build.0 = Release|x86
-		{474A8196-9047-40AF-8F58-4FA4166F9F91}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -382,7 +352,6 @@ Global
 		{3FDA05DD-6708-496F-BA7A-8CC6D82CA4B3} = {67EF2E48-4A81-4384-A9D9-C6AE4E25A9DD}
 		{76953F7D-527A-4448-8019-3DD4ADEAAC0B} = {67EF2E48-4A81-4384-A9D9-C6AE4E25A9DD}
 		{8ECBD9A5-BDEE-4060-BC18-0F42D7690EB4} = {67EF2E48-4A81-4384-A9D9-C6AE4E25A9DD}
-		{474A8196-9047-40AF-8F58-4FA4166F9F91} = {67EF2E48-4A81-4384-A9D9-C6AE4E25A9DD}
 		{39BB5384-7E0E-4DB3-976F-6BCE522494E9} = {BA5C3BD5-B443-4C56-A3D3-F7AD330D5CAD}
 	EndGlobalSection
 EndGlobal
