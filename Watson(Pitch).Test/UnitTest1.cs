@@ -11,7 +11,6 @@ namespace Watson_Pitch_.Test
         {
             var File = new Watson.Team();
             var Roster = File.GetPlayers();
-
             Assert.AreEqual(1458, Roster.Count);
         }
 
@@ -22,7 +21,6 @@ namespace Watson_Pitch_.Test
             var TotalPlays = File.GetPlay("tulot001");
             Assert.AreEqual(318, TotalPlays.Count);
         }
-
 
     }
 }
