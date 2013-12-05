@@ -16,7 +16,7 @@ namespace Woot
         public List<Event> GetEvents(string site)
         {
             var url = @"http://api.woot.com/2/events.json";
-            var queryString = string.Format("?site={0}&key={2}", site, WootKey);
+            var queryString = string.Format("?site={0}&key={1}", site, WootKey);
 
             var fullUrl = url + queryString;
             Console.WriteLine(fullUrl);
