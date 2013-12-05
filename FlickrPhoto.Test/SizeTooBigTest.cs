@@ -26,8 +26,23 @@ namespace FlickrPhoto.Test
             // now run the Check method from SizeTooBig it should return true because
             // photoSize is greater than user set MaxSize
             var isMet = criteria.Check(photo);
-            Assert.IsTrue(isMet);
-            
+            Assert.IsTrue(isMet);  
         }
+
+        [TestMethod]
+        public void ShouldNotMetPhotoSizeLessThenMaxSize()
+        {
+            // user set this criteria width of photo can not exceed 1400pixel
+            criteria.MaxSize = 900;
+
+            // set data for the fake photo to test
+            var photo = new Photo { PhotoSize = 700 };
+
+            // now run the Check method from SizeTooBig it should return FALSE because
+            // photoSize is LESS than user set MaxSize
+            var isMet = criteria.Check(photo);
+            Assert.IsFalse(isMet);
+        }
+
     }
 }
