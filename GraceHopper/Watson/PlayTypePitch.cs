@@ -18,21 +18,32 @@ namespace Watson
         public string Message { get; set; }
         public string Name { get; set; }
         public string PlayerID { get; set; }
+        public bool isPitcher { get; set; }
 
-        public bool Check (Play Player)
+        public bool Check(Play Player)
         {
-            if (Player.PlayCode.Contains('K') & Player.PlayerID == PlayerID)
+            if (isPitcher == true)
             {
-                Message = ("The Pitcher has recorded a strikeout");
+                if (Player.PlayCode.Contains('K') & Player.PlayerID == PlayerID)
+                {
+                    Message = ("The Pitcher has recorded a strikeout");
+                    return true;
+                }
+                else if (Player.PlayCode.Contains('W') & Player.PlayerID == PlayerID)
+                {
+                    Message = ("The Pitcher has recorded a walk");
+                    return true;
+                }
+                else
+                    return false;
+            }
+            else
+            {
+                Message = ("Player did not pitch this season!");
                 return true;
             }
-            else if (Player.PlayCode.Contains('W') & Player.PlayerID == PlayerID)
-            {
-                Message = ("The Pitcher has recorded a walk");
-                return true;
-            }
-            else 
-                return false;
+
+
         }
     }
 }

@@ -34,12 +34,16 @@ namespace IfSetupWindows
 
         private void acptBtn_Click(object sender, RoutedEventArgs e)
         {
+
             if (PlaySelected.Text == "Watson.PlayTypePitch") 
             {
                 var PitchCriteria = new PlayTypePitch();
                 PitchCriteria.Name = PlayerSelected.Text;
                 var team = new Team();
                 var playerList = team.GetPlayers();
+
+                if (PlayerSelected.Text == "Jeff Francis" || PlayerSelected.Text == "Jhoulys Chacin")
+                    PitchCriteria.isPitcher = true;
 
                 foreach (Player search in playerList)
                 {
