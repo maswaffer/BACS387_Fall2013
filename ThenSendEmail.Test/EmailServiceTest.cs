@@ -17,7 +17,7 @@ namespace ThenSendEmail.Test
         //[TestMethod]
         public void ShouldSendEmail()
         {
-            service.SendEmail("maswaffer@gmail.com", "hello!");
+            service.SendEmail("nish3841@bears.unco.edu", "hello!");
         }
     }
 }
