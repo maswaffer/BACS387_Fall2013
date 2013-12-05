@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace FlickrPhoto.Test
 {
     [TestClass]
-    public class UnitTest1
+    public class SizeTooBigTest
     {
         [TestMethod]
         public void TestMethod1()
