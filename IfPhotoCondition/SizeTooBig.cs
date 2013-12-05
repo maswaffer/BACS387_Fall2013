@@ -26,8 +26,12 @@ namespace IfPhotoCondition
             if (photoValue.PhotoSize > MaxSize)
             {
                 Message = "Size too big...";
+                return true;
             }
-            return false;
+            else
+            {
+                return false;
+            }
         }
 
         // to change the name in the combobox
