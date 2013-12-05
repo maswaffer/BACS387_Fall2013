@@ -15,7 +15,9 @@ namespace Barabara.Liskov
            
             var NameMatch = new NameMatchCriteria();
             //Fake.Name = "Charmeleon";
-            Criteria = NameMatch;
+            var NumberMatch = new PokedexNumberMatchCriteria();
+            Criteria = NameMatch; 
+            Criteria = NumberMatch;
             GetNumber = new RandomNumber();
             File = new PokemonFile();
         }
