@@ -42,7 +42,10 @@ namespace Drin
 
             Motor.NotificationSent += (t) =>
             {
-                ProgressReport.Children.Add(new TextBlock { Text = t });
+                Dispatcher.Invoke(() =>
+                {
+                    ProgressReport.Children.Add(new TextBlock { Text = t });
+                }
             };
 
             Motor.StatusUpdate += (t) =>
