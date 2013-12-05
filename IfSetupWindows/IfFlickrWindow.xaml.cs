@@ -62,6 +62,7 @@ namespace IfSetupWindows
             txtEnterSize.Text = "";
             datePickerBox.Text = "";
             CriteriaType.Text = "";
+            TagTextBox.Text = "";
         }
 
         // when user hit the Add Criteria Button...
