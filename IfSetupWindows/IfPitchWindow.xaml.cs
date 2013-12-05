@@ -38,20 +38,36 @@ namespace IfSetupWindows
             {
                 var PitchCriteria = new PlayTypePitch();
                 PitchCriteria.Name = PlayerSelected.Text;
-                /*foreach (Player search in Team.roster)
+                var team = new Team();
+                var playerList = team.GetPlayers();
+
+                foreach (Player search in playerList)
                 {
-                    if (search.Name = Playerselected.Text)
+                    if (search.Name == PlayerSelected.Text)
                         PitchCriteria.PlayerID = search.playerID;
-                }*/
-                CriteriaSelected.Add(PitchCriteria);
+                }
+                
+                TriggertoProcess = new ResultTrigger(PitchCriteria.PlayerID);
+                TriggertoProcess.AddCriteria(PitchCriteria);
             }
 
             if (PlaySelected.Text == "Watson.PlayTypeHit")
             {
                 var HitCriteria = new PlayTypeHit();
                 HitCriteria.Name = PlayerSelected.Text;
-                CriteriaSelected.Add(HitCriteria);
+                var team = new Team();
+                var playerList = team.GetPlayers();
+
+                foreach (Player search in playerList)
+                {
+                    if (search.Name == PlayerSelected.Text)
+                        HitCriteria.PlayerID = search.playerID;
+                }
+
+                TriggertoProcess = new ResultTrigger(HitCriteria.PlayerID);
+                TriggertoProcess.AddCriteria(HitCriteria);
             }
+
 
             Close();
         }
@@ -61,17 +77,7 @@ namespace IfSetupWindows
             this.Close();
         }
 
-        private void PlayType_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            var a = false;
-        }
 
-        private void ComboBox_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
-        {
-            var b = false;
-        }
-
-        
-
+ 
     }
 }
