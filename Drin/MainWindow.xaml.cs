@@ -45,7 +45,7 @@ namespace Drin
                 Dispatcher.Invoke(() =>
                 {
                     ProgressReport.Children.Add(new TextBlock { Text = t });
-                }
+                });
             };
 
             Motor.StatusUpdate += (t) =>
