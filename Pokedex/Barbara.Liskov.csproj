@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="NameMatchCriteria.cs" />
     <Compile Include="Pokedex.cs" />
+    <Compile Include="PokedexNumberMatchCriteria.cs" />
     <Compile Include="Pokemon.cs" />
     <Compile Include="PokemonFile.cs" />
     <Compile Include="RandomNumber.cs" />

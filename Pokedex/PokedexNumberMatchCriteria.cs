@@ -1,4 +1,5 @@
-﻿using Common;
+﻿
+using Common;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,24 +8,22 @@ using System.Threading.Tasks;
 
 namespace Barabara.Liskov
 {
-    public class NameMatchCriteria : ICriteria<Pokemon> 
+    public class PokedexNumberMatchCriteria : ICriteria<Pokemon>
     {
-        public string Name { get; set; }
+        public int Number { get; set; }
         public bool Check(Pokemon pokmeoncompare)
         {
-            var Match = pokmeoncompare.Name == Name.ToLower();
+            var Match = pokmeoncompare.PokedexNumber == Number;
             if (Match)
             {
                 Message = "Found Match";
             }
             return Match;
         }
-        public string Message {get; set; }
+        public string Message { get; set; }
         public override string ToString()
         {
-            return "Name Match";
+            return "Pokedex Number Match";
         }
-
-
     }
 }
