@@ -49,9 +49,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokemonFile.Test", "Pokemon
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdaLovelace(Story).Test", "UnitTestProject2\AdaLovelace(Story).Test.csproj", "{8ECBD9A5-BDEE-4060-BC18-0F42D7690EB4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlickrPhoto.Test", "FlickrPhoto.Test\FlickrPhoto.Test.csproj", "{389C49A8-36CB-4A58-B301-5EE6416CD98E}"
+EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 20
+		SccNumberOfProjects = 21
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://bacs387.visualstudio.com/defaultcollection
 		SccLocalPath0 = .
@@ -129,6 +131,10 @@ Global
 		SccProjectTopLevelParentUniqueName19 = FinalProject.sln
 		SccProjectName19 = UnitTestProject2
 		SccLocalPath19 = UnitTestProject2
+		SccProjectUniqueName20 = FlickrPhoto.Test\\FlickrPhoto.Test.csproj
+		SccProjectTopLevelParentUniqueName20 = FinalProject.sln
+		SccProjectName20 = FlickrPhoto.Test
+		SccLocalPath20 = FlickrPhoto.Test
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -331,6 +337,16 @@ Global
 		{8ECBD9A5-BDEE-4060-BC18-0F42D7690EB4}.Release|ARM.ActiveCfg = Release|Any CPU
 		{8ECBD9A5-BDEE-4060-BC18-0F42D7690EB4}.Release|x64.ActiveCfg = Release|Any CPU
 		{8ECBD9A5-BDEE-4060-BC18-0F42D7690EB4}.Release|x86.ActiveCfg = Release|Any CPU
+		{389C49A8-36CB-4A58-B301-5EE6416CD98E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{389C49A8-36CB-4A58-B301-5EE6416CD98E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{389C49A8-36CB-4A58-B301-5EE6416CD98E}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{389C49A8-36CB-4A58-B301-5EE6416CD98E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{389C49A8-36CB-4A58-B301-5EE6416CD98E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{389C49A8-36CB-4A58-B301-5EE6416CD98E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{389C49A8-36CB-4A58-B301-5EE6416CD98E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{389C49A8-36CB-4A58-B301-5EE6416CD98E}.Release|ARM.ActiveCfg = Release|Any CPU
+		{389C49A8-36CB-4A58-B301-5EE6416CD98E}.Release|x64.ActiveCfg = Release|Any CPU
+		{389C49A8-36CB-4A58-B301-5EE6416CD98E}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -352,6 +368,7 @@ Global
 		{3FDA05DD-6708-496F-BA7A-8CC6D82CA4B3} = {67EF2E48-4A81-4384-A9D9-C6AE4E25A9DD}
 		{76953F7D-527A-4448-8019-3DD4ADEAAC0B} = {67EF2E48-4A81-4384-A9D9-C6AE4E25A9DD}
 		{8ECBD9A5-BDEE-4060-BC18-0F42D7690EB4} = {67EF2E48-4A81-4384-A9D9-C6AE4E25A9DD}
+		{389C49A8-36CB-4A58-B301-5EE6416CD98E} = {67EF2E48-4A81-4384-A9D9-C6AE4E25A9DD}
 		{39BB5384-7E0E-4DB3-976F-6BCE522494E9} = {BA5C3BD5-B443-4C56-A3D3-F7AD330D5CAD}
 	EndGlobalSection
 EndGlobal
