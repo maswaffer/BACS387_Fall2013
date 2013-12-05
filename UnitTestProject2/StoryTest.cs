@@ -12,7 +12,7 @@ namespace AdaLovelace_Story_.Test
         public void getLatestTenStories()
         {
             NewsService test = new NewsService("2Q2yOlhzs/CflQI7amq22KrGBgxX3OyQk2mjsYPmZy0");
-            test.SearchFor(null); 
+            test.SearchFor(null);
         }
     }
 }

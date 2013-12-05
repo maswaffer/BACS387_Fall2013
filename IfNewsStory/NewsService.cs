@@ -31,14 +31,11 @@ namespace Ada.Lovelace2._0
             // The market to use.
             string market = "en-us";
 
-            // Get news for science and technology.
-            //string newsCat = "rt_ScienceAndTechnology";
-
             // Configure bingContainer to use your credentials.
             bingContainer.Credentials = new NetworkCredential(BingAccountKey, BingAccountKey);
 
             // Build the query, limiting to 10 results.
-            var newsQuery = bingContainer.News(null, null, market, null, null, null, null, null, null);
+            var newsQuery = bingContainer.News(query, null, market, null, null, null, null, null, null);
             newsQuery = newsQuery.AddQueryOption("$top", 10);
 
             // Run the query and display the results.
