@@ -14,9 +14,12 @@ namespace IfPhotoCondition
         public PhotoConditionTrigger()
         {
             // come back for more work in here
+            Service = new Flickr();
+            Criteria = new List<ICriteria<Photo>>();
         }
 
-        
+        private List<ICriteria<Photo>> Criteria { get; set; }
+
         // creating a list of icriteria properties to access somewhere else
         private List<ICriteria<Photo>> ListOfCriteria { get; set; }
 
