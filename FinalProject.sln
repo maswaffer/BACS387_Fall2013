@@ -51,9 +51,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdaLovelace(Story).Test", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlickrPhoto.Test", "FlickrPhoto.Test\FlickrPhoto.Test.csproj", "{389C49A8-36CB-4A58-B301-5EE6416CD98E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Watson(Pitch).Test", "Watson(Pitch).Test\Watson(Pitch).Test.csproj", "{B6353BB7-63C5-4D6B-ADEB-FBF2211A56C1}"
+EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 21
+		SccNumberOfProjects = 22
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://bacs387.visualstudio.com/defaultcollection
 		SccLocalPath0 = .
@@ -135,6 +137,10 @@ Global
 		SccProjectTopLevelParentUniqueName20 = FinalProject.sln
 		SccProjectName20 = FlickrPhoto.Test
 		SccLocalPath20 = FlickrPhoto.Test
+		SccProjectUniqueName21 = Watson(Pitch).Test\\Watson(Pitch).Test.csproj
+		SccProjectTopLevelParentUniqueName21 = FinalProject.sln
+		SccProjectName21 = Watson(Pitch).Test
+		SccLocalPath21 = Watson(Pitch).Test
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -347,6 +353,16 @@ Global
 		{389C49A8-36CB-4A58-B301-5EE6416CD98E}.Release|ARM.ActiveCfg = Release|Any CPU
 		{389C49A8-36CB-4A58-B301-5EE6416CD98E}.Release|x64.ActiveCfg = Release|Any CPU
 		{389C49A8-36CB-4A58-B301-5EE6416CD98E}.Release|x86.ActiveCfg = Release|Any CPU
+		{B6353BB7-63C5-4D6B-ADEB-FBF2211A56C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6353BB7-63C5-4D6B-ADEB-FBF2211A56C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6353BB7-63C5-4D6B-ADEB-FBF2211A56C1}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{B6353BB7-63C5-4D6B-ADEB-FBF2211A56C1}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B6353BB7-63C5-4D6B-ADEB-FBF2211A56C1}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B6353BB7-63C5-4D6B-ADEB-FBF2211A56C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6353BB7-63C5-4D6B-ADEB-FBF2211A56C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6353BB7-63C5-4D6B-ADEB-FBF2211A56C1}.Release|ARM.ActiveCfg = Release|Any CPU
+		{B6353BB7-63C5-4D6B-ADEB-FBF2211A56C1}.Release|x64.ActiveCfg = Release|Any CPU
+		{B6353BB7-63C5-4D6B-ADEB-FBF2211A56C1}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -369,6 +385,7 @@ Global
 		{76953F7D-527A-4448-8019-3DD4ADEAAC0B} = {67EF2E48-4A81-4384-A9D9-C6AE4E25A9DD}
 		{8ECBD9A5-BDEE-4060-BC18-0F42D7690EB4} = {67EF2E48-4A81-4384-A9D9-C6AE4E25A9DD}
 		{389C49A8-36CB-4A58-B301-5EE6416CD98E} = {67EF2E48-4A81-4384-A9D9-C6AE4E25A9DD}
+		{B6353BB7-63C5-4D6B-ADEB-FBF2211A56C1} = {67EF2E48-4A81-4384-A9D9-C6AE4E25A9DD}
 		{39BB5384-7E0E-4DB3-976F-6BCE522494E9} = {BA5C3BD5-B443-4C56-A3D3-F7AD330D5CAD}
 	EndGlobalSection
 EndGlobal
