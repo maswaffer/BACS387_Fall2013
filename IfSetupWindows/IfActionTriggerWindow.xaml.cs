@@ -46,8 +46,8 @@ namespace IfSetupWindows
             criteria.Keyword = keyword;
             //criteria.Category = category;
 
-            TriggertoProcess = new ActionTrigger();
-            TriggertoProcess.AddCriteria(criteria);
+            //TriggertoProcess = new ActionTrigger();
+            //TriggertoProcess.AddCriteria(criteria);
 
             Close();
         }
