@@ -15,6 +15,13 @@ namespace ThenShowPhotos
             throw new NotImplementedException();
         }
 
-       
+
+        public string sizeType { get; set; }
+        // modify the message depend on what user choose in the combobox...
+        public override string ToString()
+        {
+            var message = string.Format("Show images with size of", sizeType);
+            return message;
+        }
     }
 }

@@ -32,7 +32,7 @@
         <Button Content="OK" 
                 Grid.Row="1" 
                 Grid.Column="0" 
-                Margin="4,4,4,0"
+                Margin="4,4,4,0" Click="Button_Click"
                 Height="40" VerticalAlignment="Top"/>
 
     </Grid>

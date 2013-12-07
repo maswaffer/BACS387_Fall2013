@@ -27,8 +27,17 @@ namespace ThenSetupWindows
             ListOfSize.Items.Add("150 pixels Square"); // will alter string with photo URL type source
             ListOfSize.Items.Add("500 pixels"); // will alter string with photo URL type source
             ListOfSize.Items.Add("800 pixels"); // will alter string with photo URL type source
-            ListOfSize.Items.Add("1600 pixels"); // will alter string with photo URL type source
-            
+            ListOfSize.Items.Add("1600 pixels"); // will alter string with photo URL type source     
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            var showPhotoAction = new ShowPhotosAction();
+            showPhotoAction.sizeType = ListOfSize.Text;
+            ActionToProcess = showPhotoAction;
+            Close();
+        }
+
+
     }
 }
