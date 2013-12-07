@@ -20,7 +20,18 @@
                        HorizontalAlignment="Center"
                        FontSize="15">Configure size of photo to get Web URL</TextBlock>
         </Border>
-        <ListBox Name ="ListOfSize" Grid.Column="1" Grid.Row="1" Margin="4,4,4,4"/>
-        
+        <ComboBox Name ="ListOfSize" 
+                  Grid.Column="1" 
+                  Grid.Row="1" 
+                  Width="Auto"
+                  Height="40"
+                  VerticalAlignment="Top"
+                  Margin="4,4,4,4"/>
+        <Button Content="OK" 
+                Grid.Row="1" 
+                Grid.Column="0" 
+                Margin="4,4,4,0"
+                Height="40" VerticalAlignment="Top"/>
+
     </Grid>
 </y:ThenWindow>
