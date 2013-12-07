@@ -47,12 +47,20 @@ namespace IfSetupWindows
                 // disable the parameter for Date
                 datePickerBox.IsEnabled = false;
                 txtEnterSize.IsEnabled = true;
+                TagTextBox.IsEnabled = false;
             }
             else if (selected is SetDateCriteria)
             {
                 //disable the parameter for Size
                 txtEnterSize.IsEnabled = false;
                 datePickerBox.IsEnabled = true;
+                TagTextBox.IsEnabled = false;
+            }
+            else
+            {
+                TagTextBox.IsEnabled = true;
+                txtEnterSize.IsEnabled = false;
+                datePickerBox.IsEnabled = false;
             }
         }
 
@@ -70,6 +78,7 @@ namespace IfSetupWindows
         {
             // validation the text from Enter width of the photo
             // come back to this later...
+            
             var input = txtEnterSize.Text;
             int output;
             bool dataCheck = Int32.TryParse(input, out output);
@@ -101,8 +110,18 @@ namespace IfSetupWindows
                 TriggertoProcess.AddCriteria<Photo>(c);
             }
             MessageBox.Show("you are saving now...");
+            
             Close();
         }
+
+        private void ClearEntryWhenChange(object sender, EventArgs e)
+        {
+            txtEnterSize.Text = "";
+            TagTextBox.Text = "";
+            datePickerBox.Text = "";
+        }
+
+        
 
         
     }
