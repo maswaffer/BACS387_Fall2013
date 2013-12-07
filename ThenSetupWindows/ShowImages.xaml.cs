@@ -12,13 +12,14 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+//using ThenShowPhotos;
 
 namespace ThenSetupWindows
 {
     /// <summary>
     /// Interaction logic for ShowImages.xaml
     /// </summary>
-    public partial class ShowImages : UserControl
+    public partial class ShowImages : ThenWindow
     {
         public ShowImages()
         {

@@ -56,6 +56,8 @@ namespace Drin
             {
                 case "Email":
                     return new ThenSendEmailWindow();
+                //case "Show":
+                //    return new ShowImages();
                 default:
                     return null;
             }
