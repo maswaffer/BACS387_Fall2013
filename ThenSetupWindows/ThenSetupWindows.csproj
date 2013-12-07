@@ -49,6 +49,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShowImages.xaml.cs">
+      <DependentUpon>ShowImages.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ThenSendEmailWindow.xaml.cs">
       <DependentUpon>ThenSendEmailWindow.xaml</DependentUpon>
     </Compile>
@@ -63,8 +66,16 @@
       <Project>{dbdcdbb6-4dd8-4e99-9948-cc5d90918160}</Project>
       <Name>ThenSendEmail</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ThenShowPhotos\ThenShowPhotos.csproj">
+      <Project>{bd134c33-41a6-4750-9c4d-440fd7937cce}</Project>
+      <Name>ThenShowPhotos</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Page Include="ShowImages.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ThenSendEmailWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
