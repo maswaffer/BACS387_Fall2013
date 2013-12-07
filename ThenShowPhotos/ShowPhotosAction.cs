@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Common;
+using IfPhotoCondition;
+
 namespace ThenShowPhotos
 {
     public class ShowPhotosAction:IAction
@@ -12,5 +14,7 @@ namespace ThenShowPhotos
         {
             throw new NotImplementedException();
         }
+
+       
     }
 }

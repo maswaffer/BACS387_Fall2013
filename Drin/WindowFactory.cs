@@ -56,8 +56,8 @@ namespace Drin
             {
                 case "Email":
                     return new ThenSendEmailWindow();
-                //case "Show":
-                //    return new ShowImages();
+                case "Show":
+                    return new ShowImages();
                 default:
                     return null;
             }
@@ -66,7 +66,8 @@ namespace Drin
         public static List<string> GetActionTypes()
         {
             return new List<string>{
-                "Email"
+                "Email",
+                "Show"
             };
         }
 
