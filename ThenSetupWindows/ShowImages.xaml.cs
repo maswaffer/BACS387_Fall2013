@@ -24,6 +24,11 @@ namespace ThenSetupWindows
         public ShowImages()
         {
             InitializeComponent();
+            ListOfSize.Items.Add("150 pixels Square"); // will alter string with photo URL type source
+            ListOfSize.Items.Add("500 pixels"); // will alter string with photo URL type source
+            ListOfSize.Items.Add("800 pixels"); // will alter string with photo URL type source
+            ListOfSize.Items.Add("1600 pixels"); // will alter string with photo URL type source
+            
         }
     }
 }
