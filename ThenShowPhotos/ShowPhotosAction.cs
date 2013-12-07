@@ -12,7 +12,8 @@ namespace ThenShowPhotos
     {
         public void SendNotification(string message)
         {
-            throw new NotImplementedException();
+            // will delete this line later...
+            string dontdothing = "no show message...need window pop to show image";
         }
 
 
@@ -20,7 +21,7 @@ namespace ThenShowPhotos
         // modify the message depend on what user choose in the combobox...
         public override string ToString()
         {
-            var message = string.Format("Show images with size of", sizeType);
+            var message = string.Format("Show images with size of ", sizeType);
             return message;
         }
     }

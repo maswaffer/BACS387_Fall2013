@@ -28,7 +28,7 @@
                   FontSize="15"
                   
                   VerticalAlignment="Top"
-                  Margin="4,4,4,4"/>
+                  Margin="4,4,4,0"/>
         <Button Content="OK" 
                 Grid.Row="1" 
                 Grid.Column="0" 
