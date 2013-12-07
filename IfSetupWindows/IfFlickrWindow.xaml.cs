@@ -71,10 +71,23 @@ namespace IfSetupWindows
             // validation the text from Enter width of the photo
             // come back to this later...
             var input = txtEnterSize.Text;
+            int output;
+            bool dataCheck = Int32.TryParse(input, out output);
+
+            // condition to check if the user enter correct data type for photo width
+            if (dataCheck)
+            {
+                var selected = CriteriaType.SelectedItem as ICriteria<Photo>;
+                CriteriaSelected.Add(selected);
+                MessageBox.Show("Sucessfully added");
+            }
+            else
+            {
+                MessageBox.Show("Wrong type, should be number");
+                txtEnterSize.Text = "";
+                txtEnterSize.Focus();
+            }
             
-            var selected = CriteriaType.SelectedItem as ICriteria<Photo>;
-            CriteriaSelected.Add(selected);
-            MessageBox.Show("Sucessfully added");
 
         }
 
