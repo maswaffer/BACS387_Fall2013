@@ -25,7 +25,7 @@ namespace ThenShowPhotos
         // modify the message depend on what user choose in the combobox...
         public override string ToString()
         {
-            var message = string.Format("Show images with size of ", SizeType);
+            var message = string.Format("Show images with size of {0}", SizeType);
             return message;
         }
     }

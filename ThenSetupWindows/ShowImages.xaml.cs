@@ -33,7 +33,7 @@ namespace ThenSetupWindows
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             var showPhotoAction = new ShowPhotosAction();
-            showPhotoAction.SizeType = ListOfSize.Items.ToString();
+            showPhotoAction.SizeType = ListOfSize.SelectedItem.ToString();
             ActionToProcess = showPhotoAction;
             Close();
         }
