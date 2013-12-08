@@ -19,7 +19,8 @@ namespace Woot
 
         public bool Check(Event value)
         {
-            if (value.Title.Contains(Keyword))
+            //if (value.Title.Contains(Keyword))
+            if (value.Title.ToUpper().Contains(Keyword.ToUpper()))
             {
                 Message = "The item matching your keyword: " + value.Title;
                 return true;

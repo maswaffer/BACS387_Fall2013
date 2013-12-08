@@ -25,7 +25,7 @@ namespace Woot
 
             var response = client.DownloadString(fullUrl);
 
-            Debug.WriteLine(response);
+            //Debug.WriteLine(response);
          
             var list = JsonConvert.DeserializeObject<List<Event>>(response);
 
