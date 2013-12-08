@@ -23,7 +23,8 @@ namespace Watson
                     var player = new Player
                     {
                         playerID = splitByComma[1],
-                        Name = splitByComma[2]
+                        //Name = splitByComma[2]
+                        Name = splitByComma[2].Replace("\"", "")
                     };
 
                     roster.Add(player);
