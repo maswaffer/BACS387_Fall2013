@@ -23,7 +23,8 @@ namespace Ada.Lovelace2._0
             bool match = false; 
             if (value.Title.Contains(Keyword))
             {
-                if (value.storyDate.Equals(Date))
+                //if (value.storyDate.Equals(Date))
+                if (value.storyDate.Date.Equals(Date.Date))
                 {
                     match = true;
                 }
