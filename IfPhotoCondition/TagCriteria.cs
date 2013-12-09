@@ -13,6 +13,7 @@ namespace IfPhotoCondition
             get { return "Configure tag"; }
             set{}
         }
+        // mosab is working on this need to go back here to modify this...
         public bool Check(Photo photoValue)
         {
             throw new NotImplementedException();

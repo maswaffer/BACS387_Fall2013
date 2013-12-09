@@ -71,7 +71,12 @@ namespace IfPhotoCondition
         // override to string method
         public override string ToString()
         {
-            return "will set up this message if the user choose option send email...";
+            var criteriaDescription = new List<string>();
+            foreach (var c in Criteria)
+            {
+                criteriaDescription.Add(c.ToString());
+            }
+            return "Photo " + string.Join(" or ", criteriaDescription);
         }
     }
 }
