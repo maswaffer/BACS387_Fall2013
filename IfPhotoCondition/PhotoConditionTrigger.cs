@@ -66,5 +66,11 @@ namespace IfPhotoCondition
         // implement Message from ITrigger
         public string Message
         { get; set; }
+
+        // override to string method
+        public override string ToTring()
+        {
+            return "will set up this message if the user choose option send email...";
+        }
     }
 }
