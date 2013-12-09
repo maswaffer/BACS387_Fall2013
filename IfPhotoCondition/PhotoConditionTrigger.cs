@@ -69,7 +69,7 @@ namespace IfPhotoCondition
         { get; set; }
 
         // override to string method
-        public override string ToTring()
+        public override string ToString()
         {
             return "will set up this message if the user choose option send email...";
         }
