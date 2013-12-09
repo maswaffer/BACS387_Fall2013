@@ -34,6 +34,7 @@ namespace IfPhotoCondition
         {
             // var listOfCriteria = new List<ICriteria<Photo>>();
             // we could do a for loop here instead
+
             listOfCriteria.Add(new SizeTooBig());
             listOfCriteria.Add(new SizeTooSmall());
 
