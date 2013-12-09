@@ -94,19 +94,26 @@ namespace IfSetupWindows
                     }
                     else if (dataCheck == true)
                     {
-                        CriteriaSelected.Add(selected);
-                        MessageBox.Show("Sucessfully added");
+                        AddCriteria(selected);
+                        
                     }
             }
             else
             {
-                // this to add the criteria
-                CriteriaSelected.Add(selected);
-                MessageBox.Show("Sucessfully added");
+                // Calling helper method to perform add criteria and 
+                // Show Message to let the user know that criteria is added ok
+                AddCriteria(selected);
             }
             
         }
 
+        // Method use for adding criteria.
+        private void AddCriteria(ICriteria<Photo> selected)
+        {
+            var _selected = CriteriaType.SelectedItem as ICriteria<Photo>;
+            CriteriaSelected.Add(_selected);
+            MessageBox.Show("Sucessfully added");
+        }
         // save information to the List and close the form
         private void Save_Click(object sender, RoutedEventArgs e)
         {
