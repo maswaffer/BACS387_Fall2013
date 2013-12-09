@@ -39,14 +39,20 @@ namespace IfPhotoCondition
 
             // we have to get photo size from flickr service.
             var Value = Service.GetPhotosByArea();
-            bool result;
+            
             foreach (var criteria in listOfCriteria)
             {
+                bool resultOk;
                 // photovalue get from Photo
-                result = criteria.Check(Value);
+                resultOk = criteria.Check(Value);
+                if (resultOk)
+                {
+                    Message = criteria.Message;
+                    return true;
+                }
                 
             }
-            return true;
+            return false;
         }
 
 
