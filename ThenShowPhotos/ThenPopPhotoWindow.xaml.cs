@@ -25,7 +25,7 @@ namespace ThenShowPhotos
         public ThenPopPhotoWindow()
         {
             // This line error...
-            //InitializeComponent();
+            InitializeComponent();
         } 
     }
 }
