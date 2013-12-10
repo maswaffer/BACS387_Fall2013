@@ -15,7 +15,7 @@ using Common;
 using Barabara.Liskov;
 
 
-namespace IfSetupWindows
+namespace ThenShowPhotos
 {
     /// <summary>
     /// Interaction logic for IfPokedexWindow.xaml

@@ -15,7 +15,7 @@ using IfPhotoCondition;
 using Common;
 
 
-namespace IfSetupWindows
+namespace ThenShowPhotos
 {
     /// <summary>
     /// Interaction logic for IfFlickrWindow.xaml

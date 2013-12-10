@@ -14,7 +14,7 @@ using System.Windows.Shapes;
 using Common;
 using Ida.Rhodes;
 
-namespace IfSetupWindows
+namespace ThenShowPhotos
 {
     /// <summary>
     /// Interaction logic for IfWeatherWindow.xaml

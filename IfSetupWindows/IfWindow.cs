@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using Common;
 
-namespace IfSetupWindows
+namespace ThenShowPhotos
 {
     public class IfWindow : Window
     {

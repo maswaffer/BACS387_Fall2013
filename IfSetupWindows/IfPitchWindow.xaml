@@ -1,7 +1,7 @@
-﻿<y:IfWindow x:Class="IfSetupWindows.IfPitch"
+﻿<y:IfWindow x:Class="ThenShowPhotos.IfPitch"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:y="clr-namespace:IfSetupWindows"
+        xmlns:y="clr-namespace:ThenShowPhotos"
         Title="Set Play Criteria" Height="280" Width="431">
     <Grid x:Name="crt1Cmb" Margin="0,0,2,0">
         <Grid.ColumnDefinitions>

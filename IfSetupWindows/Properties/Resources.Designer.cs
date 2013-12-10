@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace IfSetupWindows.Properties {
+namespace ThenShowPhotos.Properties {
     
     
     /// <summary>

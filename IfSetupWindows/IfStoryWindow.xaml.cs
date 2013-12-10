@@ -16,7 +16,7 @@ using Ada.Lovelace2._0;
 
 
 
-namespace IfSetupWindows
+namespace ThenShowPhotos
 {
     /// <summary>
     /// Interaction logic for IfStoryWindow.xaml

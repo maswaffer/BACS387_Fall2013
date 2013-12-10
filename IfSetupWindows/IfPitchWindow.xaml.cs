@@ -14,7 +14,7 @@ using System.Windows.Shapes;
 using Common;
 using Watson;
 
-namespace IfSetupWindows
+namespace ThenShowPhotos
 {
     /// <summary>
     /// Interaction logic for IfPitch.xaml

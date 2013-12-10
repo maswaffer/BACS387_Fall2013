@@ -1,7 +1,7 @@
-﻿<y:IfWindow x:Class="IfSetupWindows.IfPokedexWindow"
+﻿<y:IfWindow x:Class="ThenShowPhotos.IfPokedexWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:y="clr-namespace:IfSetupWindows"  
+        xmlns:y="clr-namespace:ThenShowPhotos"  
         Title="Pokedex Add Crtieria" Height="346" Width="556">
     <Grid>
         <Grid.ColumnDefinitions>

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using Common;
-using IfSetupWindows;
+using ThenShowPhotos;
 using ThenSetupWindows;
 
 namespace Drin

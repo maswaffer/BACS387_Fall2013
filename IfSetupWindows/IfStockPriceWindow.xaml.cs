@@ -14,7 +14,7 @@ using System.Windows.Shapes;
 using Common;
 using IfStockPrice;
 
-namespace IfSetupWindows
+namespace ThenShowPhotos
 {
     /// <summary>
     /// Interaction logic for IfStockPriceWindow.xaml

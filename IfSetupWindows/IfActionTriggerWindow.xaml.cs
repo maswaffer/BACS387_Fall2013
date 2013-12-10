@@ -15,7 +15,7 @@ using Common;
 using IfStockPrice;
 using Woot;
 
-namespace IfSetupWindows
+namespace ThenShowPhotos
 {
     /// <summary>
     /// Interaction logic for Window1.xaml
