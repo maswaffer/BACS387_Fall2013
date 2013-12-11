@@ -56,11 +56,10 @@ namespace Ida.Rhodes
         
         public List<Forecast> GetHourlies(string zipcode)
         {
-            //These pull the City and state using the ZipCode
-            var ZipCode = zipcode;
-
-            //This bulds the API call using the apiKey and zipcode
             var apiKey = "9a709d3a540125fd";
+            var ZipCode = zipcode;            
+
+            //This bulds the API call using the apiKey and zipcode            
             var url = @"http://api.wunderground.com/api/{0}/hourly/q/{1}.xml";
             var urlFixed = string.Format(url, apiKey, ZipCode);
 
@@ -77,8 +76,7 @@ namespace Ida.Rhodes
                     HourlyTemp = Convert.ToInt32(el.Descendants("english").FirstOrDefault().Value)
                 }).ToList();
             return hourlyForecasts;            
-        }         
-        
+        }      
         //if we wanted to get City, ST from zipcode...http://ziptasticapi.com/{0}";   
     }
 }

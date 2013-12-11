@@ -13,7 +13,7 @@ namespace Ida.Rhodes
         public ForecastTrigger(string zipcode)
         {
             Zipcode = zipcode;
-            BrickTamland = new TellMeTheForecast();  //“I’m Brick Tamland. When there’s weather to report… I report the weather.”
+            BrickTamland = new TellMeTheForecast();  //“I’m Brick Tamland. When there’s weather to report...I report the weather.”
             CriteriaList = new List<ICriteria<Forecast>>();
         }
 
