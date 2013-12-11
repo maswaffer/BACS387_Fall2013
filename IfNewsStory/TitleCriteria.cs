@@ -40,7 +40,11 @@ namespace Ada.Lovelace2._0
             return match; 
         }
 
-
+        public override string ToString()
+        {
+            var str = string.Format("Title");
+            return str;
+        }
 
 
     }
