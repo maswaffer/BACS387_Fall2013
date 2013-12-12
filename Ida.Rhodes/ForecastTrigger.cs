@@ -20,13 +20,12 @@ namespace Ida.Rhodes
         private string Zipcode { get; set; }
         private List<ICriteria<Forecast>> CriteriaList { get; set; }
         private TellMeTheForecast BrickTamland { get; set; }
+        public string Message { get; set; }
 
         public void AddCriteria<T>(ICriteria<T> criteria) where T : new()
         {
             CriteriaList.Add(criteria as ICriteria<Forecast>);
-        }
-
-        public string Message { get; set; }
+        }        
 
         public bool CheckCondition()
         {
