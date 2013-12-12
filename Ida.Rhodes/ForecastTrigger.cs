@@ -42,21 +42,7 @@ namespace Ida.Rhodes
             }
             Message = CombinedMessage.ToString();
             if (Message== "") return false;
-                return true;
-            
+                return true;          
         }
-
-        //do we need this?
-        /*public override string ToString()
-        {
-            var criteriaDescriptions = new List<string>();
-            foreach (var c in CriteriaList)
-            {
-                criteriaDescriptions.Add(c.ToString());
-            }
-
-            //make message here.
-            return "";
-        }*/
     }
 }

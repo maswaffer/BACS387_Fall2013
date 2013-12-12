@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -13,6 +15,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using Common;
 using Ida.Rhodes;
+using System.Xml.Linq;
+using System.IO;
 
 namespace ThenShowPhotos
 {
@@ -36,57 +40,56 @@ namespace ThenShowPhotos
 
         private void SetCriteria(object sender, RoutedEventArgs e)
         {
-            ////This bulds the API call using the apiKey and zipcode
-            //var apiKey = "9a709d3a540125fd";
-            //var url = @"http://api.wunderground.com/api/{0}/hourly/q/{1}.xml";
-            //var urlFixed = string.Format(url, apiKey, ZipCode);
+            //This builds the API call using the apiKey and zipcode
+            var apikey = "9a709d3a540125fd";
+            var url = @"http://api.wunderground.com/api/{0}/hourly/q/{1}.xml";
+            var urlfixed = string.Format(url, apikey, ZipCode);
 
-            ////Calls the API and retrieves the XML file that is parsed.
-            //var client = new WebClient();
-            //var response = client.DownloadString(urlFixed);
-            //var xml = XElement.Parse(response);
+            //calls the api and retrieves the xml file that is parsed.
+            var client = new WebClient();
+            var response = client.DownloadString(urlfixed);
+            var xml = XElement.Parse(response);
 
-            //Pulls in the XML information for Zipcode validity check
-
-            //var hourlyForecasts = (from el in xml.Descendants("forecast")
-            //                       select new Forecast
-            //                       {
-            //                           Convert.ToString(el.Descendants("error").FirstOrDefault().Value) != null)
-
-            //                       }).ToList();
-            //return hourlyForecasts;
-            
-            CriteriaSelected.Clear();
-            tempChecked = Convert.ToBoolean(Temp.IsChecked);
-            precipChecked = Convert.ToBoolean(Precip.IsChecked);
-            
-            if (Convert.ToBoolean(TempAbove.IsChecked))
-                tempAboveOrBelow = "Above";
-            else tempAboveOrBelow = "Below";
-
-            if (tempChecked == true)
+            //pulls in the xml information for zipcode validity check
+            if (Convert.ToString(xml.Descendants("error").FirstOrDefault().Value) != null)
             {
-                var tempCriteria = new TempCriteria();
-                tempCriteria.tempAboveOrBelow = tempAboveOrBelow;
-                tempCriteria.userTempValue = Convert.ToInt32(Temp_Select.Value);
-                CriteriaSelected.Add(tempCriteria);
+                MessageBox.Show("Son of a bee-sting. That zipcode is not found. Try Again.");
+                ZipCode.Focus();
             }
 
-            if (precipChecked == true)
+            else
             {
-                var rainCriteria = new RainCriteria();
-                rainCriteria.userPrecipValue = Convert.ToInt32(Precip_Select.Value);
-                CriteriaSelected.Add(rainCriteria);
+                CriteriaSelected.Clear();
+                tempChecked = Convert.ToBoolean(Temp.IsChecked);
+                precipChecked = Convert.ToBoolean(Precip.IsChecked);
+
+                if (Convert.ToBoolean(TempAbove.IsChecked))
+                    tempAboveOrBelow = "Above";
+                else tempAboveOrBelow = "Below";
+
+                if (tempChecked == true)
+                {
+                    var tempCriteria = new TempCriteria();
+                    tempCriteria.tempAboveOrBelow = tempAboveOrBelow;
+                    tempCriteria.userTempValue = Convert.ToInt32(Temp_Select.Value);
+                    CriteriaSelected.Add(tempCriteria);
+                }
+
+                if (precipChecked == true)
+                {
+                    var rainCriteria = new RainCriteria();
+                    rainCriteria.userPrecipValue = Convert.ToInt32(Precip_Select.Value);
+                    CriteriaSelected.Add(rainCriteria);
+                }
+
+                TriggertoProcess = new ForecastTrigger(ZipCode.ToString());
+                foreach (var c in CriteriaSelected)
+                {
+                    TriggertoProcess.AddCriteria<Forecast>(c);
+                }
+
+                MessageBox.Show("Your settings have been saved.");
             }
-
-            TriggertoProcess = new ForecastTrigger(ZipCode.ToString());
-            foreach (var c in CriteriaSelected)
-            {
-                TriggertoProcess.AddCriteria<Forecast>(c);
-            }
-
-            MessageBox.Show("Your settings have been saved.");
-
         }      
 
         //These enable/disable the Temparature and Precipitation sliders and buttons for better user experience.

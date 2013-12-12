@@ -77,6 +77,5 @@ namespace Ida.Rhodes
                 }).ToList();
             return hourlyForecasts;            
         }      
-        //if we wanted to get City, ST from zipcode...http://ziptasticapi.com/{0}";   
     }
 }
