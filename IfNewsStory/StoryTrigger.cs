@@ -38,6 +38,7 @@ namespace Ada.Lovelace2._0
             searchResults = Service.SearchFor(); 
             while (size < 10)
             {
+                //Message returned if condition found
                 if (title.Check(searchResults[size]) == true)
                 {
                     Message = "Here is the link to the article that you requested" + searchResults[size].Link;

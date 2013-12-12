@@ -23,6 +23,7 @@ namespace ThenShowPhotos
     /// </summary>
     public partial class IfStoryWindow : IfWindow
     {
+
         public IfStoryWindow()
         {
             InitializeComponent();
@@ -31,7 +32,7 @@ namespace ThenShowPhotos
 
             CriteriaSelected = new List<ICriteria<Story>>();
         }
-
+        /* Originally intended to use multiple Criteria, but Bing's API did not have the other criteria we developed. */
         private List<ICriteria<Story>> CriteriaSelected {get;set;}
         private void CriteriaType_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -41,12 +42,13 @@ namespace ThenShowPhotos
             var selection = ((ComboBox)sender).SelectedItem as ICriteria<Story>;
 
         }
+        //Close the window
         private void CancelButton_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
         }
 
-
+        //Save and send criteria, also close window.
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {         
                         
