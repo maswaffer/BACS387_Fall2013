@@ -24,12 +24,12 @@ namespace Watson
         {
             if (isPitcher == true)
             {
-                if (Player.PlayCode.Contains('K') & Player.PlayerID == PlayerID)
+                if (Player.PlayCode.Contains('K'))
                 {
                     Message = ("The Pitcher has recorded a strikeout");
                     return true;
                 }
-                else if (Player.PlayCode.Contains('W') & Player.PlayerID == PlayerID)
+                else if (Player.PlayCode.Contains('W'))
                 {
                     Message = ("The Pitcher has recorded a walk");
                     return true;
