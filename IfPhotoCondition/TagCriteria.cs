@@ -26,17 +26,7 @@ namespace IfPhotoCondition
             else return false;
         }
 
-        public string Message
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
+        public string Message { get; set; }
 
         public override string ToString()
         {
