@@ -22,14 +22,16 @@ namespace Ida.Rhodes
         public bool Check(Forecast latest)
         {
             if (tempAboveOrBelow == "Below")
-                if (latest.LowTemp < userTempValue) 
+            {
+                if (latest.LowTemp < userTempValue)
                 {
                     Message = string.Format("Cold today, with a high temperature of {0} degrees.  ", latest.HighTemp);
                     return true;
                 }
+            }
 
-            else if(tempAboveOrBelow == "Above")
-                    if (latest.HighTemp >= userTempValue) 
+            else if (tempAboveOrBelow == "Above")
+                if (latest.HighTemp >= userTempValue)
                 {
                     Message = string.Format("Warmer today, with a high temperature of {0} degrees.  ", latest.HighTemp);
                     return true;

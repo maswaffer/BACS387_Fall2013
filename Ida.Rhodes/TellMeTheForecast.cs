@@ -66,14 +66,14 @@ namespace Ida.Rhodes
             //Calls the API and retrieves the XML file that is parsed.
             var client = new WebClient();
             var response = client.DownloadString(urlFixed);
-            var xml = XElement.Parse(response);
+            var thirtySixHourForecast = XElement.Parse(response);
             
             //builds forecasts using the parsed XML information
-            var hourlyForecasts = (from el in xml.Descendants("forecast")
+            var hourlyForecasts = (from eachHourly in thirtySixHourForecast.Descendants("forecast")
                 select new Forecast
                 {
-                    HourlyChanceOfPrecip = Convert.ToInt32(el.Descendants("pop").FirstOrDefault().Value),
-                    HourlyTemp = Convert.ToInt32(el.Descendants("english").FirstOrDefault().Value)
+                    HourlyChanceOfPrecip = Convert.ToInt32(eachHourly.Descendants("pop").FirstOrDefault().Value),
+                    HourlyTemp = Convert.ToInt32(eachHourly.Descendants("english").FirstOrDefault().Value)
                 }).ToList();
             return hourlyForecasts;            
         }      
