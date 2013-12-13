@@ -37,7 +37,7 @@ namespace IfPhotoCondition
         // to change the name in the combobox
         public override string ToString()
         {
-            return Name + MaxSize;
+            return Name;
         }
         
     }

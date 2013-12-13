@@ -127,7 +127,7 @@ namespace ThenShowPhotos
             
             Close();
         }
-
+        //clears the inputs when you hit the combobox "Dropdown menu"
         private void ClearEntryWhenChange(object sender, EventArgs e)
         {
             txtEnterSize.Text = "";
