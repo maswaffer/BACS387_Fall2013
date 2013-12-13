@@ -51,15 +51,18 @@ namespace ThenShowPhotos
             var xml = XElement.Parse(response);
 
             //pulls in the xml information for zipcode validity check
-            /*if (Convert.ToString(xml.Descendants("error").FirstOrDefault().Value) != null)
-            {
-                MessageBox.Show("Son of a bee-sting. That zipcode is not found. Try Again.");
-                ZipCode.Focus();
-            }
+            CriteriaSelected.Clear();
+            var errorCheck = Convert.ToString(xml.Descendants("error").FirstOrDefault().Value);
 
-            else*/
-            {
-                CriteriaSelected.Clear();
+            //if (errorCheck)
+            //{
+            //    MessageBox.Show("son of a bee-sting. that zipcode is not found. try again.");
+            //    ZipCode.Focus();
+            //}
+
+            //else
+            //{
+                
                 tempChecked = Convert.ToBoolean(Temp.IsChecked);
                 precipChecked = Convert.ToBoolean(Precip.IsChecked);
 
@@ -89,7 +92,7 @@ namespace ThenShowPhotos
                 }
 
                 MessageBox.Show("Your settings have been saved.");
-            }
+            //}
         }      
 
         //These enable/disable the Temparature and Precipitation sliders and buttons for better user experience.
