@@ -51,13 +51,13 @@ namespace ThenShowPhotos
             var xml = XElement.Parse(response);
 
             //pulls in the xml information for zipcode validity check
-            if (Convert.ToString(xml.Descendants("error").FirstOrDefault().Value) != null)
+            /*if (Convert.ToString(xml.Descendants("error").FirstOrDefault().Value) != null)
             {
                 MessageBox.Show("Son of a bee-sting. That zipcode is not found. Try Again.");
                 ZipCode.Focus();
             }
 
-            else
+            else*/
             {
                 CriteriaSelected.Clear();
                 tempChecked = Convert.ToBoolean(Temp.IsChecked);
