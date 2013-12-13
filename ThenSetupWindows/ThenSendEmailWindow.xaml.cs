@@ -26,12 +26,19 @@ namespace ThenSetupWindows
             InitializeComponent();
         }
 
+        
+
         private void OKButton_Click(object sender, RoutedEventArgs e)
         {
             var emailAction = new EmailAction();
             emailAction.Recipient = Email.Text;
             ActionToProcess = emailAction;
             Close();
+        }
+
+        private void ThenWindow_Loaded(object sender, RoutedEventArgs e)
+        {
+            Email.Focus();
         }
     }
 }

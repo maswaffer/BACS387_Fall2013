@@ -14,14 +14,18 @@ namespace IfStockPrice
 
         public bool Check(Stock value)
         {
+            var met = false;
             if (PercentChange > 0)
             {
-                return value.ChangePercent > PercentChange;
+                met = value.ChangePercent > PercentChange;
             }
             else
             {
-                return value.ChangePercent < PercentChange;
+                met = value.ChangePercent < PercentChange;
             }
+            Message = met ? string.Format("{0} changed by {1}.  You asked to be notified of changes greater than {2}", value.Symbol, value.ChangePercent, PercentChange) : "";
+
+            return met;
         }
 
         public decimal PercentChange { get; set; }

@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CE6B712B-7D91-474F-BC1B-CCA2F3F4F9E2}</ProjectGuid>
+    <ProjectGuid>{999961EF-8F87-4FE8-9DC4-6D8C2F1CB922}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>IfStockPrice.Test</RootNamespace>
-    <AssemblyName>IfStockPrice.Test</AssemblyName>
+    <RootNamespace>IfStockPriceTest</RootNamespace>
+    <AssemblyName>IfStockPriceTest</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -54,20 +54,8 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="PriceChangeGreaterThanTest.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StockPriceTriggerTest.cs" />
     <Compile Include="ServiceTest.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Common\Common.csproj">
-      <Project>{d3e1dc31-e7f5-496b-bc6d-1d64e18cd7a8}</Project>
-      <Name>Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\IfStockPrice\IfStockPrice.csproj">
-      <Project>{1134aa5d-f606-40a1-a8fb-ebce0c18d4e9}</Project>
-      <Name>IfStockPrice</Name>
-    </ProjectReference>
+    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

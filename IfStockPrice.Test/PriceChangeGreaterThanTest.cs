@@ -65,6 +65,23 @@ namespace IfStockPrice.Test
         }
 
         [TestMethod]
+        public void ShouldBeMetNegativePercent2()
+        {
+            //Set Criteria
+            criteria.PercentChange = -3M;
+
+            //Set data (only set relevant fields)
+            var stock = new Stock
+            {
+                ChangePercent = -3.9M
+            };
+
+            var isMet = criteria.Check(stock);
+
+            Assert.IsTrue(isMet);
+        }
+
+        [TestMethod]
         public void ShouldNotBeMetNegativePercent()
         {
             //Set Criteria

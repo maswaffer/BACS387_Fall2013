@@ -36,8 +36,8 @@ namespace Drin.Engine
                     }
                 }
                 StatusUpdate("Waiting");
-                //Wait 10 seconds before doing it again
-                Thread.Sleep(10000);
+                //Wait 30 seconds before doing it again
+                Thread.Sleep(30000);
             }
         }
 

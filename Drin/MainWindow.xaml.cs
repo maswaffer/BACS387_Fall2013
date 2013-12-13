@@ -36,7 +36,7 @@ namespace Drin
             {
                 Dispatcher.Invoke(() =>
                 {
-                    ProgressReport.Children.Add(new TextBlock { Text = t });
+                    ProgressReport.Children.Add(new TextBlock { Text = "Checking: " + t });
                 });
             };
 
@@ -44,13 +44,16 @@ namespace Drin
             {
                 Dispatcher.Invoke(() =>
                 {
-                    ProgressReport.Children.Add(new TextBlock { Text = t });
+                    ProgressReport.Children.Add(new TextBlock { Text = "Rule match: " + t });
                 });
             };
 
             Motor.StatusUpdate += (t) =>
             {
-                //TODO: Finish this
+                Dispatcher.Invoke(() =>
+                {
+                    ProgressReport.Children.Add(new TextBlock { Text = "Status: " + t });
+                });
             };
               
         }
@@ -66,7 +69,8 @@ namespace Drin
             var window = WindowFactory.GetTriggerWindow(triggerType);
             window.ProcessTrigger((t) =>
             {
-                TriggerToAdd = t;
+                if(t != null)
+                    TriggerToAdd = t;
             });
             window.Show();
         }
@@ -77,7 +81,8 @@ namespace Drin
             var window = WindowFactory.GetActionWindow(actionType);
             window.ProcessAction((t) =>
             {
-                ActionToAdd = t;
+                if(t != null)
+                    ActionToAdd = t;
             });
             window.Show();
         }
