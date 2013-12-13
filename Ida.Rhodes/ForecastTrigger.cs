@@ -30,8 +30,11 @@ namespace Ida.Rhodes
         public bool CheckCondition()
         {
             StringBuilder CombinedMessage = new StringBuilder(); 
-            //Thinking we'll use this to combine messages if its cold AND there's precip.
+            
+            //pulls in the forecast information
             var LatestForecast = BrickTamland.GetForecast(Zipcode);
+
+            //Combines messages if its cold AND there's precip.
             foreach (var criteria in CriteriaList)
             {
                 var isMet = criteria.Check(LatestForecast);

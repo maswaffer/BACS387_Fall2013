@@ -18,20 +18,20 @@ namespace Ida.Rhodes
     {
         public Forecast GetForecast(string zipcode)
         {
-            //new-up a Forecast object called Latest
+            //Constructs a Forecast object called Latest
             Forecast Latest;
             Latest = new Forecast();
 
             //Call the GetHourlies method which will assemble a list of 36 hourly forecasts into this var hourlies
             var hourlies = GetHourlies(zipcode);
             
-            //setup for loop through hourlies...initialize ChanceOfPrecip, HighTemp, and LowTemp to hourlies[0] values, and start hourlies counter at 1 (since we know 0)
+            //setup for loop through hourlies...initialize ChanceOfPrecip, HighTemp, and LowTemp to hourlies[0] values
             Latest.ChanceOfPrecip = hourlies[0].HourlyChanceOfPrecip;
             Latest.HighTemp = hourlies[0].HourlyTemp;
             Latest.LowTemp = hourlies[0].HourlyTemp;
             int i = 0;
 
-            //loop through hourlies to find max ChanceOfPrecip, HighTemp, and LowTemp
+            //loop through each forceast in hourlies to find max ChanceOfPrecip, HighTemp, and LowTemp
             foreach (Forecast hourly in hourlies)                
             {          
                 if (Latest.ChanceOfPrecip >= hourlies[i].HourlyChanceOfPrecip)
