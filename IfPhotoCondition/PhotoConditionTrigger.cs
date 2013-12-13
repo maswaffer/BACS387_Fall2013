@@ -76,7 +76,7 @@ namespace IfPhotoCondition
             {
                 criteriaDescription.Add(c.ToString());
             }
-            return "Photo " + criteriaDescription;
+            return "Photo " + string.Join(" or ", criteriaDescription);
         }
     }
 }
