@@ -51,8 +51,8 @@ namespace ThenShowPhotos
             var xml = XElement.Parse(response);
 
             //pulls in the xml information for zipcode validity check
-            CriteriaSelected.Clear();
-            var errorCheck = Convert.ToString(xml.Descendants("error").FirstOrDefault().Value);
+            //CriteriaSelected.Clear();
+            //var errorCheck = Convert.ToString(xml.Descendants("error").FirstOrDefault().Value);
 
             //if (errorCheck)
             //{

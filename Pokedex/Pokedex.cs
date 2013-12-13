@@ -41,15 +41,14 @@ namespace Barabara.Liskov
              */
             var number = GetNumber.GetNumber();
             var PokemonList = File.GetPokemon();
+            var SelectedPokemon = PokemonList[number];
 
-            foreach (var pokemon in PokemonList)
-            {
-                if (Criteria.Check(pokemon))
+            if (Criteria.Check(SelectedPokemon))
                 {
-                    Message = pokemon.ToString();
+                    Message = SelectedPokemon.ToString();
                     return true;
                 }
-            }
+           
 
 
             return false;

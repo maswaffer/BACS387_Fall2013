@@ -50,8 +50,7 @@ namespace ThenShowPhotos
 
         //Save and send criteria, also close window.
         private void SaveButton_Click(object sender, RoutedEventArgs e)
-        {         
-                        
+        {                             
             var selected = CriteriaType.SelectedItem as ICriteria<Story>;
             var TitleInfo = new TitleCriteria();
            
@@ -62,10 +61,6 @@ namespace ThenShowPhotos
             TriggertoProcess = new StoryTrigger();
             TriggertoProcess.AddCriteria(TitleInfo); 
 
-            
-
-
- 
             Close();
         }
     }

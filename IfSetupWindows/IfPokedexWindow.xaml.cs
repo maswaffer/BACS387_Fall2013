@@ -43,8 +43,8 @@ namespace ThenShowPhotos
 
         public void SaveButton_Click(object sender, RoutedEventArgs e)
         {
-            var Number = PokemonNumber.Text;
-            //var NumberCriteria = new PokedexNumberMatchCriteria();
+            //var Number = PokemonNumber.Text;
+            ////var NumberCriteria = new PokedexNumberMatchCriteria();
 
             var Name = PokemonName.Text;
             var NameCritera = new NameMatchCriteria();
