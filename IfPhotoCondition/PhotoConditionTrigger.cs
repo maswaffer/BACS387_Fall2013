@@ -28,6 +28,11 @@ namespace IfPhotoCondition
 
         List<ICriteria<Photo>> listOfCriteria = new List<ICriteria<Photo>>();
 
+          // implement the new method from ITrigger 
+        public void AddCriteria<T>(ICriteria<T> criteria) where T : new()
+        {
+            listOfCriteria.Add(criteria as ICriteria<Photo>);
+        }
 
         // Implement method in ITrigger (MUST)
         public bool CheckCondition()
@@ -38,7 +43,7 @@ namespace IfPhotoCondition
             //listOfCriteria.Add(new SizeTooBig());
             //listOfCriteria.Add(new SizeTooSmall());
 
-            // we have to get photo size from flickr service.
+            // we have to get photo from flickr service.
             var Value = Service.GetPhotosByArea();
             
             foreach (var criteria in listOfCriteria)
@@ -57,12 +62,7 @@ namespace IfPhotoCondition
         }
 
 
-        // implement the new method from ITrigger 
-        public void AddCriteria<T>(ICriteria<T> criteria) where T : new()
-        {
-            listOfCriteria.Add(criteria as ICriteria<Photo>);
-        }
-
+      
 
         // implement Message from ITrigger
         public string Message
@@ -72,7 +72,7 @@ namespace IfPhotoCondition
         public override string ToString()
         {
             var criteriaDescription = new List<string>();
-            foreach (var c in Criteria)
+            foreach (var c in listOfCriteria)
             {
                 criteriaDescription.Add(c.ToString());
             }
