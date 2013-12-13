@@ -13,10 +13,17 @@ namespace IfPhotoCondition
             get { return "Configure tag"; }
             set{}
         }
+        public string userTag { get; set; }
+      
         // mosab is working on this need to go back here to modify this...
         public bool Check(Photo photoValue)
         {
-            throw new NotImplementedException();
+            if (!userTag.Equals(photoValue.PhotoTag))
+            {
+                Message = "not match";
+                return true;
+            }
+            else return false;
         }
 
         public string Message
