@@ -35,7 +35,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\SampleApps\packages\Newtonsoft.Json.5.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\packages\Newtonsoft.Json.5.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -61,6 +61,7 @@
   <ItemGroup>
     <None Include="ClassDiagramWoot.cd" />
     <None Include="JsonResponseExample.json" />
+    <None Include="packages.config" />
     <None Include="SequenceDiagram.sequencediagram" />
   </ItemGroup>
   <ItemGroup>
